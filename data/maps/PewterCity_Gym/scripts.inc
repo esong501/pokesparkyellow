@@ -20,6 +20,11 @@ PewterCity_Gym_EventScript_DefeatedBrock:: @ 816A5C5
 	goto PewterCity_Gym_EventScript_GiveTM39
 	end
 
+PewterCity_Gym_EventScript_HideAide::
+	setvar VAR_MAP_SCENE_PEWTER_CITY, 2
+	release
+	end
+
 PewterCity_Gym_EventScript_GiveTM39:: @ 816A5F3
 	msgbox PewterCity_Gym_Text_TakeThisWithYou
 	checkitemspace ITEM_TM39, 1
@@ -28,6 +33,7 @@ PewterCity_Gym_EventScript_GiveTM39:: @ 816A5F3
 	giveitem_msg PewterCity_Gym_Text_ReceivedTM39FromBrock, ITEM_TM39
 	setflag FLAG_GOT_TM39_FROM_BROCK
 	msgbox PewterCity_Gym_Text_ExplainTM39
+	goto_if_set FLAG_SYS_B_DASH, PewterCity_Gym_EventScript_HideAide
 	release
 	end
 

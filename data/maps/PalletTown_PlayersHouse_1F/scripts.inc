@@ -10,6 +10,7 @@ PalletTown_PlayersHouse_1F_EventScript_Mom:: @ 8168C09
 	checkplayergender
 	compare VAR_RESULT, MALE
 	call_if_eq PalletTown_PlayersHouse_1F_EventScript_MomOakLookingForYouMale
+	checkplayergender
 	compare VAR_RESULT, FEMALE
 	call_if_eq PalletTown_PlayersHouse_1F_EventScript_MomOakLookingForYouFemale
 	closemessage
@@ -20,10 +21,33 @@ PalletTown_PlayersHouse_1F_EventScript_Mom:: @ 8168C09
 
 PalletTown_PlayersHouse_1F_EventScript_MomOakLookingForYouMale:: @ 8168C38
 	msgbox PalletTown_PlayersHouse_1F_Text_AllBoysLeaveOakLookingForYou
+	goto_if_set FLAG_SYS_B_DASH, PalletTown_PlayersHouse_1F_EventScript_MomEnd
+	call PalletTown_PlayersHouse_1F_EventScript_ReceiveRunningShoes
 	return
 
 PalletTown_PlayersHouse_1F_EventScript_MomOakLookingForYouFemale:: @ 8168C41
 	msgbox PalletTown_PlayersHouse_1F_Text_AllGirlsLeaveOakLookingForYou
+	goto_if_set FLAG_SYS_B_DASH, PalletTown_PlayersHouse_1F_EventScript_MomEnd
+	call PalletTown_PlayersHouse_1F_EventScript_ReceiveRunningShoes
+	return
+
+PalletTown_PlayersHouse_1F_EventScript_MomEnd::
+	applymovement LOCALID_MOM, Movement_FaceOriginalDirection
+	waitmovement 0
+	release
+	end
+
+PalletTown_PlayersHouse_1F_EventScript_ReceiveRunningShoes::
+	msgbox PalletTown_PlayersHouse_1F_Text_TakeRunningShoes
+	textcolor 3
+	playfanfare MUS_OBTAIN_KEY_ITEM
+	message PalletTown_PlayersHouse_1F_Text_ReceivedRunningShoes
+	waitmessage
+	waitfanfare
+	msgbox PalletTown_PlayersHouse_1F_Text_SwitchedShoesWithRunningShoes
+	setflag FLAG_SYS_B_DASH
+	call EventScript_RestorePrevTextColor
+	msgbox PalletTown_PlayersHouse_1F_Text_ExplainRunningShoes
 	return
 
 PalletTown_PlayersHouse_1F_EventScript_MomHeal:: @ 8168C4A
