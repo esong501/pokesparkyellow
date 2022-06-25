@@ -564,6 +564,11 @@ static void TMCase_ItemPrintFunc(u8 windowId, u32 itemId, u8 y)
             StringExpandPlaceholders(gStringVar4, gText_TimesStrVar1);
             AddTextPrinterParameterized_ColorByIndex(windowId, 0, gStringVar4, 0x7E, y, 0, 0, 0xFF, 1);
         }
+        // trying to make TMs not show HM icon
+        else if (itemId < ITEM_HM01)
+        {
+            return;
+        }
         else
         {
             PlaceHMTileInWindow(windowId, 8, y);

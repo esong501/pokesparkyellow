@@ -261,6 +261,7 @@ PalletTown_Movement_OakEnterLeft:: @ 81656F2
 	walk_right
 	walk_up
 	walk_up
+	walk_up
 	step_end
 
 PalletTown_Movement_OakEnterRight:: @ 81656FB
@@ -271,6 +272,7 @@ PalletTown_Movement_OakEnterRight:: @ 81656FB
 	walk_up
 	walk_up
 	walk_right
+	walk_up
 	walk_up
 	walk_up
 	step_end
@@ -296,12 +298,14 @@ PalletTown_Movement_OakEnterRight:: @ 81656FB
 
 PalletTown_Movement_OakWalkToLabLeft:: @ 8165705
 	walk_down
+	walk_down
 	walk_to_lab
 	walk_right
 	walk_in_place_fastest_up
 	step_end
 
 PalletTown_Movement_OakWalkToLabRight:: @ 8165719
+	walk_down
 	walk_down
 	walk_left
 	walk_to_lab
@@ -317,10 +321,12 @@ PalletTown_Movement_OakEnterLab:: @ 816572E
 PalletTown_Movement_PlayerWalkToLabLeft:: @ 8165731
 	walk_down
 	walk_down
+	walk_down
 	walk_to_lab
 	step_end
 
 PalletTown_Movement_PlayerWalkToLabRight:: @ 8165744
+	walk_down
 	walk_down
 	walk_down
 	walk_left

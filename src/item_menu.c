@@ -1790,10 +1790,14 @@ static void ReturnToBagMenuFromSubmenu_PCBox(void)
 static void Task_ItemContext_Sell(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
+    // we want to make TMs impossible to sell
     if (gSpecialVar_ItemId == ITEM_TM_CASE)
     {
-        ItemMenu_SetExitCallback(GoToTMCase_Sell);
-        ItemMenu_StartFadeToExitCallback(taskId);
+        // ItemMenu_SetExitCallback(GoToTMCase_Sell);
+        // ItemMenu_StartFadeToExitCallback(taskId);
+        CopyItemName(gSpecialVar_ItemId, gStringVar1);
+        StringExpandPlaceholders(gStringVar4, gText_OhNoICantBuyThat);
+        DisplayItemMessageInBag(taskId, GetDialogBoxFontId(), gStringVar4, Task_ReturnToBagFromContextMenu);
     }
     else if (gSpecialVar_ItemId == ITEM_BERRY_POUCH)
     {

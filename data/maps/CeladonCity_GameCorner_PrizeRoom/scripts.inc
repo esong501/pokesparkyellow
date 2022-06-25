@@ -323,9 +323,9 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_TryGivePrize:: @ 816CF3F
 	checkcoins VAR_RESULT
 	compare VAR_RESULT, VAR_TEMP_2
 	goto_if_lt CeladonCity_GameCorner_PrizeRoom_EventScript_NotEnoughCoins
-	checkitemspace VAR_TEMP_1, 1
+	checkitem VAR_TEMP_1, 1
 	compare VAR_RESULT, FALSE
-	goto_if_eq CeladonCity_GameCorner_PrizeRoom_EventScript_BagFull
+	goto_if_eq CeladonCity_GameCorner_PrizeRoom_EventScript_YouAlreadyHaveThis
 	removecoins VAR_TEMP_2
 	updatecoinsbox 0, 5
 	giveitem VAR_TEMP_1
@@ -335,6 +335,13 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_TryGivePrize:: @ 816CF3F
 CeladonCity_GameCorner_PrizeRoom_EventScript_BagFull:: @ 816CF79
 	textcolor 3
 	msgbox Text_TooBadBagFull
+	hidecoinsbox 0, 0
+	release
+	end
+
+CeladonCity_GameCorner_PrizeRoom_EventScript_YouAlreadyHaveThis:: @ 816CF79
+	textcolor 3
+	msgbox CeladonCity_GameCorner_PrizeRoom_Text_YouAlreadyHaveThis
 	hidecoinsbox 0, 0
 	release
 	end
