@@ -244,7 +244,7 @@ PalletTown_ProfessorOaksLab_ChooseStarterScene:: @ 816923E
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalFedUpWithWaiting
 	closemessage
 	delay 60
-	msgbox PalletTown_ProfessorOaksLab_Text_OakThreeMonsChooseOne
+	msgbox PalletTown_ProfessorOaksLab_Text_OakTakeMon
 	closemessage
 	delay 30
 	applymovement LOCALID_RIVAL, PalletTown_ProfessorOaksLab_Movement_RivalReact
@@ -328,9 +328,9 @@ PalletTown_ProfessorOaksLab_EventScript_RivalBattle:: @ 816930B
 	compare VAR_STARTER_MON, 0
 	goto_if_eq PalletTown_ProfessorOaksLab_EventScript_RivalApproachForBattleCharmander
 	compare VAR_STARTER_MON, 1
-	goto_if_eq PalletTown_ProfessorOaksLab_EventScript_RivalApproachForBattleBulbasaur
-	compare VAR_STARTER_MON, 2
 	goto_if_eq PalletTown_ProfessorOaksLab_EventScript_RivalApproachForBattleSquirtle
+	compare VAR_STARTER_MON, 2
+	goto_if_eq PalletTown_ProfessorOaksLab_EventScript_RivalApproachForBattleBulbasaur
 	end
 
 @ The scripts for the rival approaching the player for battle are a bit bloated because
@@ -484,6 +484,34 @@ PalletTown_ProfessorOaksLab_EventScript_RivalBattleBulbasaur:: @ 816949F
 	goto PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle
 	end
 
+PalletTown_ProfessorOaksLab_Movement_RivalSnatchPokemon::
+	emote_exclamation_mark
+	walk_down
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+PalletTown_ProfessorOaksLab_Movement_PlayerPushed::
+	walk_right
+	emote_question_mark
+	step_end
+
+PalletTown_ProfessorOaksLab_Movement_RivalFacePokemon::
+	walk_in_place_fast_up
+	step_end
+
+PalletTown_ProfessorOaksLab_Movement_PlayerGoToOak::
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	walk_up
+	step_end
+
 PalletTown_ProfessorOaksLab_Movement_RivalApproachForBattleBulbasaurLeft:: @ 81694B3
 	walk_left
 	walk_left
@@ -629,7 +657,7 @@ PalletTown_ProfessorOaksLab_EventScript_ProfOak:: @ 8169595
 	goto_if_eq PalletTown_ProfessorOaksLab_EventScript_OakBattleMonForItToGrow
 	compare VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3
 	goto_if_eq PalletTown_ProfessorOaksLab_EventScript_OakCanReachNextTownWithMon
-	msgbox PalletTown_ProfessorOaksLab_Text_OakWhichOneWillYouChoose
+	msgbox PalletTown_ProfessorOaksLab_Text_OakGetYourPokemon
 	release
 	end
 
@@ -1232,8 +1260,7 @@ PalletTown_ProfessorOaksLab_EventScript_ChoseStarter:: @ 8169C74
 EventScript_GiveNicknameToStarter:: @ 8169CCC
 	setvar VAR_0x8004, 0
 	call EventScript_ChangePokemonNickname
-	goto PalletTown_ProfessorOaksLab_EventScript_RivalPicksStarter
-	end
+	return
 
 PalletTown_ProfessorOaksLab_EventScript_RivalPicksStarter:: @ 8169CDC
 	closemessage
@@ -1309,6 +1336,72 @@ PalletTown_ProfessorOaksLab_Movement_RivalWalksToBulbasaur:: @ 8169D72
 	walk_right
 	walk_in_place_fastest_up
 	step_end
+
+PalletTown_ProfessorOaksLab_Movement_OakFaceRight::
+	walk_in_place_fastest_right
+	step_end
+
+PalletTown_ProfessorOaksLab_Movement_OakFaceDown::
+	walk_in_place_fastest_down
+	step_end
+
+PalletTown_ProfessorOaksLab_EventScript_PikachuBall::
+	lock
+	faceplayer
+	setvar PLAYER_STARTER_NUM, 1
+	setvar PLAYER_STARTER_SPECIES, SPECIES_PIKACHU
+	setvar RIVAL_STARTER_SPECIES, SPECIES_EEVEE
+	setvar RIVAL_STARTER_ID, LOCALID_BULBASAUR_BALL
+	goto PalletTown_ProfessorOaksLab_EventScript_RivalTakesPokemon
+	end
+
+PalletTown_ProfessorOaksLab_EventScript_RivalTakesPokemon::
+	applymovement LOCALID_RIVAL, PalletTown_ProfessorOaksLab_Movement_RivalSnatchPokemon
+	waitmovement 0
+	applymovement LOCALID_RIVAL, PalletTown_ProfessorOaksLab_Movement_RivalFacePokemon
+	applymovement OBJ_EVENT_ID_PLAYER, PalletTown_ProfessorOaksLab_Movement_PlayerPushed
+	textcolor 0
+	msgbox PalletTown_ProfessorOaksLab_Text_RivalTakePokemon
+	removeobject LOCALID_SQUIRTLE_BALL
+	textcolor 3
+	message PalletTown_ProfessorOaksLab_Text_RivalSnatchedPokemon
+	waitmessage
+	playfanfare MUS_OBTAIN_KEY_ITEM
+	waitfanfare
+	setvar VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3
+	call_if_set FLAG_OPENED_START_MENU, PalletTown_ProfessorOaksLab_EventScript_ReadyEndSignLadyScene
+	textcolor 0
+	applymovement LOCALID_PROF_OAK, PalletTown_ProfessorOaksLab_Movement_OakFaceRight
+	msgbox PalletTown_ProfessorOaksLab_Text_OakWhatAreYouDoing
+	releaseall
+	goto PalletTown_ProfessorOaksLab_EventScript_OakGivePikachu
+	end
+
+PalletTown_ProfessorOaksLab_EventScript_OakGivePikachu::
+	applymovement LOCALID_PROF_OAK, PalletTown_ProfessorOaksLab_Movement_OakFaceDown
+	applymovement OBJ_EVENT_ID_PLAYER, PalletTown_ProfessorOaksLab_Movement_PlayerGoToOak
+	waitmovement 0
+	goto PalletTown_ProfessorOaksLab_EventScript_GetPikachu
+	release
+	end
+	
+PalletTown_ProfessorOaksLab_EventScript_GetPikachu::
+	msgbox PalletTown_ProfessorOaksLab_Text_OakMonCaughtEarlier
+	call EventScript_RestorePrevTextColor
+	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_PALLET_LADY_NOT_BLOCKING_SIGN
+	givemon PLAYER_STARTER_SPECIES, 5, ITEM_NONE
+	copyvar VAR_STARTER_MON, PLAYER_STARTER_NUM
+	getspeciesname 0, PLAYER_STARTER_SPECIES
+	message PalletTown_ProfessorOaksLab_Text_ReceivedMonFromOak
+	waitmessage
+	playfanfare MUS_OBTAIN_KEY_ITEM
+	waitfanfare
+	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	call_if_eq EventScript_GiveNicknameToStarter
+	releaseall
+	end
 
 PalletTown_ProfessorOaksLab_EventScript_SquirtleBall:: @ 8169D78
 	lock

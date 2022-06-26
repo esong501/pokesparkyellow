@@ -109,7 +109,7 @@ PalletTown_ProfessorOaksLab_Text_OakTakeMon:: @ 818DFBC
     .string "Do you see that ball on the\n"
     .string "table? It's called a POKé BALL.\p"
     .string "It holds a POKéMON inside.\n"
-    .string "You may have it! Go on, take it!\p"
+    .string "You may have it! Go on, take it!$"
 
 PalletTown_ProfessorOaksLab_Text_OakBePatientRival:: @ 818E0EA
     .string "OAK: Be patient, {RIVAL}.\n"
@@ -127,7 +127,13 @@ PalletTown_ProfessorOaksLab_Text_OakGetYourPokemon:: @ 818E116
 
 PalletTown_ProfessorOaksLab_Text_OakWhatAreYouDoing::
     .string "OAK: {RIVAL}!\n"
-    .string "What are you doing?$"
+    .string "What are you doing?\p"
+    .string "{RIVAL}: Gramps,\n"
+    .string "I want this one!\p"
+    .string "OAK: But, I… Oh, all right\n"
+    .string "then. That POKéMON is yours.\p"
+    .string "I was going to give you one\n"
+    .string "anyway… {PLAYER}, come over here.$"
 
 PalletTown_ProfessorOaksLab_Text_OakOkay::
     .string "OAK: But, I… Oh, all right\n"
@@ -137,8 +143,8 @@ PalletTown_ProfessorOaksLab_Text_OakOkay::
 
 PalletTown_ProfessorOaksLab_Text_OakMonCaughtEarlier::
     .string "OAK: {PLAYER}, this is the\n"
-    .string "POKéMON we caught earlier.\p"
-    .string "You can have it. We caught it in\n"
+    .string "POKéMON I caught earlier.\p"
+    .string "You can have it. I caught it in\n"
     .string "the wild so it's not tame yet.$"
 
 PalletTown_ProfessorOaksLab_Text_OakWhat::
