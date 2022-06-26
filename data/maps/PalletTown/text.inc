@@ -14,6 +14,16 @@ PalletTown_Text_OakGrassYellow::
     .string "OAK: That was close!\n"
     .string "Wild POKéMON live in tall grass!$"
 
+PalletTown_Text_OakCaughtPikachu::
+    .string "OAK: Whew…$"
+
+PalletTown_Text_OakPokemonCanAppear::
+    .string "A POKéMON can appear anytime in\n"
+    .string "tall grass.\p"
+    .string "You need your own POKéMON for your\n"
+    .string "protection. I know!\p"
+    .string "Here, come with me!$"
+
 PalletTown_Text_RaisingMonsToo:: @ 817D7C8
     .string "I'm raising POKéMON, too.\p"
     .string "When they get strong, they can\n"

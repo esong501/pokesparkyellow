@@ -15,6 +15,21 @@ PalletTown_ProfessorOaksLab_Text_RivalGoChoosePlayer:: @ 818DCE2
     .string "greedy like you. I'm mature!\p"
     .string "Go ahead and choose, {PLAYER}!$"
 
+PalletTown_ProfessorOaksLab_Text_RivalWantPokemon:: @ 818DCE2
+    .string "{RIVAL}: Humph! I'll get a\n"
+    .string "better POKéMON than you!$"
+
+PalletTown_ProfessorOaksLab_Text_RivalTakePokemon::
+    .string "{RIVAL}: No way! {PLAYER},\n"
+    .string "I want this POKéMON!$"
+
+PalletTown_ProfessorOaksLab_Text_RivalSnatchedPokemon:: @ 818DD52
+    .string "{RIVAL} snatched the POKéMON!$"
+
+PalletTown_ProfessorOaksLab_Text_RivalGrampsIWant::
+    .string "{RIVAL}: Gramps,\n"
+    .string "I want this one!$"
+
 PalletTown_ProfessorOaksLab_Text_RivalIllTakeThisOneThen:: @ 818DD34
     .string "{RIVAL}: I'll take this one, then!$"
 
@@ -106,6 +121,37 @@ PalletTown_ProfessorOaksLab_Text_OakWhichOneWillYouChoose:: @ 818E116
     .string "POKéMON.\p"
     .string "Which one will you choose for\n"
     .string "yourself?$"
+
+PalletTown_ProfessorOaksLab_Text_OakGetYourPokemon:: @ 818E116
+    .string "OAK: Go ahead, it's yours!$"
+
+PalletTown_ProfessorOaksLab_Text_OakWhatAreYouDoing::
+    .string "OAK: {RIVAL}!\n"
+    .string "What are you doing?$"
+
+PalletTown_ProfessorOaksLab_Text_OakOkay::
+    .string "OAK: But, I… Oh, all right\n"
+    .string "then. That POKéMON is yours.\p"
+    .string "I was going to give you one\n"
+    .string "anyway… {PLAYER}, come over here.$"
+
+PalletTown_ProfessorOaksLab_Text_OakMonCaughtEarlier::
+    .string "OAK: {PLAYER}, this is the\n"
+    .string "POKéMON we caught earlier.\p"
+    .string "You can have it. We caught it in\n"
+    .string "the wild so it's not tame yet.$"
+
+PalletTown_ProfessorOaksLab_Text_OakWhat::
+    .string "OAK: What?$"
+
+PalletTown_ProfessorOaksLab_Text_OakWouldYouLook::
+    .string "OAK: Would you look at that?\p"
+    .string "It's odd, but it appears that\n"
+    .string "your PIKACHU dislikes POKé BALLS.\p"
+    .string "You should just keep it with you.\n"
+    .string "That should make it happy!\p"
+    .string "You can talk to it and see how it\n"
+    .string "feels about you.$"
 
 PalletTown_ProfessorOaksLab_Text_OakHeyDontGoAwayYet:: @ 818E177
     .string "OAK: Hey!\n"

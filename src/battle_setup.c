@@ -297,6 +297,9 @@ void StartOldManTutorialBattle(void)
     CreateBattleStartTask(B_TRANSITION_SLICED_SCREEN, 0);
 }
 
+// starting a battle with Pikachu where you can only catch him
+
+
 void StartScriptedWildBattle(void)
 {
     ScriptContext2_Enable();

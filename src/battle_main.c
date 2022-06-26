@@ -2513,6 +2513,7 @@ static void BattleIntroDrawTrainersOrMonsSprites(void)
                                        | BATTLE_TYPE_LINK
                                        | BATTLE_TYPE_GHOST
                                        | BATTLE_TYPE_OLD_MAN_TUTORIAL
+                                       | BATTLE_TYPE_PIKACHU
                                        | BATTLE_TYPE_LEGENDARY)))
                     HandleSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[gActiveBattler].species), FLAG_SET_SEEN, gBattleMons[gActiveBattler].personality);
             }
@@ -2530,6 +2531,7 @@ static void BattleIntroDrawTrainersOrMonsSprites(void)
                                                 | BATTLE_TYPE_LINK
                                                 | BATTLE_TYPE_GHOST
                                                 | BATTLE_TYPE_OLD_MAN_TUTORIAL
+                                                | BATTLE_TYPE_PIKACHU
                                                 | BATTLE_TYPE_LEGENDARY)))
                     {
                         HandleSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[gActiveBattler].species), FLAG_SET_SEEN, gBattleMons[gActiveBattler].personality);
@@ -2684,6 +2686,7 @@ static void BattleIntroRecordMonsToDex(void)
                                    | BATTLE_TYPE_LINK
                                    | BATTLE_TYPE_GHOST
                                    | BATTLE_TYPE_OLD_MAN_TUTORIAL
+                                   | BATTLE_TYPE_PIKACHU
                                    | BATTLE_TYPE_LEGENDARY)))
                 HandleSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[gActiveBattler].species), FLAG_SET_SEEN, gBattleMons[gActiveBattler].personality);
         gBattleMainFunc = BattleIntroPrintPlayerSendsOut;
