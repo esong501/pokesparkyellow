@@ -10,6 +10,10 @@ PalletTown_Text_OakGrassUnsafeNeedMon:: @ 817D74A
     .string "I know!\n"
     .string "Here, come with me!$"
 
+PalletTown_Text_OakGrassYellow::
+    .string "OAK: That was close!\n"
+    .string "Wild POKéMON live in tall grass!$"
+
 PalletTown_Text_RaisingMonsToo:: @ 817D7C8
     .string "I'm raising POKéMON, too.\p"
     .string "When they get strong, they can\n"

@@ -85,9 +85,20 @@ PalletTown_ProfessorOaksLab_Text_OakThreeMonsChooseOne:: @ 818DFBC
     .string "You can have one.\n"
     .string "Go on, choose!$"
 
+PalletTown_ProfessorOaksLab_Text_OakTakeMon:: @ 818DFBC
+    .string "OAK: Hmm? {RIVAL}?\n"
+    .string "Why are you here already?\p"
+    .string "I said for you to come by later…\n"
+    .string "Ah, whatever! Just wait there.\p"
+    .string "Look, {PLAYER}!\p"
+    .string "Do you see that ball on the\n"
+    .string "table? It's called a POKé BALL.\p"
+    .string "It holds a POKéMON inside.\n"
+    .string "You may have it! Go on, take it!\p"
+
 PalletTown_ProfessorOaksLab_Text_OakBePatientRival:: @ 818E0EA
     .string "OAK: Be patient, {RIVAL}.\n"
-    .string "You can have one, too!$"
+    .string "I'll give you one later.$"
 
 PalletTown_ProfessorOaksLab_Text_OakWhichOneWillYouChoose:: @ 818E116
     .string "OAK: Now, {PLAYER}.\p"
