@@ -801,7 +801,9 @@ static void Task_SelectTMAction_FromFieldBag(u8 taskId)
     StringAppend(strbuf, gText_Var1IsSelected + 2); // +2 skips over the stringvar
     AddTextPrinterParameterized_ColorByIndex(2, 2, strbuf, 0, 2, 1, 0, 0, 1);
     Free(strbuf);
-    if (itemid_is_unique(gSpecialVar_ItemId))
+    // right now, this prints the HM tile for everything since now TMs are same importance
+    // let's change this to id >= HM01
+    if (gSpecialVar_ItemId >= ITEM_HM01)
     {
         PlaceHMTileInWindow(2, 0, 2);
         CopyWindowToVram(2, COPYWIN_GFX);

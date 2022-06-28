@@ -278,3 +278,83 @@ VermilionCity_EventScript_GymSign:: @ 8166C6E
 VermilionCity_EventScript_HarborSign:: @ 8166C86
 	msgbox VermilionCity_Text_VermilionHarbor, MSGBOX_SIGN
 	end
+
+VermilionCity_EventScript_Jenny::
+	lock
+	faceplayer
+	goto_if_set FLAG_GOT_SQUIRTLE, VermilionCity_EventScript_HowsSquirtle
+	goto_if_set FLAG_BADGE03_GET, VermilionCity_EventScript_JennyBadge
+	msgbox VermilionCity_Text_SquirtleTrainer
+	releaseall
+	end
+
+VermilionCity_EventScript_JennyBadge::
+	msgbox VermilionCity_Text_BadgeGet, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	goto_if_eq VermilionCity_EventScript_ReceiveSquirtle
+	compare VAR_RESULT, NO
+	goto_if_eq VermilionCity_EventScript_SquirtleDeclined
+	end
+
+VermilionCity_EventScript_SquirtleDeclined::
+	msgbox VermilionCity_Text_SquirtleDeclined
+	releaseall
+	end
+
+VermilionCity_EventScript_HowsSquirtle::
+	msgbox VermilionCity_Text_HowsSquirtle
+	releaseall
+	end
+
+VermilionCity_EventScript_ReceiveSquirtle::
+	setvar VAR_TEMP_1, SPECIES_SQUIRTLE
+	givemon SPECIES_SQUIRTLE, 15, ITEM_MYSTIC_WATER
+	compare VAR_RESULT, 0
+	goto_if_eq VermilionCity_EventScript_ReceiveSquirtleParty
+	compare VAR_RESULT, 1
+	goto_if_eq VermilionCity_EventScript_ReceiveSquirtlePC
+	compare VAR_RESULT, 2
+	goto_if_eq EventScript_NoMoreRoomForPokemon
+	release
+	end
+
+VermilionCity_EventScript_ReceiveSquirtleParty:: @ 8161B12
+	textcolor 3
+	playfanfare MUS_LEVEL_UP
+	message VermilionCity_Text_ObtainedSquirtleFromMelanie
+	waitmessage
+	waitfanfare
+	getspeciesname 0, SPECIES_SQUIRTLE
+	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq VermilionCity_EventScript_EndReceiveSquirtle
+	call EventScript_GetGiftMonPartySlot
+	call EventScript_ChangePokemonNickname
+	goto VermilionCity_EventScript_EndReceiveSquirtle
+	end
+
+VermilionCity_EventScript_ReceiveSquirtlePC:: @ 8161B45
+	textcolor 3
+	playfanfare MUS_LEVEL_UP
+	message VermilionCity_Text_ObtainedSquirtleFromMelanie
+	waitmessage
+	waitfanfare
+	getspeciesname 0, SPECIES_SQUIRTLE
+	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq VermilionCity_EventScript_SquirtleTransferredToPC
+	call EventScript_NameReceivedBoxMon
+	goto VermilionCity_EventScript_SquirtleTransferredToPC
+	end
+
+VermilionCity_EventScript_SquirtleTransferredToPC:: @ 8161B73
+	call EventScript_TransferredToPC
+	goto VermilionCity_EventScript_EndReceiveSquirtle
+	end
+
+VermilionCity_EventScript_EndReceiveSquirtle:: @ 8161B7E
+	call EventScript_RestorePrevTextColor
+	msgbox VermilionCity_Text_SquirtleGet
+	setflag FLAG_GOT_SQUIRTLE
+	release
+	end

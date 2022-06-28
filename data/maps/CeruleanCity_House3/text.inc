@@ -28,6 +28,6 @@ CeruleanCity_House3_Text_ObtainedBulbasaurFromMelanie::
     .string "from MELANIE!$"
 
 CeruleanCity_House3_Text_BulbasaurDeclined::
-    .string "Oh… Okay. I'm sure a TRAINER\n"
+    .string "Oh… Okay. I'm sure a trainer\n"
     .string "like yourself could make do.$"
 

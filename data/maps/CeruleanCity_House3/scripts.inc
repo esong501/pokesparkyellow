@@ -55,7 +55,7 @@ CeruleanCity_House3_EventScript_HowsBulbasaur::
 
 CeruleanCity_House3_EventScript_ReceiveBulbasaur::
 	setvar VAR_TEMP_1, SPECIES_BULBASAUR
-	givemon SPECIES_BULBASAUR, 12, ITEM_MIRACLE_SEED
+	givemon SPECIES_BULBASAUR, 15, ITEM_MIRACLE_SEED
 	compare VAR_RESULT, 0
 	goto_if_eq CeruleanCity_House3_EventScript_ReceiveBulbasaurParty
 	compare VAR_RESULT, 1
