@@ -25,5 +25,4 @@ CeruleanCity_House3_Text_ObtainedBulbasaurFromMelanie::
     .string "{PLAYER} received a BULBASAUR\n"
     .string "from MELANIE!$"
 
-Cerulean
 
