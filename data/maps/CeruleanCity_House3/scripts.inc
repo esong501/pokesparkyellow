@@ -26,6 +26,71 @@ CeruleanCity_House3_EventScript_Dontae:: @ 816A9B1
 	release
 	end
 
+CeruleanCity_House3_EventScript_Melanie::
+	lock
+	faceplayer
+	goto_if_set FLAG_GOT_BULBASAUR, CeruleanCity_House3_EventScript_HowsBulbasaur
+	msgbox CeruleanCity_House3_Text_BulbasaurTrainer
+	goto CeruleanCity_House3_EventScript_ReceiveBulbasaur
+	releaseall
+	end
+
+CeruleanCity_House3_EventScript_HowsBulbasaur::
+	msgbox CeruleanCity_House3_Text_HowsBulbasaur
+	releaseall
+	end
+
+CeruleanCity_House3_EventScript_ReceiveBulbasaur::
+	setvar VAR_TEMP_1, SPECIES_BULBASAUR
+	givemon SPECIES_BULBASAUR, 12, ITEM_MIRACLE_SEED
+	compare VAR_RESULT, 0
+	goto_if_eq CeruleanCity_House3_EventScript_ReceiveBulbasaurParty
+	compare VAR_RESULT, 1
+	goto_if_eq CeruleanCity_House3_EventScript_ReceiveBulbasaurPC
+	compare VAR_RESULT, 2
+	goto_if_eq EventScript_NoMoreRoomForPokemon
+	release
+	end
+
+CeruleanCity_House3_EventScript_ReceiveBulbasaurParty:: @ 8161B12
+	textcolor 3
+	playfanfare MUS_LEVEL_UP
+	message CeruleanCity_House3_Text_ObtainedBulbasaurFromMelanie
+	waitmessage
+	waitfanfare
+	getspeciesname 0, SPECIES_BULBASAUR
+	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq CeruleanCity_House3_EventScript_EndReceiveBulbasaur
+	call EventScript_GetGiftMonPartySlot
+	call EventScript_ChangePokemonNickname
+	goto CeruleanCity_House3_EventScript_EndReceiveBulbasaur
+	end
+
+CeruleanCity_House3_EventScript_ReceiveBulbasaurPC:: @ 8161B45
+	textcolor 3
+	playfanfare MUS_LEVEL_UP
+	message CeruleanCity_House3_Text_ObtainedBulbasaurFromMelanie
+	waitmessage
+	waitfanfare
+	getspeciesname 0, SPECIES_BULBASAUR
+	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq CeruleanCity_House3_EventScript_BulbasaurTransferredToPC
+	call EventScript_NameReceivedBoxMon
+	goto CeruleanCity_House3_EventScript_BulbasaurTransferredToPC
+	end
+
+CeruleanCity_House3_EventScript_BulbasaurTransferredToPC:: @ 8161B73
+	call EventScript_TransferredToPC
+	goto CeruleanCity_House3_EventScript_EndReceiveBulbasaur
+	end
+
+CeruleanCity_House3_EventScript_EndReceiveBulbasaur:: @ 8161B7E
+	setflag FLAG_GOT_BULBASAUR
+	release
+	end
+
 CeruleanCity_House3_EventScript_DeclineTrade:: @ 816AA0B
 	msgbox Trade_Text_WellIfYouDontWantTo
 	release

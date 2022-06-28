@@ -183,7 +183,8 @@
 
 // Unused?
 #define FLAG_LOST_FIRST_RIVAL    0x0AF
-#define FLAG_0x0B0               0x0B0
+// Melanie's Bulbasaur
+#define FLAG_GOT_BULBASAUR       0x0B0
 #define FLAG_0x0B1               0x0B1
 #define FLAG_0x0B2               0x0B2
 #define FLAG_0x0B3               0x0B3
