@@ -98,3 +98,27 @@ Route24_Text_CaleDefeat:: @ 818908C
 
 Route24_Text_CalePostBattle:: @ 818909E
     .string "I did my best. I have no regrets!$"
+
+Route24_Text_CharmanderTrainer::
+    .string "I'm not good at raising POKéMON.\p"
+    .string "I should release my CHARMANDER\n"
+    .string "because I haven't raised it well…\p"
+    .string "If you promise me you'll care for\n"
+    .string "it, it's yours.$"
+
+Route24_Text_BadgeGet::
+    .string "Oh, that's the BOULDER BADGE!\p"
+    .string "Would you please take CHARMANDER\n"
+    .string "with you?$"
+
+Route24_Text_HowsCharmander::
+    .string "You better be raising CHARMANDER\n"
+    .string "well!$"
+
+Route24_Text_ObtainedCharmanderFromDamian::
+    .string "{PLAYER} received a CHARMANDER\n"
+    .string "from DAMIAN!$"
+
+Route24_Text_CharmanderDeclined::
+    .string "Figures. I'll find something\n"
+    .string "for CHARMANDER.$"

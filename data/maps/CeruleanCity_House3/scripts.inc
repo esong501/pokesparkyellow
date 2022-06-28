@@ -31,7 +31,20 @@ CeruleanCity_House3_EventScript_Melanie::
 	faceplayer
 	goto_if_set FLAG_GOT_BULBASAUR, CeruleanCity_House3_EventScript_HowsBulbasaur
 	msgbox CeruleanCity_House3_Text_BulbasaurTrainer
-	goto CeruleanCity_House3_EventScript_ReceiveBulbasaur
+	goto_if_set FLAG_BADGE01_GET, CeruleanCity_House3_EventScript_MelanieBadge
+	releaseall
+	end
+
+CeruleanCity_House3_EventScript_MelanieBadge::
+	msgbox CeruleanCity_House3_Text_BadgeGet, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	goto_if_eq CeruleanCity_House3_EventScript_ReceiveBulbasaur
+	compare VAR_RESULT, NO
+	goto_if_eq CeruleanCity_House3_EventScript_BulbasaurDeclined
+	end
+
+CeruleanCity_House3_EventScript_BulbasaurDeclined::
+	msgbox CeruleanCity_House3_Text_BulbasaurDeclined
 	releaseall
 	end
 

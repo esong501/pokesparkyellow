@@ -4316,8 +4316,10 @@ static void sub_8124E48(void)
     {
         GiveMoveToMon(&gPlayerParty[gPartyMenu.slotId], ItemIdToBattleMoveId(gSpecialVar_ItemId));
         AdjustFriendship(&gPlayerParty[gPartyMenu.slotId], FRIENDSHIP_EVENT_LEARN_TMHM);
-        if (gSpecialVar_ItemId <= ITEM_TM50)
-            RemoveBagItem(gSpecialVar_ItemId, 1);
+        // It appears in FRLG, we also need to remove this check to make TMs
+        // infinite use
+        // if (gSpecialVar_ItemId <= ITEM_TM50)
+        //     RemoveBagItem(gSpecialVar_ItemId, 1);
         SetMainCallback2(gPartyMenu.exitCallback);
     }
     else
@@ -4338,8 +4340,10 @@ static void sub_8124EFC(void)
         SetMonMoveSlot(mon, ItemIdToBattleMoveId(gSpecialVar_ItemId), moveIdx);
         AdjustFriendship(mon, FRIENDSHIP_EVENT_LEARN_TMHM);
         ItemUse_SetQuestLogEvent(QL_EVENT_USED_ITEM, mon, gSpecialVar_ItemId, move);
-        if (gSpecialVar_ItemId <= ITEM_TM50)
-            RemoveBagItem(gSpecialVar_ItemId, 1);
+        // there are so many changes needed to make TMs infinite use because this removes
+        // the item too
+        // if (gSpecialVar_ItemId <= ITEM_TM50)
+        //     RemoveBagItem(gSpecialVar_ItemId, 1);
         SetMainCallback2(gPartyMenu.exitCallback);
     }
     else
@@ -4840,7 +4844,7 @@ static void Task_LearnedMove(u8 taskId)
         AdjustFriendship(mon, FRIENDSHIP_EVENT_LEARN_TMHM);
         // we want to make TMs infinite use. Let's remove this check
         // if (item < ITEM_HM01_CUT)
-        //     RemoveBagItem(item, 1);
+            // RemoveBagItem(item, 1);
     }
     GetMonNickname(mon, gStringVar1);
     StringCopy(gStringVar2, gMoveNames[move[0]]);

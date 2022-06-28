@@ -185,8 +185,10 @@
 #define FLAG_LOST_FIRST_RIVAL    0x0AF
 // Melanie's Bulbasaur
 #define FLAG_GOT_BULBASAUR       0x0B0
-#define FLAG_0x0B1               0x0B1
-#define FLAG_0x0B2               0x0B2
+// trainer's Charmander
+#define FLAG_GOT_CHARMANDER      0x0B1
+// officer Jenny's Squirtle
+#define FLAG_GOT_SQUIRTLE        0x0B2
 #define FLAG_0x0B3               0x0B3
 #define FLAG_0x0B4               0x0B4
 #define FLAG_0x0B5               0x0B5

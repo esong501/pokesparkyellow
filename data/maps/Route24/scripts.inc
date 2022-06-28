@@ -103,3 +103,76 @@ Route24_Movement_RocketWalkBackToPos:: @ 8168740
 Route24_Movement_WalkDown:: @ 8168743
 	walk_down
 	step_end
+
+Route24_EventScript_Damian::
+	lock
+	faceplayer
+	goto_if_set FLAG_GOT_CHARMANDER, Route24_EventScript_HowsCharmander
+	msgbox Route24_Text_CharmanderTrainer, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	goto_if_eq Route24_EventScript_ReceiveCharmander
+	compare VAR_RESULT, NO
+	goto_if_eq Route24_EventScript_CharmanderDeclined
+	releaseall
+	end
+
+Route24_EventScript_CharmanderDeclined::
+	msgbox Route24_Text_CharmanderDeclined
+	releaseall
+	end
+
+Route24_EventScript_HowsCharmander::
+	msgbox Route24_Text_HowsCharmander
+	releaseall
+	end
+
+Route24_EventScript_ReceiveCharmander::
+	setvar VAR_TEMP_1, SPECIES_CHARMANDER
+	givemon SPECIES_CHARMANDER, 15, ITEM_CHARCOAL
+	compare VAR_RESULT, 0
+	goto_if_eq Route24_EventScript_ReceiveCharmanderParty
+	compare VAR_RESULT, 1
+	goto_if_eq Route24_EventScript_ReceiveCharmanderPC
+	compare VAR_RESULT, 2
+	goto_if_eq EventScript_NoMoreRoomForPokemon
+	release
+	end
+
+Route24_EventScript_ReceiveCharmanderParty:: @ 8161B12
+	textcolor 3
+	playfanfare MUS_LEVEL_UP
+	message Route24_Text_ObtainedCharmanderFromDamian
+	waitmessage
+	waitfanfare
+	getspeciesname 0, SPECIES_CHARMANDER
+	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq Route24_EventScript_EndReceiveCharmander
+	call EventScript_GetGiftMonPartySlot
+	call EventScript_ChangePokemonNickname
+	goto Route24_EventScript_EndReceiveCharmander
+	end
+
+Route24_EventScript_ReceiveCharmanderPC:: @ 8161B45
+	textcolor 3
+	playfanfare MUS_LEVEL_UP
+	message Route24_Text_ObtainedCharmanderFromDamian
+	waitmessage
+	waitfanfare
+	getspeciesname 0, SPECIES_CHARMANDER
+	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq Route24_EventScript_CharmanderTransferredToPC
+	call EventScript_NameReceivedBoxMon
+	goto Route24_EventScript_CharmanderTransferredToPC
+	end
+
+Route24_EventScript_CharmanderTransferredToPC:: @ 8161B73
+	call EventScript_TransferredToPC
+	goto Route24_EventScript_EndReceiveCharmander
+	end
+
+Route24_EventScript_EndReceiveCharmander:: @ 8161B7E
+	setflag FLAG_GOT_CHARMANDER
+	release
+	end

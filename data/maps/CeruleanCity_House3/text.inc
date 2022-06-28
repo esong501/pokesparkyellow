@@ -11,9 +11,11 @@ CeruleanCity_House3_Text_BulbasaurTrainer::
     .string "BULBASAUR, but now that we've\n"
     .string "treated everyone, I think\p"
     .string "BULBASAUR needs a better home\n"
-    .string "with a strong trainer.\p"
+    .string "with a strong trainer.$"
+
+CeruleanCity_House3_Text_BadgeGet::
     .string "Oh, that's the BOULDER BADGE!\p"
-    .string "would you please take BULBASAUR\n"
+    .string "Would you please take BULBASAUR\n"
     .string "with you?$"
 
 CeruleanCity_House3_Text_HowsBulbasaur::
@@ -25,4 +27,7 @@ CeruleanCity_House3_Text_ObtainedBulbasaurFromMelanie::
     .string "{PLAYER} received a BULBASAUR\n"
     .string "from MELANIE!$"
 
+CeruleanCity_House3_Text_BulbasaurDeclined::
+    .string "Oh… Okay. I'm sure a TRAINER\n"
+    .string "like yourself could make do.$"
 
