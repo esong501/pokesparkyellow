@@ -486,11 +486,11 @@ PalletTown_ProfessorOaksLab_EventScript_RivalBattleBulbasaur:: @ 816949F
 
 PalletTown_ProfessorOaksLab_Movement_RivalSnatchPokemon::
 	emote_exclamation_mark
-	walk_down
-	walk_right
-	walk_right
-	walk_right
-	walk_right
+	walk_fast_down
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
 	step_end
 
 PalletTown_ProfessorOaksLab_Movement_PlayerPushed::
@@ -535,6 +535,7 @@ PalletTown_ProfessorOaksLab_Movement_RivalApproachForBattleBulbasaurRight:: @ 81
 
 PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle:: @ 81694C2
 	special HealPlayerParty
+	call_if_set FLAG_LOST_FIRST_RIVAL, PalletTown_ProfessorOaksLab_EventScript_Vaporeon
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalGoToughenMyMon
 	closemessage
 	playbgm MUS_RIVAL_EXIT, 0
@@ -551,6 +552,10 @@ PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle:: @ 81694C2
 	setflag FLAG_BEAT_RIVAL_IN_OAKS_LAB
 	releaseall
 	end
+
+PalletTown_ProfessorOaksLab_EventScript_Vaporeon::
+	setvar PLAYER_STARTER_NUM, 2
+	return
 
 PalletTown_ProfessorOaksLab_EventScript_RivalExitAfterBattleLeft:: @ 8169504
 	applymovement LOCALID_RIVAL, PalletTown_ProfessorOaksLab_Movement_RivalExitAfterBattleLeft
@@ -629,7 +634,7 @@ PalletTown_ProfessorOaksLab_EventScript_Rival:: @ 816955F
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_RivalWaitingForStarter:: @ 8169581
-	msgbox PalletTown_ProfessorOaksLab_Text_RivalGoChoosePlayer
+	msgbox PalletTown_ProfessorOaksLab_Text_RivalWantPokemon
 	release
 	end
 

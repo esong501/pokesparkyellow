@@ -911,6 +911,8 @@ static void CB2_EndTrainerBattle(void)
                 SetMainCallback2(CB2_WhiteOut);
                 return;
             }
+            // if the player loses the first battle, we just want to set a flag that sets the rival team to Vaporeon
+            FlagSet(FLAG_LOST_FIRST_RIVAL);
             SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
             SetBattledTrainerFlag();
             QuestLogEvents_HandleEndTrainerBattle();
