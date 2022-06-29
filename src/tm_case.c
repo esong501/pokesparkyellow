@@ -567,7 +567,7 @@ static void TMCase_ItemPrintFunc(u8 windowId, u32 itemId, u8 y)
         //     AddTextPrinterParameterized_ColorByIndex(windowId, 0, gStringVar4, 0x7E, y, 0, 0, 0xFF, 1);
         // }
         // trying to make TMs not show HM icon
-        if (itemId < ITEM_HM01)
+        if (BagGetItemIdByPocketPosition(POCKET_TM_CASE, itemId) < ITEM_HM01)
         {
             return;
         }

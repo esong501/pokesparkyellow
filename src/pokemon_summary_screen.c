@@ -3772,8 +3772,10 @@ static u8 PokeSum_CanForgetSelectedMove(void)
 
     move = GetMonMoveBySlotId(&sMonSummaryScreen->currentMon, sMoveSelectionCursorPos);
 
-    if (IsMoveHm(move) == TRUE && sMonSummaryScreen->mode != PSS_MODE_FORGET_MOVE)
-        return FALSE;
+    // this checks if the move is an HM move and the summary screen is in forget move mode
+    // if we literally just remove this check, we can forget any move from summary screen only!
+    // if (IsMoveHm(move) == TRUE && sMonSummaryScreen->mode != PSS_MODE_FORGET_MOVE)
+    //     return FALSE;
 
     return TRUE;
 }
