@@ -392,6 +392,9 @@ extern const u8 gText_PkmnAlreadyInBattle[];
 extern const u8 gText_EggCantBattle[];
 extern const u8 gText_PkmnAlreadySelected[];
 extern const u8 gText_PkmnCantSwitchOut[];
+// new strings for both nicknaming and changing moves
+extern const u8 gText_Nickname[];
+extern const u8 gText_ChangeMoves[];
 
 // credits
 extern const u8 gString_Dummy[];
