@@ -16,10 +16,13 @@
 #include "strings.h"
 #include "constants/songs.h"
 #include "constants/moves.h"
+#include "party_menu.h"
 
 /*
  * Move relearner state machine
  * ------------------------
+ * 
+ * Entry Point: DisplayMoveTutorMenu
  * 
  * CB2_MoveRelearner_Init
  *   - Creates listMenuScrollPos to listen to right/left buttons.
@@ -615,11 +618,17 @@ static void MoveRelearnerStateMachine(void)
         sMoveRelearner->state++;
         break;
     case MENU_STATE_RETURN_TO_FIELD:
+        // normally, since we only ever access the move relearner from an NPC, the game only exits to the overworld
+        // since we'll be accessing this from inside the party menu, we want to exit back to the party menu.
         if (!gPaletteFade.active)
         {
             FreeAllWindowBuffers();
             Free(sMoveRelearner);
-            SetMainCallback2(CB2_ReturnToField);
+            // we'll set a temporary flag from inside our new change moves function to proc this case
+            if (FlagGet(FLAG_TEMP_1))
+				SetMainCallback2(CB2_ReturnToPartyMenuFromSummaryScreen);
+			else
+				SetMainCallback2(CB2_ReturnToField);
         }
         break;
     case MENU_STATE_FADE_FROM_SUMMARY_SCREEN:

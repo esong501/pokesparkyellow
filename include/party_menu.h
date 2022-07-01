@@ -84,4 +84,7 @@ void ShowPartyMenuToShowcaseMultiBattleParty(void);
 void ChooseMonForDaycare(void);
 void ChoosePartyMonByMenuType(u8 menuType);
 
+// we change this method so it can be called within learn_move.c
+void CB2_ReturnToPartyMenuFromSummaryScreen(void);
+
 #endif // GUARD_PARTY_MENU_H

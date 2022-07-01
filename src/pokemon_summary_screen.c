@@ -3389,6 +3389,15 @@ u8 GetLastViewedMonIndex(void)
     return sLastViewedMonIndex;
 }
 
+// if we were to implement the change moves function and use ReturnToPartyMenuFromSummaryScreen, when the game returns
+// to the party menu, it goes to the slot of the Pokemon you last viewed the summary of. We can simply change it, but
+// since sLastViewedMonIndex is a static variable, I found it easiest just to create a new function to set this
+// rather than go through the hurdles of trying to change it within party_menu.c
+void SetLastViewedMonIndex(u8 index)
+{
+    sLastViewedMonIndex = index;
+}
+
 u8 GetMoveSlotToReplace(void)
 {
     return sMoveSwapCursorPos;
