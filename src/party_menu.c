@@ -67,6 +67,8 @@
 #include "constants/pokemon.h"
 #include "constants/quest_log.h"
 #include "constants/songs.h"
+#include "learn_move.h"
+#include "naming_screen.h"
 
 #define PARTY_PAL_SELECTED     (1 << 0)
 #define PARTY_PAL_FAINTED      (1 << 1)
@@ -110,8 +112,8 @@ struct PartyMenuInternal
     u32 spriteIdCancelPokeball:7;
     u32 messageId:14;
     u8 windowId[3];
-    // changing to add nickname
-    u8 actions[9];
+    // changing to add nickname and change moves
+    u8 actions[10];
     u8 numActions;
     u16 palBuffer[BG_PLTT_SIZE / sizeof(u16)];
     s16 data[16];
@@ -132,6 +134,7 @@ static void BlitBitmapToPartyWindow_LeftColumn(u8 windowId, u8 x, u8 y, u8 width
 static void BlitBitmapToPartyWindow_RightColumn(u8 windowId, u8 x, u8 y, u8 width, u8 height, bool8 isEgg);
 static void CursorCB_Summary(u8 taskId);
 static void CursorCB_Nickname(u8 taskId);
+static void CursorCB_ChangeMoves(u8 taskId);
 static void CursorCB_Switch(u8 taskId);
 static void CursorCB_Cancel1(u8 taskId);
 static void CursorCB_Item(u8 taskId);
@@ -263,7 +266,7 @@ static u8 GetPartyMenuActionsTypeInBattle(struct Pokemon *mon);
 static u8 GetPartySlotEntryStatus(s8 slot);
 static void Task_HandleSelectionMenuInput(u8 taskId);
 static void CB2_ShowPokemonSummaryScreen(void);
-static void CB2_ReturnToPartyMenuFromSummaryScreen(void);
+// static void CB2_ReturnToPartyMenuFromSummaryScreen(void);
 static void UpdatePartyToBattleOrder(void);
 static void SlidePartyMenuBoxOneStep(u8 taskId);
 static void Task_SlideSelectedSlotsOffscreen(u8 taskId);
@@ -3008,6 +3011,8 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
         AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SWITCH);
     if (!IsTradedMon(&mons[slotId]))
         AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_NICKNAME);
+    if (GetNumberOfRelearnableMoves(&mons[slotId]) != 0)
+        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_CHANGEMOVES);
     if (ItemIsMail(GetMonData(&mons[slotId], MON_DATA_HELD_ITEM)))
         AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_MAIL);
     else
@@ -3125,13 +3130,37 @@ static void CursorCB_Summary(u8 taskId)
     Task_ClosePartyMenu(taskId);
 }
 
-void ChangePokemonNickname(void);
+static void ChangePokemonNicknamePartyScreen_CB(void)
+{
+    SetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_NICKNAME, gStringVar2);
+    CB2_ReturnToPartyMenuFromSummaryScreen();
+}
+
+static void ChangePokemonNicknamePartyScreen(void)
+{
+    GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_NICKNAME, gStringVar3);
+    GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_NICKNAME, gStringVar2);
+    DoNamingScreen(NAMING_SCREEN_NAME_RATER, gStringVar2, GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES, NULL), GetMonGender(&gPlayerParty[gSpecialVar_0x8004]), GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_PERSONALITY, NULL), ChangePokemonNicknamePartyScreen_CB);
+}
 
 static void CursorCB_Nickname(u8 taskId)
 {
     PlaySE(SE_SELECT);
     gSpecialVar_0x8004 = gPartyMenu.slotId;
-    sPartyMenuInternal->exitCallback = ChangePokemonNickname;
+    SetLastViewedMonIndex(gPartyMenu.slotId);
+    sPartyMenuInternal->exitCallback = ChangePokemonNicknamePartyScreen;
+    Task_ClosePartyMenu(taskId);
+}
+
+static void CursorCB_ChangeMoves(u8 taskId)
+{
+    PlaySE(SE_SELECT);
+    FlagSet(FLAG_TEMP_1);
+    gSpecialVar_0x8004 = gPartyMenu.slotId;
+    SetLastViewedMonIndex(gPartyMenu.slotId);
+    gSpecialVar_0x8005 = GetNumberOfRelearnableMoves(&gPlayerParty[gSpecialVar_0x8004]);
+    DisplayMoveTutorMenu();
+    sPartyMenuInternal->exitCallback = DisplayMoveTutorMenu;
     Task_ClosePartyMenu(taskId);
 }
 
@@ -3142,7 +3171,7 @@ static void CB2_ShowPokemonSummaryScreen(void)
     ShowPokemonSummaryScreen(gPlayerParty, gPartyMenu.slotId, gPlayerPartyCount - 1, CB2_ReturnToPartyMenuFromSummaryScreen, PSS_MODE_NORMAL);
 }
 
-static void CB2_ReturnToPartyMenuFromSummaryScreen(void)
+void CB2_ReturnToPartyMenuFromSummaryScreen(void)
 {
     gPaletteFade.bufferTransferDisabled = TRUE;
     gPartyMenu.slotId = GetLastViewedMonIndex();

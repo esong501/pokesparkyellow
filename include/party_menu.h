@@ -83,5 +83,7 @@ u8 GetPartyIdFromBattlePartyId(u8 battlePartyId);
 void ShowPartyMenuToShowcaseMultiBattleParty(void);
 void ChooseMonForDaycare(void);
 void ChoosePartyMonByMenuType(u8 menuType);
+// for changing moves
+void CB2_ReturnToPartyMenuFromSummaryScreen(void);
 
 #endif // GUARD_PARTY_MENU_H

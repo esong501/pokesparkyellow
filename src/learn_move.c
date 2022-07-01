@@ -16,10 +16,13 @@
 #include "strings.h"
 #include "constants/songs.h"
 #include "constants/moves.h"
+#include "party_menu.h"
 
 /*
  * Move relearner state machine
  * ------------------------
+ * 
+ * Entry point: DisplayMoveTutorMenu
  * 
  * CB2_MoveRelearner_Init
  *   - Creates listMenuScrollPos to listen to right/left buttons.
@@ -619,7 +622,11 @@ static void MoveRelearnerStateMachine(void)
         {
             FreeAllWindowBuffers();
             Free(sMoveRelearner);
-            SetMainCallback2(CB2_ReturnToField);
+            // SetMainCallback2(CB2_ReturnToField);
+            if (FlagGet(FLAG_TEMP_1))
+				SetMainCallback2(CB2_ReturnToPartyMenuFromSummaryScreen);
+			else
+				SetMainCallback2(CB2_ReturnToField);
         }
         break;
     case MENU_STATE_FADE_FROM_SUMMARY_SCREEN:

@@ -321,6 +321,7 @@ static EWRAM_DATA struct HpBarObjs * sHpBarObjs = NULL;
 static EWRAM_DATA struct ExpBarObjs * sExpBarObjs = NULL;
 static EWRAM_DATA struct PokerusIconObj * sPokerusIconObj = NULL;
 static EWRAM_DATA struct ShinyStarObjData * sShinyStarObjData = NULL;
+// we want to make this index non static to access it in nickname and change moves functions
 static EWRAM_DATA u8 sLastViewedMonIndex = 0;
 static EWRAM_DATA u8 sMoveSelectionCursorPos = 0;
 static EWRAM_DATA u8 sMoveSwapCursorPos = 0;
@@ -3390,6 +3391,12 @@ static void PokeSum_PrintMonTypeIcons(void)
 u8 GetLastViewedMonIndex(void)
 {
     return sLastViewedMonIndex;
+}
+
+// maybe adding this function can help us exit back to the desired Pokemon for nicknaming and changing moves
+void SetLastViewedMonIndex(u8 index)
+{
+    sLastViewedMonIndex = index;
 }
 
 u8 GetMoveSlotToReplace(void)
