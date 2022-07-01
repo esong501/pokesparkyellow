@@ -434,18 +434,12 @@ void RestoreSerialTimer3IntrHandlers(void)
 static void IntrDummy(void)
 {}
 
-// used for vsyncing but the way it works now is super inefficient
-// instead of using a while loop, we'll use the function used in Ruby/Sapphire
 static void WaitForVBlank(void)
 {
     gMain.intrCheck &= ~INTR_FLAG_VBLANK;
 
-    // while (!(gMain.intrCheck & INTR_FLAG_VBLANK))
-    //     ;
-    // Ruby/Sapphire's function for vsyncing
-    // VBlankIntrWait();
-    // or, we could inline this function to save a function call
-    asm("swi 0x5");
+    while (!(gMain.intrCheck & INTR_FLAG_VBLANK))
+        ;
 }
 
 void SetVBlankCounter1Ptr(u32 *ptr)
