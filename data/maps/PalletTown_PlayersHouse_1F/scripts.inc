@@ -1,15 +1,16 @@
 .equ LOCALID_MOM, 1
 
-PalletTown_PlayersHouse_1F_MapScripts:: @ 8168C08
+PalletTown_PlayersHouse_1F_MapScripts::
 	.byte 0
 
-PalletTown_PlayersHouse_1F_EventScript_Mom:: @ 8168C09
+PalletTown_PlayersHouse_1F_EventScript_Mom::
 	lock
 	faceplayer
 	goto_if_set FLAG_BEAT_RIVAL_IN_OAKS_LAB, PalletTown_PlayersHouse_1F_EventScript_MomHeal
 	checkplayergender
 	compare VAR_RESULT, MALE
 	call_if_eq PalletTown_PlayersHouse_1F_EventScript_MomOakLookingForYouMale
+	checkplayergender
 	compare VAR_RESULT, FEMALE
 	call_if_eq PalletTown_PlayersHouse_1F_EventScript_MomOakLookingForYouFemale
 	closemessage
@@ -18,15 +19,38 @@ PalletTown_PlayersHouse_1F_EventScript_Mom:: @ 8168C09
 	release
 	end
 
-PalletTown_PlayersHouse_1F_EventScript_MomOakLookingForYouMale:: @ 8168C38
+PalletTown_PlayersHouse_1F_EventScript_MomOakLookingForYouMale::
 	msgbox PalletTown_PlayersHouse_1F_Text_AllBoysLeaveOakLookingForYou
+	goto_if_set FLAG_SYS_B_DASH, PalletTown_PlayersHouse_1F_EventScript_MomEnd
+	call PalletTown_PlayersHouse_1F_EventScript_ReceiveRunningShoes
 	return
 
-PalletTown_PlayersHouse_1F_EventScript_MomOakLookingForYouFemale:: @ 8168C41
+PalletTown_PlayersHouse_1F_EventScript_MomOakLookingForYouFemale::
 	msgbox PalletTown_PlayersHouse_1F_Text_AllGirlsLeaveOakLookingForYou
+	goto_if_set FLAG_SYS_B_DASH, PalletTown_PlayersHouse_1F_EventScript_MomEnd
+	call PalletTown_PlayersHouse_1F_EventScript_ReceiveRunningShoes
 	return
 
-PalletTown_PlayersHouse_1F_EventScript_MomHeal:: @ 8168C4A
+PalletTown_PlayersHouse_1F_EventScript_MomEnd::
+	applymovement LOCALID_MOM, Movement_FaceOriginalDirection
+	waitmovement 0
+	release
+	end
+
+PalletTown_PlayersHouse_1F_EventScript_ReceiveRunningShoes::
+	msgbox PalletTown_PlayersHouse_1F_Text_TakeRunningShoes
+	textcolor 3
+	playfanfare MUS_OBTAIN_KEY_ITEM
+	message PalletTown_PlayersHouse_1F_Text_ReceivedRunningShoes
+	waitmessage
+	waitfanfare
+	msgbox PalletTown_PlayersHouse_1F_Text_SwitchedShoesWithRunningShoes
+	setflag FLAG_SYS_B_DASH
+	call EventScript_RestorePrevTextColor
+	msgbox PalletTown_PlayersHouse_1F_Text_ExplainRunningShoes
+	return
+
+PalletTown_PlayersHouse_1F_EventScript_MomHeal::
 	msgbox PalletTown_PlayersHouse_1F_Text_YouShouldTakeQuickRest
 	closemessage
 	call EventScript_OutOfCenterPartyHeal
@@ -35,7 +59,7 @@ PalletTown_PlayersHouse_1F_EventScript_MomHeal:: @ 8168C4A
 	end
 
 @ Displays special text if interacted with from side or back (which are normally inaccessible)
-PalletTown_PlayersHouse_1F_EventScript_TV:: @ 8168C62
+PalletTown_PlayersHouse_1F_EventScript_TV::
 	lockall
 	compare VAR_FACING, DIR_NORTH
 	goto_if_eq PalletTown_PlayersHouse_1F_EventScript_TVScreen
@@ -43,7 +67,7 @@ PalletTown_PlayersHouse_1F_EventScript_TV:: @ 8168C62
 	releaseall
 	end
 
-PalletTown_PlayersHouse_1F_EventScript_TVScreen:: @ 8168C78
+PalletTown_PlayersHouse_1F_EventScript_TVScreen::
 	checkplayergender
 	compare VAR_RESULT, MALE
 	call_if_eq PalletTown_PlayersHouse_1F_EventScript_TVScreenMale
@@ -52,10 +76,10 @@ PalletTown_PlayersHouse_1F_EventScript_TVScreen:: @ 8168C78
 	releaseall
 	end
 
-PalletTown_PlayersHouse_1F_EventScript_TVScreenMale:: @ 8168C91
+PalletTown_PlayersHouse_1F_EventScript_TVScreenMale::
 	msgbox PalletTown_PlayersHouse_1F_Text_MovieOnTVFourBoysOnRailroad
 	return
 
-PalletTown_PlayersHouse_1F_EventScript_TVScreenFemale:: @ 8168C9A
+PalletTown_PlayersHouse_1F_EventScript_TVScreenFemale::
 	msgbox PalletTown_PlayersHouse_1F_Text_MovieOnTVGirlOnBrickRoad
 	return

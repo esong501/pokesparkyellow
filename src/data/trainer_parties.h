@@ -3721,7 +3721,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RivalOaksLabSquirtle[] =
     {
         .iv = 0,
         .lvl = 5,
-        .species = SPECIES_SQUIRTLE,
+        .species = SPECIES_EEVEE,
     },
 };
 
@@ -3729,7 +3729,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RivalOaksLabBulbasaur[] 
     {
         .iv = 0,
         .lvl = 5,
-        .species = SPECIES_BULBASAUR,
+        .species = SPECIES_EEVEE,
     },
 };
 
@@ -3737,7 +3737,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RivalOaksLabCharmander[]
     {
         .iv = 0,
         .lvl = 5,
-        .species = SPECIES_CHARMANDER,
+        .species = SPECIES_EEVEE,
     },
 };
 
@@ -3745,14 +3745,14 @@ static const struct TrainerMonNoItemCustomMoves sParty_RivalRoute22EarlySquirtle
     {
         .iv = 50,
         .lvl = 9,
-        .species = SPECIES_PIDGEY,
-        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_NONE, MOVE_NONE},
+        .species = SPECIES_SPEAROW,
+        .moves = {MOVE_PECK, MOVE_GROWL, MOVE_LEER, MOVE_NONE},
     },
     {
         .iv = 50,
-        .lvl = 9,
-        .species = SPECIES_SQUIRTLE,
-        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_NONE, MOVE_NONE},
+        .lvl = 8,
+        .species = SPECIES_EEVEE,
+        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_SAND_ATTACK, MOVE_NONE},
     },
 };
 
@@ -3760,14 +3760,14 @@ static const struct TrainerMonNoItemCustomMoves sParty_RivalRoute22EarlyBulbasau
     {
         .iv = 50,
         .lvl = 9,
-        .species = SPECIES_PIDGEY,
-        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_NONE, MOVE_NONE},
+        .species = SPECIES_SPEAROW,
+        .moves = {MOVE_PECK, MOVE_GROWL, MOVE_LEER, MOVE_NONE},
     },
     {
         .iv = 50,
-        .lvl = 9,
-        .species = SPECIES_BULBASAUR,
-        .moves = {MOVE_TACKLE, MOVE_GROWL, MOVE_NONE, MOVE_NONE},
+        .lvl = 8,
+        .species = SPECIES_EEVEE,
+        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_SAND_ATTACK, MOVE_NONE},
     },
 };
 
@@ -3775,14 +3775,14 @@ static const struct TrainerMonNoItemCustomMoves sParty_RivalRoute22EarlyCharmand
     {
         .iv = 50,
         .lvl = 9,
-        .species = SPECIES_PIDGEY,
-        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_NONE, MOVE_NONE},
+        .species = SPECIES_SPEAROW,
+        .moves = {MOVE_PECK, MOVE_GROWL, MOVE_LEER, MOVE_NONE},
     },
     {
         .iv = 50,
-        .lvl = 9,
-        .species = SPECIES_CHARMANDER,
-        .moves = {MOVE_SCRATCH, MOVE_GROWL, MOVE_NONE, MOVE_NONE},
+        .lvl = 8,
+        .species = SPECIES_EEVEE,
+        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_SAND_ATTACK, MOVE_NONE},
     },
 };
 
@@ -3790,14 +3790,14 @@ static const struct TrainerMonNoItemCustomMoves sParty_RivalCeruleanSquirtle[] =
     {
         .iv = 50,
         .lvl = 17,
-        .species = SPECIES_PIDGEOTTO,
-        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
+        .species = SPECIES_SPEAROW,
+        .moves = {MOVE_PECK, MOVE_GROWL, MOVE_LEER, MOVE_FURY_ATTACK},
     },
     {
         .iv = 50,
         .lvl = 16,
-        .species = SPECIES_ABRA,
-        .moves = {MOVE_TELEPORT, MOVE_NONE, MOVE_NONE, MOVE_NONE},
+        .species = SPECIES_SANDSHREW,
+        .moves = {MOVE_SCRATCH, MOVE_SAND_ATTACK, MOVE_DEFENSE_CURL, MOVE_NONE},
     },
     {
         .iv = 50,
@@ -3808,8 +3808,8 @@ static const struct TrainerMonNoItemCustomMoves sParty_RivalCeruleanSquirtle[] =
     {
         .iv = 100,
         .lvl = 18,
-        .species = SPECIES_SQUIRTLE,
-        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_WITHDRAW, MOVE_WATER_GUN},
+        .species = SPECIES_EEVEE,
+        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_SAND_ATTACK, MOVE_GROWL},
     },
 };
 
@@ -3817,14 +3817,14 @@ static const struct TrainerMonNoItemCustomMoves sParty_RivalCeruleanBulbasaur[] 
     {
         .iv = 50,
         .lvl = 17,
-        .species = SPECIES_PIDGEOTTO,
-        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
+        .species = SPECIES_SPEAROW,
+        .moves = {MOVE_PECK, MOVE_GROWL, MOVE_LEER, MOVE_FURY_ATTACK},
     },
     {
         .iv = 50,
         .lvl = 16,
-        .species = SPECIES_ABRA,
-        .moves = {MOVE_TELEPORT, MOVE_NONE, MOVE_NONE, MOVE_NONE},
+        .species = SPECIES_SANDSHREW,
+        .moves = {MOVE_SCRATCH, MOVE_SAND_ATTACK, MOVE_DEFENSE_CURL, MOVE_NONE},
     },
     {
         .iv = 50,
@@ -3835,8 +3835,8 @@ static const struct TrainerMonNoItemCustomMoves sParty_RivalCeruleanBulbasaur[] 
     {
         .iv = 100,
         .lvl = 18,
-        .species = SPECIES_BULBASAUR,
-        .moves = {MOVE_SLEEP_POWDER, MOVE_POISON_POWDER, MOVE_VINE_WHIP, MOVE_LEECH_SEED},
+        .species = SPECIES_EEVEE,
+        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_SAND_ATTACK, MOVE_GROWL},
     },
 };
 
@@ -3844,14 +3844,14 @@ static const struct TrainerMonNoItemCustomMoves sParty_RivalCeruleanCharmander[]
     {
         .iv = 50,
         .lvl = 17,
-        .species = SPECIES_PIDGEOTTO,
-        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
+        .species = SPECIES_SPEAROW,
+        .moves = {MOVE_PECK, MOVE_GROWL, MOVE_LEER, MOVE_FURY_ATTACK},
     },
     {
         .iv = 50,
         .lvl = 16,
-        .species = SPECIES_ABRA,
-        .moves = {MOVE_TELEPORT, MOVE_NONE, MOVE_NONE, MOVE_NONE},
+        .species = SPECIES_SANDSHREW,
+        .moves = {MOVE_SCRATCH, MOVE_SAND_ATTACK, MOVE_DEFENSE_CURL, MOVE_NONE},
     },
     {
         .iv = 50,
@@ -3862,8 +3862,8 @@ static const struct TrainerMonNoItemCustomMoves sParty_RivalCeruleanCharmander[]
     {
         .iv = 100,
         .lvl = 18,
-        .species = SPECIES_CHARMANDER,
-        .moves = {MOVE_METAL_CLAW, MOVE_EMBER, MOVE_GROWL, MOVE_SCRATCH},
+        .species = SPECIES_EEVEE,
+        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_SAND_ATTACK, MOVE_GROWL},
     },
 };
 
@@ -5813,7 +5813,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RivalSsAnneSquirtle[] = 
     {
         .iv = 50,
         .lvl = 19,
-        .species = SPECIES_PIDGEOTTO,
+        .species = SPECIES_SPEAROW,
     },
     {
         .iv = 50,
@@ -5823,12 +5823,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RivalSsAnneSquirtle[] = 
     {
         .iv = 50,
         .lvl = 18,
-        .species = SPECIES_KADABRA,
+        .species = SPECIES_SANDSHREW,
     },
     {
         .iv = 100,
         .lvl = 20,
-        .species = SPECIES_WARTORTLE,
+        .species = SPECIES_EEVEE,
     },
 };
 
@@ -5836,7 +5836,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RivalSsAnneBulbasaur[] =
     {
         .iv = 50,
         .lvl = 19,
-        .species = SPECIES_PIDGEOTTO,
+        .species = SPECIES_SPEAROW,
     },
     {
         .iv = 50,
@@ -5846,12 +5846,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RivalSsAnneBulbasaur[] =
     {
         .iv = 50,
         .lvl = 18,
-        .species = SPECIES_KADABRA,
+        .species = SPECIES_SANDSHREW,
     },
     {
         .iv = 100,
         .lvl = 20,
-        .species = SPECIES_IVYSAUR,
+        .species = SPECIES_EEVEE,
     },
 };
 
@@ -5859,7 +5859,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RivalSsAnneCharmander[] 
     {
         .iv = 50,
         .lvl = 19,
-        .species = SPECIES_PIDGEOTTO,
+        .species = SPECIES_SPEAROW,
     },
     {
         .iv = 50,
@@ -5869,12 +5869,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RivalSsAnneCharmander[] 
     {
         .iv = 50,
         .lvl = 18,
-        .species = SPECIES_KADABRA,
+        .species = SPECIES_SANDSHREW,
     },
     {
         .iv = 100,
         .lvl = 20,
-        .species = SPECIES_CHARMELEON,
+        .species = SPECIES_EEVEE,
     },
 };
 
@@ -5882,27 +5882,27 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RivalPokenonTowerSquirtl
     {
         .iv = 100,
         .lvl = 25,
-        .species = SPECIES_PIDGEOTTO,
+        .species = SPECIES_FEAROW,
     },
     {
         .iv = 100,
         .lvl = 23,
-        .species = SPECIES_GROWLITHE,
+        .species = SPECIES_VULPIX,
     },
     {
         .iv = 100,
         .lvl = 22,
-        .species = SPECIES_EXEGGCUTE,
+        .species = SPECIES_MAGNEMITE,
     },
     {
         .iv = 100,
         .lvl = 20,
-        .species = SPECIES_KADABRA,
+        .species = SPECIES_SANDSHREW,
     },
     {
         .iv = 100,
         .lvl = 25,
-        .species = SPECIES_WARTORTLE,
+        .species = SPECIES_EEVEE,
     },
 };
 
@@ -5910,27 +5910,27 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RivalPokenonTowerBulbasa
     {
         .iv = 100,
         .lvl = 25,
-        .species = SPECIES_PIDGEOTTO,
+        .species = SPECIES_FEAROW,
     },
     {
         .iv = 100,
         .lvl = 23,
-        .species = SPECIES_GYARADOS,
+        .species = SPECIES_SHELLDER,
     },
     {
         .iv = 100,
         .lvl = 22,
-        .species = SPECIES_GROWLITHE,
+        .species = SPECIES_VULPIX,
     },
     {
         .iv = 100,
         .lvl = 20,
-        .species = SPECIES_KADABRA,
+        .species = SPECIES_SANDSHREW,
     },
     {
         .iv = 100,
         .lvl = 25,
-        .species = SPECIES_IVYSAUR,
+        .species = SPECIES_EEVEE,
     },
 };
 
@@ -5938,27 +5938,27 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RivalPokenonTowerCharman
     {
         .iv = 100,
         .lvl = 25,
-        .species = SPECIES_PIDGEOTTO,
+        .species = SPECIES_FEAROW,
     },
     {
         .iv = 100,
         .lvl = 23,
-        .species = SPECIES_EXEGGCUTE,
+        .species = SPECIES_MAGNEMITE,
     },
     {
         .iv = 100,
         .lvl = 22,
-        .species = SPECIES_GYARADOS,
+        .species = SPECIES_SHELLDER,
     },
     {
         .iv = 100,
         .lvl = 20,
-        .species = SPECIES_KADABRA,
+        .species = SPECIES_SANDSHREW,
     },
     {
         .iv = 100,
         .lvl = 25,
-        .species = SPECIES_CHARMELEON,
+        .species = SPECIES_EEVEE,
     },
 };
 
@@ -5966,17 +5966,17 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RivalSilphSquirtle[] = {
     {
         .iv = 100,
         .lvl = 37,
-        .species = SPECIES_PIDGEOT,
+        .species = SPECIES_SANDSLASH,
     },
     {
         .iv = 100,
         .lvl = 38,
-        .species = SPECIES_GROWLITHE,
+        .species = SPECIES_NINETALES,
     },
     {
         .iv = 100,
         .lvl = 35,
-        .species = SPECIES_EXEGGCUTE,
+        .species = SPECIES_MAGNETON,
     },
     {
         .iv = 100,
@@ -5986,7 +5986,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RivalSilphSquirtle[] = {
     {
         .iv = 150,
         .lvl = 40,
-        .species = SPECIES_BLASTOISE,
+        .species = SPECIES_VAPOREON,
     },
 };
 
@@ -5994,17 +5994,17 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RivalSilphBulbasaur[] = 
     {
         .iv = 100,
         .lvl = 37,
-        .species = SPECIES_PIDGEOT,
+        .species = SPECIES_SANDSLASH,
     },
     {
         .iv = 100,
         .lvl = 38,
-        .species = SPECIES_GYARADOS,
+        .species = SPECIES_CLOYSTER,
     },
     {
         .iv = 100,
         .lvl = 35,
-        .species = SPECIES_GROWLITHE,
+        .species = SPECIES_NINETALES,
     },
     {
         .iv = 100,
@@ -6014,7 +6014,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RivalSilphBulbasaur[] = 
     {
         .iv = 150,
         .lvl = 40,
-        .species = SPECIES_VENUSAUR,
+        .species = SPECIES_JOLTEON,
     },
 };
 
@@ -6022,17 +6022,17 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RivalSilphCharmander[] =
     {
         .iv = 100,
         .lvl = 37,
-        .species = SPECIES_PIDGEOT,
+        .species = SPECIES_SANDSLASH,
     },
     {
         .iv = 100,
         .lvl = 38,
-        .species = SPECIES_EXEGGCUTE,
+        .species = SPECIES_MAGNETON,
     },
     {
         .iv = 100,
         .lvl = 35,
-        .species = SPECIES_GYARADOS,
+        .species = SPECIES_CLOYSTER,
     },
     {
         .iv = 100,
@@ -6042,7 +6042,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RivalSilphCharmander[] =
     {
         .iv = 150,
         .lvl = 40,
-        .species = SPECIES_CHARIZARD,
+        .species = SPECIES_FLAREON,
     },
 };
 
@@ -6050,20 +6050,20 @@ static const struct TrainerMonNoItemCustomMoves sParty_RivalRoute22LateSquirtle[
     {
         .iv = 150,
         .lvl = 47,
-        .species = SPECIES_PIDGEOT,
-        .moves = {MOVE_FEATHER_DANCE, MOVE_WING_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
+        .species = SPECIES_SANDSLASH,
+        .moves = {MOVE_SLASH, MOVE_ROCK_TOMB, MOVE_FURY_SWIPES, MOVE_EARTHQUAKE},
     },
     {
         .iv = 150,
         .lvl = 45,
-        .species = SPECIES_RHYHORN,
-        .moves = {MOVE_TAKE_DOWN, MOVE_HORN_DRILL, MOVE_ROCK_BLAST, MOVE_FURY_ATTACK},
+        .species = SPECIES_MAGNETON,
+        .moves = {MOVE_TRI_ATTACK, MOVE_LOCK_ON, MOVE_THUNDER, MOVE_THUNDER_WAVE},
     },
     {
         .iv = 150,
         .lvl = 45,
-        .species = SPECIES_GROWLITHE,
-        .moves = {MOVE_FLAME_WHEEL, MOVE_TAKE_DOWN, MOVE_LEER, MOVE_AGILITY},
+        .species = SPECIES_NINETALES,
+        .moves = {MOVE_FIRE_SPIN, MOVE_QUICK_ATTACK, MOVE_CONFUSE_RAY, MOVE_SAFEGUARD},
     },
     {
         .iv = 150,
@@ -6080,8 +6080,8 @@ static const struct TrainerMonNoItemCustomMoves sParty_RivalRoute22LateSquirtle[
     {
         .iv = 250,
         .lvl = 53,
-        .species = SPECIES_BLASTOISE,
-        .moves = {MOVE_WATER_GUN, MOVE_RAIN_DANCE, MOVE_BITE, MOVE_RAPID_SPIN},
+        .species = SPECIES_VAPOREON,
+        .moves = {MOVE_HYDRO_PUMP, MOVE_HAZE, MOVE_AURORA_BEAM, MOVE_BITE},
     },
 };
 
@@ -6089,53 +6089,8 @@ static const struct TrainerMonNoItemCustomMoves sParty_RivalRoute22LateBulbasaur
     {
         .iv = 150,
         .lvl = 47,
-        .species = SPECIES_PIDGEOT,
-        .moves = {MOVE_FEATHER_DANCE, MOVE_WING_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
-    },
-    {
-        .iv = 150,
-        .lvl = 45,
-        .species = SPECIES_RHYHORN,
-        .moves = {MOVE_TAKE_DOWN, MOVE_HORN_DRILL, MOVE_ROCK_BLAST, MOVE_FURY_ATTACK},
-    },
-    {
-        .iv = 150,
-        .lvl = 45,
-        .species = SPECIES_GYARADOS,
-        .moves = {MOVE_HYDRO_PUMP, MOVE_TWISTER, MOVE_LEER, MOVE_RAIN_DANCE},
-    },
-    {
-        .iv = 150,
-        .lvl = 45,
-        .species = SPECIES_GROWLITHE,
-        .moves = {MOVE_FLAME_WHEEL, MOVE_TAKE_DOWN, MOVE_LEER, MOVE_AGILITY},
-    },
-    {
-        .iv = 150,
-        .lvl = 47,
-        .species = SPECIES_ALAKAZAM,
-        .moves = {MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_FUTURE_SIGHT, MOVE_DISABLE},
-    },
-    {
-        .iv = 250,
-        .lvl = 53,
-        .species = SPECIES_VENUSAUR,
-        .moves = {MOVE_RAZOR_LEAF, MOVE_SWEET_SCENT, MOVE_GROWTH, MOVE_SYNTHESIS},
-    },
-};
-
-static const struct TrainerMonNoItemCustomMoves sParty_RivalRoute22LateCharmander[] = {
-    {
-        .iv = 150,
-        .lvl = 47,
-        .species = SPECIES_PIDGEOT,
-        .moves = {MOVE_FEATHER_DANCE, MOVE_WING_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
-    },
-    {
-        .iv = 150,
-        .lvl = 45,
-        .species = SPECIES_RHYHORN,
-        .moves = {MOVE_TAKE_DOWN, MOVE_HORN_DRILL, MOVE_ROCK_BLAST, MOVE_FURY_ATTACK},
+        .species = SPECIES_SANDSLASH,
+        .moves = {MOVE_SLASH, MOVE_ROCK_TOMB, MOVE_FURY_SWIPES, MOVE_EARTHQUAKE},
     },
     {
         .iv = 150,
@@ -6146,8 +6101,14 @@ static const struct TrainerMonNoItemCustomMoves sParty_RivalRoute22LateCharmande
     {
         .iv = 150,
         .lvl = 45,
-        .species = SPECIES_GYARADOS,
-        .moves = {MOVE_HYDRO_PUMP, MOVE_TWISTER, MOVE_LEER, MOVE_RAIN_DANCE},
+        .species = SPECIES_CLOYSTER,
+        .moves = {MOVE_SURF, MOVE_PROTECT, MOVE_SPIKES, MOVE_AURORA_BEAM},
+    },
+    {
+        .iv = 150,
+        .lvl = 45,
+        .species = SPECIES_NINETALES,
+        .moves = {MOVE_FIRE_SPIN, MOVE_QUICK_ATTACK, MOVE_CONFUSE_RAY, MOVE_SAFEGUARD},
     },
     {
         .iv = 150,
@@ -6158,8 +6119,47 @@ static const struct TrainerMonNoItemCustomMoves sParty_RivalRoute22LateCharmande
     {
         .iv = 250,
         .lvl = 53,
-        .species = SPECIES_CHARIZARD,
-        .moves = {MOVE_FLAMETHROWER, MOVE_WING_ATTACK, MOVE_SLASH, MOVE_SCARY_FACE},
+        .species = SPECIES_JOLTEON,
+        .moves = {MOVE_THUNDER, MOVE_AGILITY, MOVE_PIN_MISSILE, MOVE_DOUBLE_KICK},
+    },
+};
+
+static const struct TrainerMonNoItemCustomMoves sParty_RivalRoute22LateCharmander[] = {
+    {
+        .iv = 150,
+        .lvl = 47,
+        .species = SPECIES_SANDSLASH,
+        .moves = {MOVE_SLASH, MOVE_ROCK_TOMB, MOVE_FURY_SWIPES, MOVE_EARTHQUAKE},
+    },
+    {
+        .iv = 150,
+        .lvl = 45,
+        .species = SPECIES_MAGNETON,
+        .moves = {MOVE_TRI_ATTACK, MOVE_LOCK_ON, MOVE_THUNDER, MOVE_THUNDER_WAVE},
+    },
+    {
+        .iv = 150,
+        .lvl = 45,
+        .species = SPECIES_EXEGGCUTE,
+        .moves = {MOVE_SOLAR_BEAM, MOVE_SLEEP_POWDER, MOVE_POISON_POWDER, MOVE_STUN_SPORE},
+    },
+    {
+        .iv = 150,
+        .lvl = 45,
+        .species = SPECIES_CLOYSTER,
+        .moves = {MOVE_SURF, MOVE_PROTECT, MOVE_SPIKES, MOVE_AURORA_BEAM},
+    },
+    {
+        .iv = 150,
+        .lvl = 47,
+        .species = SPECIES_ALAKAZAM,
+        .moves = {MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_FUTURE_SIGHT, MOVE_DISABLE},
+    },
+    {
+        .iv = 250,
+        .lvl = 53,
+        .species = SPECIES_FLAREON,
+        .moves = {MOVE_FLAMETHROWER, MOVE_SHADOW_BALL, MOVE_FIRE_SPIN, MOVE_LEER},
     },
 };
 
@@ -6167,9 +6167,9 @@ static const struct TrainerMonItemCustomMoves sParty_ChampionFirstSquirtle[] = {
     {
         .iv = 255,
         .lvl = 59,
-        .species = SPECIES_PIDGEOT,
+        .species = SPECIES_SANDSLASH,
         .heldItem = ITEM_NONE,
-        .moves = {MOVE_AERIAL_ACE, MOVE_FEATHER_DANCE, MOVE_SAND_ATTACK, MOVE_WHIRLWIND},
+        .moves = {MOVE_SLASH, MOVE_ROCK_SLIDE, MOVE_SWORDS_DANCE, MOVE_EARTHQUAKE},
     },
     {
         .iv = 255,
@@ -6181,16 +6181,16 @@ static const struct TrainerMonItemCustomMoves sParty_ChampionFirstSquirtle[] = {
     {
         .iv = 255,
         .lvl = 59,
-        .species = SPECIES_RHYDON,
+        .species = SPECIES_MAGNETON,
         .heldItem = ITEM_NONE,
-        .moves = {MOVE_TAKE_DOWN, MOVE_EARTHQUAKE, MOVE_ROCK_TOMB, MOVE_SCARY_FACE},
+        .moves = {MOVE_TRI_ATTACK, MOVE_LOCK_ON, MOVE_THUNDER, MOVE_THUNDER_WAVE},
     },
     {
         .iv = 255,
         .lvl = 59,
-        .species = SPECIES_ARCANINE,
+        .species = SPECIES_NINETALES,
         .heldItem = ITEM_NONE,
-        .moves = {MOVE_EXTREME_SPEED, MOVE_FLAMETHROWER, MOVE_ROAR, MOVE_BITE},
+        .moves = {MOVE_FLAMETHROWER, MOVE_QUICK_ATTACK, MOVE_CONFUSE_RAY, MOVE_SAFEGUARD},
     },
     {
         .iv = 255,
@@ -6202,9 +6202,9 @@ static const struct TrainerMonItemCustomMoves sParty_ChampionFirstSquirtle[] = {
     {
         .iv = 255,
         .lvl = 63,
-        .species = SPECIES_BLASTOISE,
+        .species = SPECIES_VAPOREON,
         .heldItem = ITEM_SITRUS_BERRY,
-        .moves = {MOVE_HYDRO_PUMP, MOVE_RAIN_DANCE, MOVE_SKULL_BASH, MOVE_BITE},
+        .moves = {MOVE_HYDRO_PUMP, MOVE_RAIN_DANCE, MOVE_ICE_BEAM, MOVE_TOXIC},
     },
 };
 
@@ -6212,9 +6212,9 @@ static const struct TrainerMonItemCustomMoves sParty_ChampionFirstBulbasaur[] = 
     {
         .iv = 255,
         .lvl = 59,
-        .species = SPECIES_PIDGEOT,
+        .species = SPECIES_SANDSLASH,
         .heldItem = ITEM_NONE,
-        .moves = {MOVE_AERIAL_ACE, MOVE_FEATHER_DANCE, MOVE_SAND_ATTACK, MOVE_WHIRLWIND},
+        .moves = {MOVE_SLASH, MOVE_ROCK_SLIDE, MOVE_SWORDS_DANCE, MOVE_EARTHQUAKE},
     },
     {
         .iv = 255,
@@ -6225,31 +6225,31 @@ static const struct TrainerMonItemCustomMoves sParty_ChampionFirstBulbasaur[] = 
     },
     {
         .iv = 255,
-        .lvl = 59,
-        .species = SPECIES_RHYDON,
-        .heldItem = ITEM_NONE,
-        .moves = {MOVE_TAKE_DOWN, MOVE_EARTHQUAKE, MOVE_ROCK_TOMB, MOVE_SCARY_FACE},
-    },
-    {
-        .iv = 255,
-        .lvl = 59,
-        .species = SPECIES_GYARADOS,
-        .heldItem = ITEM_NONE,
-        .moves = {MOVE_HYDRO_PUMP, MOVE_DRAGON_RAGE, MOVE_BITE, MOVE_THRASH},
-    },
-    {
-        .iv = 255,
         .lvl = 61,
-        .species = SPECIES_ARCANINE,
+        .species = SPECIES_EXEGGUTOR,
         .heldItem = ITEM_NONE,
-        .moves = {MOVE_EXTREME_SPEED, MOVE_FLAMETHROWER, MOVE_ROAR, MOVE_BITE},
+        .moves = {MOVE_GIGA_DRAIN, MOVE_EGG_BOMB, MOVE_SLEEP_POWDER, MOVE_LIGHT_SCREEN},
+    },
+    {
+        .iv = 255,
+        .lvl = 59,
+        .species = SPECIES_CLOYSTER,
+        .heldItem = ITEM_NONE,
+        .moves = {MOVE_SURF, MOVE_PROTECT, MOVE_SPIKES, MOVE_ICE_BEAM},
+    },
+    {
+        .iv = 255,
+        .lvl = 59,
+        .species = SPECIES_NINETALES,
+        .heldItem = ITEM_NONE,
+        .moves = {MOVE_FLAMETHROWER, MOVE_QUICK_ATTACK, MOVE_CONFUSE_RAY, MOVE_SAFEGUARD},
     },
     {
         .iv = 255,
         .lvl = 63,
-        .species = SPECIES_VENUSAUR,
+        .species = SPECIES_JOLTEON,
         .heldItem = ITEM_SITRUS_BERRY,
-        .moves = {MOVE_SOLAR_BEAM, MOVE_SYNTHESIS, MOVE_SUNNY_DAY, MOVE_GROWTH},
+        .moves = {MOVE_THUNDER, MOVE_RAIN_DANCE, MOVE_SUBSTITUTE, MOVE_SHADOW_BALL},
     },
 };
 
@@ -6257,9 +6257,9 @@ static const struct TrainerMonItemCustomMoves sParty_ChampionFirstCharmander[] =
     {
         .iv = 255,
         .lvl = 59,
-        .species = SPECIES_PIDGEOT,
+        .species = SPECIES_SANDSLASH,
         .heldItem = ITEM_NONE,
-        .moves = {MOVE_AERIAL_ACE, MOVE_FEATHER_DANCE, MOVE_SAND_ATTACK, MOVE_WHIRLWIND},
+        .moves = {MOVE_SLASH, MOVE_ROCK_SLIDE, MOVE_SWORDS_DANCE, MOVE_EARTHQUAKE},
     },
     {
         .iv = 255,
@@ -6271,9 +6271,9 @@ static const struct TrainerMonItemCustomMoves sParty_ChampionFirstCharmander[] =
     {
         .iv = 255,
         .lvl = 59,
-        .species = SPECIES_RHYDON,
+        .species = SPECIES_MAGNETON,
         .heldItem = ITEM_NONE,
-        .moves = {MOVE_TAKE_DOWN, MOVE_EARTHQUAKE, MOVE_ROCK_TOMB, MOVE_SCARY_FACE},
+        .moves = {MOVE_TRI_ATTACK, MOVE_LOCK_ON, MOVE_THUNDER, MOVE_THUNDER_WAVE},
     },
     {
         .iv = 255,
@@ -6284,17 +6284,17 @@ static const struct TrainerMonItemCustomMoves sParty_ChampionFirstCharmander[] =
     },
     {
         .iv = 255,
-        .lvl = 61,
-        .species = SPECIES_GYARADOS,
+        .lvl = 59,
+        .species = SPECIES_CLOYSTER,
         .heldItem = ITEM_NONE,
-        .moves = {MOVE_HYDRO_PUMP, MOVE_DRAGON_RAGE, MOVE_BITE, MOVE_THRASH},
+        .moves = {MOVE_SURF, MOVE_PROTECT, MOVE_SPIKES, MOVE_ICE_BEAM},
     },
     {
         .iv = 255,
         .lvl = 63,
-        .species = SPECIES_CHARIZARD,
+        .species = SPECIES_FLAREON,
         .heldItem = ITEM_SITRUS_BERRY,
-        .moves = {MOVE_FIRE_BLAST, MOVE_AERIAL_ACE, MOVE_SLASH, MOVE_FIRE_SPIN},
+        .moves = {MOVE_FLAMETHROWER, MOVE_SHADOW_BALL, MOVE_TOXIC, MOVE_SUNNY_DAY},
     },
 };
 
