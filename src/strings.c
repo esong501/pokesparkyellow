@@ -226,6 +226,8 @@ const u8 gUnknown_8416800[] = _("どうも ありがとう!\nじたくの パソ
 const u8 gUnknown_8416822[] = _("どうも ありがとう!\nじたくの パソコンに おくって おくね!");
 const u8 gText_YouDontHaveMoney[] = _("You don't have enough money.{PAUSE_UNTIL_PRESS}");
 const u8 gText_NoMoreRoomForThis[] = _("You have no more room for this\nitem.{PAUSE_UNTIL_PRESS}");
+// new string for buying TMs you already have
+const u8 gText_YouAlreadyHaveThis[] = _("You already have this item.{PAUSE_UNTIL_PRESS}");
 const u8 gUnknown_8416888[] = _("{STR_VAR_1}を\nいれる ばしょが いっぱいです{PAUSE_UNTIL_PRESS}");
 const u8 gText_CanIHelpWithAnythingElse[] = _("Is there anything else I can do?");
 const u8 gUnknown_84168BF[] = _("その ほかに\nなにか ちからに なれることは?");
@@ -1333,3 +1335,6 @@ const u8 gText_Receive[] = _("RECEIVE");
 const u8 gText_Send[] = _("SEND");
 const u8 gText_Toss[] = _("TOSS");
 const u8 gUnknown_841EE2B[] = _("DEL. ALL{CLEAR_TO 0x57}CANCEL{CLEAR_TO 0xA4}OK");
+// strings for changing nickname and moves
+const u8 gText_Nickname[] = _("NICKNAME");
+const u8 gText_ChangeMoves[] = _("MOVES");

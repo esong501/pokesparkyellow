@@ -321,6 +321,7 @@ static EWRAM_DATA struct HpBarObjs * sHpBarObjs = NULL;
 static EWRAM_DATA struct ExpBarObjs * sExpBarObjs = NULL;
 static EWRAM_DATA struct PokerusIconObj * sPokerusIconObj = NULL;
 static EWRAM_DATA struct ShinyStarObjData * sShinyStarObjData = NULL;
+// we want to make this index non static to access it in nickname and change moves functions
 static EWRAM_DATA u8 sLastViewedMonIndex = 0;
 static EWRAM_DATA u8 sMoveSelectionCursorPos = 0;
 static EWRAM_DATA u8 sMoveSwapCursorPos = 0;
@@ -3389,6 +3390,12 @@ u8 GetLastViewedMonIndex(void)
     return sLastViewedMonIndex;
 }
 
+// maybe adding this function can help us exit back to the desired Pokemon for nicknaming and changing moves
+void SetLastViewedMonIndex(u8 index)
+{
+    sLastViewedMonIndex = index;
+}
+
 u8 GetMoveSlotToReplace(void)
 {
     return sMoveSwapCursorPos;
@@ -3769,8 +3776,10 @@ static u8 PokeSum_CanForgetSelectedMove(void)
 
     move = GetMonMoveBySlotId(&sMonSummaryScreen->currentMon, sMoveSelectionCursorPos);
 
-    if (IsMoveHm(move) == TRUE && sMonSummaryScreen->mode != PSS_MODE_FORGET_MOVE)
-        return FALSE;
+    // this checks if the move is an HM move and the summary screen is in forget move mode
+    // if we literally just remove this check, we can forget any move from summary screen only!
+    // if (IsMoveHm(move) == TRUE && sMonSummaryScreen->mode != PSS_MODE_FORGET_MOVE)
+    //     return FALSE;
 
     return TRUE;
 }

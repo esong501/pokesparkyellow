@@ -392,6 +392,9 @@ extern const u8 gText_PkmnAlreadyInBattle[];
 extern const u8 gText_EggCantBattle[];
 extern const u8 gText_PkmnAlreadySelected[];
 extern const u8 gText_PkmnCantSwitchOut[];
+// new strings for both nicknaming and changing moves
+extern const u8 gText_Nickname[];
+extern const u8 gText_ChangeMoves[];
 
 // credits
 extern const u8 gString_Dummy[];
@@ -962,6 +965,8 @@ extern const u8 gText_InBagVar1[];
 extern const u8 gText_Var1AndYouWantedVar2[];
 extern const u8 gText_HereYouGoThankYou[];
 extern const u8 gText_NoMoreRoomForThis[];
+// new text string for buying TMs you already have
+extern const u8 gText_YouAlreadyHaveThis[];
 
 // pokedex_screen
 extern const u8 gText_PokedexTableOfContents[];
