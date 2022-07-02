@@ -4,6 +4,10 @@ Built using [pret's disassembly][1] of Pokemon Fire Red and Leaf Green
 
 Modification of Pokemon Fire Red that aims to recreate Pokemon Yellow but in the Gen 3 style with some QoL updates
 
+# Installation instructions:
+
+Use [FLIPS][2] to patch the .BPS file onto a clean Pokemon Emerald ROM (the option will appear as "Apply Patch"). From there, FLIPS will ask you for the clean unmodified ROM and THEN the patch (.BPS) file.
+
 Changelog:
 ----------
 
@@ -24,3 +28,4 @@ To-Do:
 ## Thank you to 00mn00 (split icons) for help in implementation!
 
 [1]: https://github.com/pret/pokefirered    "pret/pokefirered"
+[2]: https://www.smwcentral.net/?p=section&a=details&id=11474 "FLIPS"
