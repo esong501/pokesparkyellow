@@ -176,13 +176,13 @@ PalletTown_Movement_PlayerWalkToLabFromHouse::
 PalletTown_EventScript_OakTriggerLeft::
 	lockall
 	setvar VAR_TEMP_1, 0
-	goto PalletTown_EventScript_OakTrigger
+	goto PalletTown_EventScript_OakYellowTrigger
 	end
 
 PalletTown_EventScript_OakTriggerRight::
 	lockall
 	setvar VAR_TEMP_1, 1
-	goto PalletTown_EventScript_OakTrigger
+	goto PalletTown_EventScript_OakYellowTrigger
 	end
 
 PalletTown_EventScript_OakTrigger::
@@ -209,6 +209,53 @@ PalletTown_EventScript_OakTrigger::
 	msgbox PalletTown_Text_OakGrassUnsafeNeedMon
 	closemessage
 	delay 30
+	compare VAR_TEMP_1, 0
+	call_if_eq PalletTown_EventScript_OakLeadPlayerToLabLeft
+	compare VAR_TEMP_1, 1
+	call_if_eq PalletTown_EventScript_OakLeadPlayerToLabRight
+	opendoor 16, 13
+	waitdooranim
+	applymovement LOCALID_PROF_OAK, PalletTown_Movement_OakEnterLab
+	applymovement OBJ_EVENT_ID_PLAYER, PalletTown_Movement_PlayerEnterLab
+	waitmovement 0
+	closedoor 16, 13
+	waitdooranim
+	setvar VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 1
+	clearflag FLAG_HIDE_OAK_IN_HIS_LAB
+	setvar VAR_MAP_SCENE_PALLET_TOWN_OAK, 1
+	setflag FLAG_HIDE_OAK_IN_PALLET_TOWN
+	setflag FLAG_DONT_TRANSITION_MUSIC
+	warp MAP_PALLET_TOWN_PROFESSOR_OAKS_LAB, 255, 6, 12
+	waitstate
+	releaseall
+	end
+
+PalletTown_EventScript_OakYellowTrigger::
+	famechecker FAMECHECKER_OAK, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
+	textcolor 0
+	delay 30
+	playbgm MUS_OAK, 0
+	message PalletTown_Text_OakDontGoOut
+	waitmessage
+	delay 85
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_WalkInPlaceFastestDown
+	waitmovement 0
+	playse SE_PIN
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_ExclamationMark
+	waitmovement 0
+	delay 30
+	addobject LOCALID_PROF_OAK
+	compare VAR_TEMP_1, 0
+	call_if_eq PalletTown_EventScript_OakEnterLeft
+	compare VAR_TEMP_1, 1
+	call_if_eq PalletTown_EventScript_OakEnterRight
+	delay 30
+	msgbox PalletTown_Text_OakGrassYellow
+	closemessage
+	delay 30
+	applymovement LOCALID_PROF_OAK, Movement_WalkInPlaceFastestRight
+	call PalletTown_EventScript_DoPikachuBattle
 	compare VAR_TEMP_1, 0
 	call_if_eq PalletTown_EventScript_OakLeadPlayerToLabLeft
 	compare VAR_TEMP_1, 1
@@ -469,3 +516,15 @@ PalletTown_EventScript_SignLadyStartShowSign::
 	call PalletTown_EventScript_SignLadyShowSign
 	release
 	end
+
+PalletTown_EventScript_DoPikachuBattle::
+	goto_if_questlog EventScript_ReleaseEnd
+	special QuestLog_CutRecording
+	special StartPikachuBattle
+	waitstate
+	lock
+	msgbox PalletTown_Text_OakCaughtPikachu
+	applymovement LOCALID_PROF_OAK, Movement_WalkInPlaceFastestUp
+	msgbox PalletTown_Text_OakPokemonCanAppear
+	releaseall
+	return

@@ -299,6 +299,14 @@ void StartOldManTutorialBattle(void)
 
 // starting a battle with Pikachu where you can only catch him
 
+void StartPikachuBattle(void)
+{
+    CreateMaleMon(&gEnemyParty[0], SPECIES_PIKACHU, 5);
+    ScriptContext2_Enable();
+    gMain.savedCallback = CB2_ReturnToFieldContinueScriptPlayMapMusic;
+    gBattleTypeFlags = BATTLE_TYPE_OLD_MAN_TUTORIAL;
+    CreateBattleStartTask(B_TRANSITION_SLICED_SCREEN, 0);
+}
 
 void StartScriptedWildBattle(void)
 {
