@@ -974,7 +974,8 @@ static void Task_OakSpeech13(u8 taskId)
         if (gTasks[taskId].data[3] == 32)
         {
             OaksSpeechPrintMessage(gOakText_WorldInhabited2, sOakSpeechResources->textSpeed);
-            PlayCry1(SPECIES_NIDORAN_F, 0);
+            // changing cry to Pikachu's
+            PlayCry1(SPECIES_PIKACHU, 0);
         }
     }
 }

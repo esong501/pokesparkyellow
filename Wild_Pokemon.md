@@ -101,3 +101,68 @@ If a location/route/method is not specified here, encounters are the exact same 
     - Gyarados: 10%
     - Slowpoke: 5%
     - Psyduck: 5%
+
+### Route 24:
+#### Tall Grass:
+- Pidgey: 25%
+- Bellsprout: 25%
+- Oddish: 25%
+- Abra: 15%
+- Venonat: 10%
+#### Fishing:
+- Good Rod
+    - Krabby: 40%
+    - Horsea: 40%
+    - Magikarp: 20%
+- Super Rod
+    - Horsea: 40%
+    - Krabby: 40%
+    - Gyarados: 10%
+    - Slowpoke: 5%
+    - Psyduck: 5%
+
+### Route 25:
+#### Tall Grass:
+- Pidgey: 25%
+- Bellsprout: 25%
+- Oddish: 25%
+- Abra: 15%
+- Venonat: 10%
+#### Fishing:
+- Good Rod
+    - Krabby: 40%
+    - Horsea: 40%
+    - Magikarp: 20%
+- Super Rod
+    - Horsea: 40%
+    - Krabby: 40%
+    - Gyarados: 10%
+    - Slowpoke: 5%
+    - Psyduck: 5%
+
+### Route 5:
+#### Tall Grass:
+- Meowth: 35%
+- Bellsprout: 25%
+- Oddish: 25%
+- Pidgey: 15%
+
+### Route 6:
+#### Tall Grass:
+- Meowth: 35%
+- Bellsprout: 25%
+- Oddish: 25%
+- Pidgey: 15%
+#### Fishing:
+- Good Rod
+    - Poliwag: 40%
+    - Goldeen: 40%
+    - Magikarp: 20%
+- Super Rod
+    - Poliwag: 40%
+    - Poliwhirl: 40%
+    - Gyarados: 10%
+    - Slowpoke: 5%
+    - Psyduck: 5%
+
+### Vermilion City:
