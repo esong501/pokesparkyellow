@@ -18,6 +18,7 @@ Changelog:
 - Bulbasaur, Charmander, and Squirtle can now be received from NPCs similar to Yellow
 - TMs are infinite use!
 - Wild Pikachu event in Pallet Town
+- change moves and nickname options from party menu!
 
 To-Do:
 ------
