@@ -41,8 +41,6 @@
 Thumbs.db
 build/
 cmake-build-*
-ld_script_ruby.txt
-ld_script_sapphire.txt
 tags
 tools/agbcc
 tools/binutils
