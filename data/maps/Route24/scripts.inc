@@ -138,7 +138,7 @@ Route24_EventScript_ReceiveCharmanderParty:: @ 8161B12
 	message Route24_Text_ObtainedCharmanderFromDamian
 	waitmessage
 	waitfanfare
-	getspeciesname 0, SPECIES_CHARMANDER
+	bufferspeciesname STR_VAR_1, SPECIES_CHARMANDER
 	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq Route24_EventScript_EndReceiveCharmander
@@ -153,7 +153,7 @@ Route24_EventScript_ReceiveCharmanderPC:: @ 8161B45
 	message Route24_Text_ObtainedCharmanderFromDamian
 	waitmessage
 	waitfanfare
-	getspeciesname 0, SPECIES_CHARMANDER
+	bufferspeciesname STR_VAR_1, SPECIES_CHARMANDER
 	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq Route24_EventScript_CharmanderTransferredToPC

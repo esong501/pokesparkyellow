@@ -1250,11 +1250,11 @@ PalletTown_ProfessorOaksLab_Movement_RivalWalksToBulbasaur::
 	step_end
 
 PalletTown_ProfessorOaksLab_Movement_OakFaceRight::
-	walk_in_place_fastest_right
+	walk_in_place_faster_right
 	step_end
 
 PalletTown_ProfessorOaksLab_Movement_OakFaceDown::
-	walk_in_place_fastest_down
+	walk_in_place_faster_down
 	step_end
 
 PalletTown_ProfessorOaksLab_EventScript_PikachuBall::
@@ -1304,7 +1304,7 @@ PalletTown_ProfessorOaksLab_EventScript_GetPikachu::
 	setflag FLAG_PALLET_LADY_NOT_BLOCKING_SIGN
 	givemon PLAYER_STARTER_SPECIES, 5, ITEM_NONE
 	copyvar VAR_STARTER_MON, PLAYER_STARTER_NUM
-	getspeciesname 0, PLAYER_STARTER_SPECIES
+	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
 	message PalletTown_ProfessorOaksLab_Text_ReceivedMonFromOak
 	waitmessage
 	playfanfare MUS_OBTAIN_KEY_ITEM

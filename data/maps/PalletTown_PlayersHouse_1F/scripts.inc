@@ -29,7 +29,7 @@ PalletTown_PlayersHouse_1F_EventScript_MomOakLookingForYouFemale::
 	return
 
 PalletTown_PlayersHouse_1F_EventScript_MomEnd::
-	applymovement LOCALID_MOM, Movement_FaceOriginalDirection
+	applymovement LOCALID_MOM, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
