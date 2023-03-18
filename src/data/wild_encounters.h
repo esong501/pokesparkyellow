@@ -3,9 +3,6 @@
 //
 
 
-
-
-
 #define ENCOUNTER_CHANCE_LAND_MONS_SLOT_0 20  
 #define ENCOUNTER_CHANCE_LAND_MONS_SLOT_1 ENCOUNTER_CHANCE_LAND_MONS_SLOT_0 + 20 
 #define ENCOUNTER_CHANCE_LAND_MONS_SLOT_2 ENCOUNTER_CHANCE_LAND_MONS_SLOT_1 + 10 
@@ -19,35 +16,24 @@
 #define ENCOUNTER_CHANCE_LAND_MONS_SLOT_10 ENCOUNTER_CHANCE_LAND_MONS_SLOT_9 + 1 
 #define ENCOUNTER_CHANCE_LAND_MONS_SLOT_11 ENCOUNTER_CHANCE_LAND_MONS_SLOT_10 + 1 
 #define ENCOUNTER_CHANCE_LAND_MONS_TOTAL (ENCOUNTER_CHANCE_LAND_MONS_SLOT_11)
-
-
-
 #define ENCOUNTER_CHANCE_WATER_MONS_SLOT_0 40  
 #define ENCOUNTER_CHANCE_WATER_MONS_SLOT_1 ENCOUNTER_CHANCE_WATER_MONS_SLOT_0 + 40 
 #define ENCOUNTER_CHANCE_WATER_MONS_SLOT_2 ENCOUNTER_CHANCE_WATER_MONS_SLOT_1 + 10 
 #define ENCOUNTER_CHANCE_WATER_MONS_SLOT_3 ENCOUNTER_CHANCE_WATER_MONS_SLOT_2 + 10 
 #define ENCOUNTER_CHANCE_WATER_MONS_TOTAL (ENCOUNTER_CHANCE_WATER_MONS_SLOT_3)
-
-
-
 #define ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_0 60  
 #define ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_1 ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_0 + 30 
 #define ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_2 ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_1 + 5 
 #define ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_3 ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_2 + 4 
 #define ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_4 ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_3 + 1 
 #define ENCOUNTER_CHANCE_ROCK_SMASH_MONS_TOTAL (ENCOUNTER_CHANCE_ROCK_SMASH_MONS_SLOT_4)
-
-
-
 #define ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_2 40 
 #define ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_3 ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_2 + 20
 #define ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_4 ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_3 + 40
 #define ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_TOTAL (ENCOUNTER_CHANCE_FISHING_MONS_GOOD_ROD_SLOT_4)
-
 #define ENCOUNTER_CHANCE_FISHING_MONS_OLD_ROD_SLOT_0 70 
 #define ENCOUNTER_CHANCE_FISHING_MONS_OLD_ROD_SLOT_1 ENCOUNTER_CHANCE_FISHING_MONS_OLD_ROD_SLOT_0 + 30
 #define ENCOUNTER_CHANCE_FISHING_MONS_OLD_ROD_TOTAL (ENCOUNTER_CHANCE_FISHING_MONS_OLD_ROD_SLOT_1)
-
 #define ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_5 40 
 #define ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_6 ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_5 + 40
 #define ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_7 ENCOUNTER_CHANCE_FISHING_MONS_SUPER_ROD_SLOT_6 + 10
@@ -57,10 +43,7 @@
 
 
 
-
-
 #ifdef FIRERED
-
 const struct WildPokemon sSevenIslandTanobyRuinsMoneanChamber_FireRed_LandMons[] =
 {
     { 25, 25, SPECIES_UNOWN },
@@ -78,15 +61,9 @@ const struct WildPokemon sSevenIslandTanobyRuinsMoneanChamber_FireRed_LandMons[]
 };
 
 const struct WildPokemonInfo sSevenIslandTanobyRuinsMoneanChamber_FireRed_LandMonsInfo = { 7, sSevenIslandTanobyRuinsMoneanChamber_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSevenIslandTanobyRuinsMoneanChamber_LeafGreen_LandMons[] =
 {
     { 25, 25, SPECIES_UNOWN },
@@ -104,14 +81,9 @@ const struct WildPokemon sSevenIslandTanobyRuinsMoneanChamber_LeafGreen_LandMons
 };
 
 const struct WildPokemonInfo sSevenIslandTanobyRuinsMoneanChamber_LeafGreen_LandMonsInfo = { 7, sSevenIslandTanobyRuinsMoneanChamber_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSevenIslandTanobyRuinsLiptooChamber_FireRed_LandMons[] =
 {
     { 25, 25, SPECIES_UNOWN },
@@ -129,15 +101,9 @@ const struct WildPokemon sSevenIslandTanobyRuinsLiptooChamber_FireRed_LandMons[]
 };
 
 const struct WildPokemonInfo sSevenIslandTanobyRuinsLiptooChamber_FireRed_LandMonsInfo = { 7, sSevenIslandTanobyRuinsLiptooChamber_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSevenIslandTanobyRuinsLiptooChamber_LeafGreen_LandMons[] =
 {
     { 25, 25, SPECIES_UNOWN },
@@ -155,14 +121,9 @@ const struct WildPokemon sSevenIslandTanobyRuinsLiptooChamber_LeafGreen_LandMons
 };
 
 const struct WildPokemonInfo sSevenIslandTanobyRuinsLiptooChamber_LeafGreen_LandMonsInfo = { 7, sSevenIslandTanobyRuinsLiptooChamber_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSevenIslandTanobyRuinsWeepthChamber_FireRed_LandMons[] =
 {
     { 25, 25, SPECIES_UNOWN },
@@ -180,15 +141,9 @@ const struct WildPokemon sSevenIslandTanobyRuinsWeepthChamber_FireRed_LandMons[]
 };
 
 const struct WildPokemonInfo sSevenIslandTanobyRuinsWeepthChamber_FireRed_LandMonsInfo = { 7, sSevenIslandTanobyRuinsWeepthChamber_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSevenIslandTanobyRuinsWeepthChamber_LeafGreen_LandMons[] =
 {
     { 25, 25, SPECIES_UNOWN },
@@ -206,14 +161,9 @@ const struct WildPokemon sSevenIslandTanobyRuinsWeepthChamber_LeafGreen_LandMons
 };
 
 const struct WildPokemonInfo sSevenIslandTanobyRuinsWeepthChamber_LeafGreen_LandMonsInfo = { 7, sSevenIslandTanobyRuinsWeepthChamber_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSevenIslandTanobyRuinsDilfordChamber_FireRed_LandMons[] =
 {
     { 25, 25, SPECIES_UNOWN },
@@ -231,15 +181,9 @@ const struct WildPokemon sSevenIslandTanobyRuinsDilfordChamber_FireRed_LandMons[
 };
 
 const struct WildPokemonInfo sSevenIslandTanobyRuinsDilfordChamber_FireRed_LandMonsInfo = { 7, sSevenIslandTanobyRuinsDilfordChamber_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSevenIslandTanobyRuinsDilfordChamber_LeafGreen_LandMons[] =
 {
     { 25, 25, SPECIES_UNOWN },
@@ -257,14 +201,9 @@ const struct WildPokemon sSevenIslandTanobyRuinsDilfordChamber_LeafGreen_LandMon
 };
 
 const struct WildPokemonInfo sSevenIslandTanobyRuinsDilfordChamber_LeafGreen_LandMonsInfo = { 7, sSevenIslandTanobyRuinsDilfordChamber_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSevenIslandTanobyRuinsScufibChamber_FireRed_LandMons[] =
 {
     { 25, 25, SPECIES_UNOWN },
@@ -282,15 +221,9 @@ const struct WildPokemon sSevenIslandTanobyRuinsScufibChamber_FireRed_LandMons[]
 };
 
 const struct WildPokemonInfo sSevenIslandTanobyRuinsScufibChamber_FireRed_LandMonsInfo = { 7, sSevenIslandTanobyRuinsScufibChamber_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSevenIslandTanobyRuinsScufibChamber_LeafGreen_LandMons[] =
 {
     { 25, 25, SPECIES_UNOWN },
@@ -308,14 +241,9 @@ const struct WildPokemon sSevenIslandTanobyRuinsScufibChamber_LeafGreen_LandMons
 };
 
 const struct WildPokemonInfo sSevenIslandTanobyRuinsScufibChamber_LeafGreen_LandMonsInfo = { 7, sSevenIslandTanobyRuinsScufibChamber_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSevenIslandTanobyRuinsRixyChamber_FireRed_LandMons[] =
 {
     { 25, 25, SPECIES_UNOWN },
@@ -333,15 +261,9 @@ const struct WildPokemon sSevenIslandTanobyRuinsRixyChamber_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSevenIslandTanobyRuinsRixyChamber_FireRed_LandMonsInfo = { 7, sSevenIslandTanobyRuinsRixyChamber_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSevenIslandTanobyRuinsRixyChamber_LeafGreen_LandMons[] =
 {
     { 25, 25, SPECIES_UNOWN },
@@ -359,14 +281,9 @@ const struct WildPokemon sSevenIslandTanobyRuinsRixyChamber_LeafGreen_LandMons[]
 };
 
 const struct WildPokemonInfo sSevenIslandTanobyRuinsRixyChamber_LeafGreen_LandMonsInfo = { 7, sSevenIslandTanobyRuinsRixyChamber_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSevenIslandTanobyRuinsViapoisChamber_FireRed_LandMons[] =
 {
     { 25, 25, SPECIES_UNOWN },
@@ -384,15 +301,9 @@ const struct WildPokemon sSevenIslandTanobyRuinsViapoisChamber_FireRed_LandMons[
 };
 
 const struct WildPokemonInfo sSevenIslandTanobyRuinsViapoisChamber_FireRed_LandMonsInfo = { 7, sSevenIslandTanobyRuinsViapoisChamber_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSevenIslandTanobyRuinsViapoisChamber_LeafGreen_LandMons[] =
 {
     { 25, 25, SPECIES_UNOWN },
@@ -410,14 +321,9 @@ const struct WildPokemon sSevenIslandTanobyRuinsViapoisChamber_LeafGreen_LandMon
 };
 
 const struct WildPokemonInfo sSevenIslandTanobyRuinsViapoisChamber_LeafGreen_LandMonsInfo = { 7, sSevenIslandTanobyRuinsViapoisChamber_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sViridianForest_FireRed_LandMons[] =
 {
     { 4, 4, SPECIES_CATERPIE },
@@ -435,15 +341,9 @@ const struct WildPokemon sViridianForest_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sViridianForest_FireRed_LandMonsInfo = { 14, sViridianForest_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sViridianForest_LeafGreen_LandMons[] =
 {
     { 4, 4, SPECIES_CATERPIE },
@@ -461,14 +361,9 @@ const struct WildPokemon sViridianForest_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sViridianForest_LeafGreen_LandMonsInfo = { 14, sViridianForest_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sMtMoon1F_FireRed_LandMons[] =
 {
     { 7, 7, SPECIES_ZUBAT },
@@ -486,15 +381,9 @@ const struct WildPokemon sMtMoon1F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtMoon1F_FireRed_LandMonsInfo = { 7, sMtMoon1F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sMtMoon1F_LeafGreen_LandMons[] =
 {
     { 7, 7, SPECIES_ZUBAT },
@@ -512,14 +401,9 @@ const struct WildPokemon sMtMoon1F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtMoon1F_LeafGreen_LandMonsInfo = { 7, sMtMoon1F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sMtMoonB1F_FireRed_LandMons[] =
 {
     { 7, 7, SPECIES_PARAS },
@@ -537,15 +421,9 @@ const struct WildPokemon sMtMoonB1F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtMoonB1F_FireRed_LandMonsInfo = { 5, sMtMoonB1F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sMtMoonB1F_LeafGreen_LandMons[] =
 {
     { 7, 7, SPECIES_PARAS },
@@ -563,14 +441,9 @@ const struct WildPokemon sMtMoonB1F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtMoonB1F_LeafGreen_LandMonsInfo = { 5, sMtMoonB1F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sMtMoonB2F_FireRed_LandMons[] =
 {
     { 8, 8, SPECIES_ZUBAT },
@@ -588,15 +461,9 @@ const struct WildPokemon sMtMoonB2F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtMoonB2F_FireRed_LandMonsInfo = { 7, sMtMoonB2F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sMtMoonB2F_LeafGreen_LandMons[] =
 {
     { 8, 8, SPECIES_ZUBAT },
@@ -614,15 +481,9 @@ const struct WildPokemon sMtMoonB2F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtMoonB2F_LeafGreen_LandMonsInfo = { 7, sMtMoonB2F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
-
 const struct WildPokemon sSSAnneExterior_FireRed_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -632,9 +493,6 @@ const struct WildPokemon sSSAnneExterior_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSSAnneExterior_FireRed_WaterMonsInfo = { 1, sSSAnneExterior_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sSSAnneExterior_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -650,13 +508,9 @@ const struct WildPokemon sSSAnneExterior_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSSAnneExterior_FireRed_FishingMonsInfo = { 10, sSSAnneExterior_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
-
 const struct WildPokemon sSSAnneExterior_LeafGreen_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -666,9 +520,6 @@ const struct WildPokemon sSSAnneExterior_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSSAnneExterior_LeafGreen_WaterMonsInfo = { 1, sSSAnneExterior_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sSSAnneExterior_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -684,11 +535,9 @@ const struct WildPokemon sSSAnneExterior_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSSAnneExterior_LeafGreen_FishingMonsInfo = { 10, sSSAnneExterior_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sDiglettsCaveB1F_FireRed_LandMons[] =
 {
     { 18, 18, SPECIES_DIGLETT },
@@ -706,15 +555,9 @@ const struct WildPokemon sDiglettsCaveB1F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sDiglettsCaveB1F_FireRed_LandMonsInfo = { 5, sDiglettsCaveB1F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sDiglettsCaveB1F_LeafGreen_LandMons[] =
 {
     { 18, 18, SPECIES_DIGLETT },
@@ -732,14 +575,9 @@ const struct WildPokemon sDiglettsCaveB1F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sDiglettsCaveB1F_LeafGreen_LandMonsInfo = { 5, sDiglettsCaveB1F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sVictoryRoad1F_FireRed_LandMons[] =
 {
     { 32, 32, SPECIES_MACHOP },
@@ -757,15 +595,9 @@ const struct WildPokemon sVictoryRoad1F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sVictoryRoad1F_FireRed_LandMonsInfo = { 7, sVictoryRoad1F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sVictoryRoad1F_LeafGreen_LandMons[] =
 {
     { 32, 32, SPECIES_MACHOP },
@@ -783,14 +615,9 @@ const struct WildPokemon sVictoryRoad1F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sVictoryRoad1F_LeafGreen_LandMonsInfo = { 7, sVictoryRoad1F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sVictoryRoad2F_FireRed_LandMons[] =
 {
     { 34, 34, SPECIES_MACHOP },
@@ -808,15 +635,9 @@ const struct WildPokemon sVictoryRoad2F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sVictoryRoad2F_FireRed_LandMonsInfo = { 7, sVictoryRoad2F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sVictoryRoad2F_LeafGreen_LandMons[] =
 {
     { 34, 34, SPECIES_MACHOP },
@@ -834,14 +655,9 @@ const struct WildPokemon sVictoryRoad2F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sVictoryRoad2F_LeafGreen_LandMonsInfo = { 7, sVictoryRoad2F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sVictoryRoad3F_FireRed_LandMons[] =
 {
     { 32, 32, SPECIES_MACHOP },
@@ -859,15 +675,9 @@ const struct WildPokemon sVictoryRoad3F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sVictoryRoad3F_FireRed_LandMonsInfo = { 7, sVictoryRoad3F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sVictoryRoad3F_LeafGreen_LandMons[] =
 {
     { 32, 32, SPECIES_MACHOP },
@@ -885,14 +695,9 @@ const struct WildPokemon sVictoryRoad3F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sVictoryRoad3F_LeafGreen_LandMonsInfo = { 7, sVictoryRoad3F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sPokemonMansion1F_FireRed_LandMons[] =
 {
     { 28, 28, SPECIES_KOFFING },
@@ -910,15 +715,9 @@ const struct WildPokemon sPokemonMansion1F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sPokemonMansion1F_FireRed_LandMonsInfo = { 7, sPokemonMansion1F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sPokemonMansion1F_LeafGreen_LandMons[] =
 {
     { 28, 28, SPECIES_GRIMER },
@@ -936,14 +735,9 @@ const struct WildPokemon sPokemonMansion1F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sPokemonMansion1F_LeafGreen_LandMonsInfo = { 7, sPokemonMansion1F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sPokemonMansion2F_FireRed_LandMons[] =
 {
     { 28, 28, SPECIES_KOFFING },
@@ -961,15 +755,9 @@ const struct WildPokemon sPokemonMansion2F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sPokemonMansion2F_FireRed_LandMonsInfo = { 7, sPokemonMansion2F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sPokemonMansion2F_LeafGreen_LandMons[] =
 {
     { 28, 28, SPECIES_GRIMER },
@@ -987,14 +775,9 @@ const struct WildPokemon sPokemonMansion2F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sPokemonMansion2F_LeafGreen_LandMonsInfo = { 7, sPokemonMansion2F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sPokemonMansion3F_FireRed_LandMons[] =
 {
     { 28, 28, SPECIES_KOFFING },
@@ -1012,15 +795,9 @@ const struct WildPokemon sPokemonMansion3F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sPokemonMansion3F_FireRed_LandMonsInfo = { 7, sPokemonMansion3F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sPokemonMansion3F_LeafGreen_LandMons[] =
 {
     { 28, 28, SPECIES_GRIMER },
@@ -1038,14 +815,9 @@ const struct WildPokemon sPokemonMansion3F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sPokemonMansion3F_LeafGreen_LandMonsInfo = { 7, sPokemonMansion3F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sPokemonMansionB1F_FireRed_LandMons[] =
 {
     { 28, 28, SPECIES_KOFFING },
@@ -1063,15 +835,9 @@ const struct WildPokemon sPokemonMansionB1F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sPokemonMansionB1F_FireRed_LandMonsInfo = { 5, sPokemonMansionB1F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sPokemonMansionB1F_LeafGreen_LandMons[] =
 {
     { 28, 28, SPECIES_GRIMER },
@@ -1089,14 +855,9 @@ const struct WildPokemon sPokemonMansionB1F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sPokemonMansionB1F_LeafGreen_LandMonsInfo = { 5, sPokemonMansionB1F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSafariZoneCenter_FireRed_LandMons[] =
 {
     { 25, 25, SPECIES_RHYHORN },
@@ -1114,8 +875,6 @@ const struct WildPokemon sSafariZoneCenter_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneCenter_FireRed_LandMonsInfo = { 21, sSafariZoneCenter_FireRed_LandMons };
-
-
 const struct WildPokemon sSafariZoneCenter_FireRed_WaterMons[] =
 {
     { 20, 25, SPECIES_PSYDUCK },
@@ -1125,9 +884,6 @@ const struct WildPokemon sSafariZoneCenter_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneCenter_FireRed_WaterMonsInfo = { 2, sSafariZoneCenter_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sSafariZoneCenter_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -1143,12 +899,9 @@ const struct WildPokemon sSafariZoneCenter_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneCenter_FireRed_FishingMonsInfo = { 20, sSafariZoneCenter_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSafariZoneCenter_LeafGreen_LandMons[] =
 {
     { 25, 25, SPECIES_RHYHORN },
@@ -1166,8 +919,6 @@ const struct WildPokemon sSafariZoneCenter_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneCenter_LeafGreen_LandMonsInfo = { 21, sSafariZoneCenter_LeafGreen_LandMons };
-
-
 const struct WildPokemon sSafariZoneCenter_LeafGreen_WaterMons[] =
 {
     { 20, 25, SPECIES_SLOWPOKE },
@@ -1177,9 +928,6 @@ const struct WildPokemon sSafariZoneCenter_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneCenter_LeafGreen_WaterMonsInfo = { 2, sSafariZoneCenter_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sSafariZoneCenter_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -1195,11 +943,9 @@ const struct WildPokemon sSafariZoneCenter_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneCenter_LeafGreen_FishingMonsInfo = { 20, sSafariZoneCenter_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSafariZoneEast_FireRed_LandMons[] =
 {
     { 24, 24, SPECIES_NIDORAN_M },
@@ -1217,8 +963,6 @@ const struct WildPokemon sSafariZoneEast_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneEast_FireRed_LandMonsInfo = { 21, sSafariZoneEast_FireRed_LandMons };
-
-
 const struct WildPokemon sSafariZoneEast_FireRed_WaterMons[] =
 {
     { 20, 25, SPECIES_PSYDUCK },
@@ -1228,9 +972,6 @@ const struct WildPokemon sSafariZoneEast_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneEast_FireRed_WaterMonsInfo = { 2, sSafariZoneEast_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sSafariZoneEast_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -1246,12 +987,9 @@ const struct WildPokemon sSafariZoneEast_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneEast_FireRed_FishingMonsInfo = { 20, sSafariZoneEast_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSafariZoneEast_LeafGreen_LandMons[] =
 {
     { 24, 24, SPECIES_NIDORAN_F },
@@ -1269,8 +1007,6 @@ const struct WildPokemon sSafariZoneEast_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneEast_LeafGreen_LandMonsInfo = { 21, sSafariZoneEast_LeafGreen_LandMons };
-
-
 const struct WildPokemon sSafariZoneEast_LeafGreen_WaterMons[] =
 {
     { 20, 25, SPECIES_SLOWPOKE },
@@ -1280,9 +1016,6 @@ const struct WildPokemon sSafariZoneEast_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneEast_LeafGreen_WaterMonsInfo = { 2, sSafariZoneEast_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sSafariZoneEast_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -1298,11 +1031,9 @@ const struct WildPokemon sSafariZoneEast_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneEast_LeafGreen_FishingMonsInfo = { 20, sSafariZoneEast_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSafariZoneNorth_FireRed_LandMons[] =
 {
     { 26, 26, SPECIES_RHYHORN },
@@ -1320,8 +1051,6 @@ const struct WildPokemon sSafariZoneNorth_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneNorth_FireRed_LandMonsInfo = { 21, sSafariZoneNorth_FireRed_LandMons };
-
-
 const struct WildPokemon sSafariZoneNorth_FireRed_WaterMons[] =
 {
     { 20, 25, SPECIES_PSYDUCK },
@@ -1331,9 +1060,6 @@ const struct WildPokemon sSafariZoneNorth_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneNorth_FireRed_WaterMonsInfo = { 2, sSafariZoneNorth_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sSafariZoneNorth_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -1349,12 +1075,9 @@ const struct WildPokemon sSafariZoneNorth_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneNorth_FireRed_FishingMonsInfo = { 20, sSafariZoneNorth_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSafariZoneNorth_LeafGreen_LandMons[] =
 {
     { 26, 26, SPECIES_RHYHORN },
@@ -1372,8 +1095,6 @@ const struct WildPokemon sSafariZoneNorth_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneNorth_LeafGreen_LandMonsInfo = { 21, sSafariZoneNorth_LeafGreen_LandMons };
-
-
 const struct WildPokemon sSafariZoneNorth_LeafGreen_WaterMons[] =
 {
     { 20, 25, SPECIES_SLOWPOKE },
@@ -1383,9 +1104,6 @@ const struct WildPokemon sSafariZoneNorth_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneNorth_LeafGreen_WaterMonsInfo = { 2, sSafariZoneNorth_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sSafariZoneNorth_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -1401,11 +1119,9 @@ const struct WildPokemon sSafariZoneNorth_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneNorth_LeafGreen_FishingMonsInfo = { 20, sSafariZoneNorth_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSafariZoneWest_FireRed_LandMons[] =
 {
     { 26, 26, SPECIES_DODUO },
@@ -1423,8 +1139,6 @@ const struct WildPokemon sSafariZoneWest_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneWest_FireRed_LandMonsInfo = { 21, sSafariZoneWest_FireRed_LandMons };
-
-
 const struct WildPokemon sSafariZoneWest_FireRed_WaterMons[] =
 {
     { 20, 25, SPECIES_PSYDUCK },
@@ -1434,9 +1148,6 @@ const struct WildPokemon sSafariZoneWest_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneWest_FireRed_WaterMonsInfo = { 2, sSafariZoneWest_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sSafariZoneWest_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -1452,12 +1163,9 @@ const struct WildPokemon sSafariZoneWest_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneWest_FireRed_FishingMonsInfo = { 20, sSafariZoneWest_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSafariZoneWest_LeafGreen_LandMons[] =
 {
     { 26, 26, SPECIES_DODUO },
@@ -1475,8 +1183,6 @@ const struct WildPokemon sSafariZoneWest_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneWest_LeafGreen_LandMonsInfo = { 21, sSafariZoneWest_LeafGreen_LandMons };
-
-
 const struct WildPokemon sSafariZoneWest_LeafGreen_WaterMons[] =
 {
     { 20, 25, SPECIES_SLOWPOKE },
@@ -1486,9 +1192,6 @@ const struct WildPokemon sSafariZoneWest_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneWest_LeafGreen_WaterMonsInfo = { 2, sSafariZoneWest_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sSafariZoneWest_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -1504,11 +1207,9 @@ const struct WildPokemon sSafariZoneWest_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSafariZoneWest_LeafGreen_FishingMonsInfo = { 20, sSafariZoneWest_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sCeruleanCave1F_FireRed_LandMons[] =
 {
     { 49, 49, SPECIES_MAGNETON },
@@ -1526,8 +1227,6 @@ const struct WildPokemon sCeruleanCave1F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sCeruleanCave1F_FireRed_LandMonsInfo = { 7, sCeruleanCave1F_FireRed_LandMons };
-
-
 const struct WildPokemon sCeruleanCave1F_FireRed_WaterMons[] =
 {
     { 30, 40, SPECIES_PSYDUCK },
@@ -1537,8 +1236,6 @@ const struct WildPokemon sCeruleanCave1F_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sCeruleanCave1F_FireRed_WaterMonsInfo = { 2, sCeruleanCave1F_FireRed_WaterMons };
-
-
 const struct WildPokemon sCeruleanCave1F_FireRed_RockSmashMons[] =
 {
     { 30, 40, SPECIES_GEODUDE },
@@ -1549,8 +1246,6 @@ const struct WildPokemon sCeruleanCave1F_FireRed_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sCeruleanCave1F_FireRed_RockSmashMonsInfo = { 50, sCeruleanCave1F_FireRed_RockSmashMons };
-
-
 const struct WildPokemon sCeruleanCave1F_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -1566,12 +1261,9 @@ const struct WildPokemon sCeruleanCave1F_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sCeruleanCave1F_FireRed_FishingMonsInfo = { 20, sCeruleanCave1F_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sCeruleanCave1F_LeafGreen_LandMons[] =
 {
     { 49, 49, SPECIES_MAGNETON },
@@ -1589,8 +1281,6 @@ const struct WildPokemon sCeruleanCave1F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sCeruleanCave1F_LeafGreen_LandMonsInfo = { 7, sCeruleanCave1F_LeafGreen_LandMons };
-
-
 const struct WildPokemon sCeruleanCave1F_LeafGreen_WaterMons[] =
 {
     { 30, 40, SPECIES_SLOWPOKE },
@@ -1600,8 +1290,6 @@ const struct WildPokemon sCeruleanCave1F_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sCeruleanCave1F_LeafGreen_WaterMonsInfo = { 2, sCeruleanCave1F_LeafGreen_WaterMons };
-
-
 const struct WildPokemon sCeruleanCave1F_LeafGreen_RockSmashMons[] =
 {
     { 30, 40, SPECIES_GEODUDE },
@@ -1612,8 +1300,6 @@ const struct WildPokemon sCeruleanCave1F_LeafGreen_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sCeruleanCave1F_LeafGreen_RockSmashMonsInfo = { 50, sCeruleanCave1F_LeafGreen_RockSmashMons };
-
-
 const struct WildPokemon sCeruleanCave1F_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -1629,11 +1315,9 @@ const struct WildPokemon sCeruleanCave1F_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sCeruleanCave1F_LeafGreen_FishingMonsInfo = { 20, sCeruleanCave1F_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sCeruleanCave2F_FireRed_LandMons[] =
 {
     { 49, 49, SPECIES_GOLBAT },
@@ -1651,9 +1335,6 @@ const struct WildPokemon sCeruleanCave2F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sCeruleanCave2F_FireRed_LandMonsInfo = { 7, sCeruleanCave2F_FireRed_LandMons };
-
-
-
 const struct WildPokemon sCeruleanCave2F_FireRed_RockSmashMons[] =
 {
     { 35, 45, SPECIES_GEODUDE },
@@ -1664,13 +1345,9 @@ const struct WildPokemon sCeruleanCave2F_FireRed_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sCeruleanCave2F_FireRed_RockSmashMonsInfo = { 50, sCeruleanCave2F_FireRed_RockSmashMons };
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sCeruleanCave2F_LeafGreen_LandMons[] =
 {
     { 49, 49, SPECIES_GOLBAT },
@@ -1688,9 +1365,6 @@ const struct WildPokemon sCeruleanCave2F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sCeruleanCave2F_LeafGreen_LandMonsInfo = { 7, sCeruleanCave2F_LeafGreen_LandMons };
-
-
-
 const struct WildPokemon sCeruleanCave2F_LeafGreen_RockSmashMons[] =
 {
     { 35, 45, SPECIES_GEODUDE },
@@ -1701,12 +1375,9 @@ const struct WildPokemon sCeruleanCave2F_LeafGreen_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sCeruleanCave2F_LeafGreen_RockSmashMonsInfo = { 50, sCeruleanCave2F_LeafGreen_RockSmashMons };
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sCeruleanCaveB1F_FireRed_LandMons[] =
 {
     { 58, 58, SPECIES_KADABRA },
@@ -1724,8 +1395,6 @@ const struct WildPokemon sCeruleanCaveB1F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sCeruleanCaveB1F_FireRed_LandMonsInfo = { 7, sCeruleanCaveB1F_FireRed_LandMons };
-
-
 const struct WildPokemon sCeruleanCaveB1F_FireRed_WaterMons[] =
 {
     { 40, 50, SPECIES_PSYDUCK },
@@ -1735,8 +1404,6 @@ const struct WildPokemon sCeruleanCaveB1F_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sCeruleanCaveB1F_FireRed_WaterMonsInfo = { 2, sCeruleanCaveB1F_FireRed_WaterMons };
-
-
 const struct WildPokemon sCeruleanCaveB1F_FireRed_RockSmashMons[] =
 {
     { 40, 50, SPECIES_GEODUDE },
@@ -1747,8 +1414,6 @@ const struct WildPokemon sCeruleanCaveB1F_FireRed_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sCeruleanCaveB1F_FireRed_RockSmashMonsInfo = { 50, sCeruleanCaveB1F_FireRed_RockSmashMons };
-
-
 const struct WildPokemon sCeruleanCaveB1F_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -1764,12 +1429,9 @@ const struct WildPokemon sCeruleanCaveB1F_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sCeruleanCaveB1F_FireRed_FishingMonsInfo = { 20, sCeruleanCaveB1F_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sCeruleanCaveB1F_LeafGreen_LandMons[] =
 {
     { 58, 58, SPECIES_KADABRA },
@@ -1787,8 +1449,6 @@ const struct WildPokemon sCeruleanCaveB1F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sCeruleanCaveB1F_LeafGreen_LandMonsInfo = { 7, sCeruleanCaveB1F_LeafGreen_LandMons };
-
-
 const struct WildPokemon sCeruleanCaveB1F_LeafGreen_WaterMons[] =
 {
     { 40, 50, SPECIES_SLOWPOKE },
@@ -1798,8 +1458,6 @@ const struct WildPokemon sCeruleanCaveB1F_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sCeruleanCaveB1F_LeafGreen_WaterMonsInfo = { 2, sCeruleanCaveB1F_LeafGreen_WaterMons };
-
-
 const struct WildPokemon sCeruleanCaveB1F_LeafGreen_RockSmashMons[] =
 {
     { 40, 50, SPECIES_GEODUDE },
@@ -1810,8 +1468,6 @@ const struct WildPokemon sCeruleanCaveB1F_LeafGreen_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sCeruleanCaveB1F_LeafGreen_RockSmashMonsInfo = { 50, sCeruleanCaveB1F_LeafGreen_RockSmashMons };
-
-
 const struct WildPokemon sCeruleanCaveB1F_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -1827,11 +1483,9 @@ const struct WildPokemon sCeruleanCaveB1F_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sCeruleanCaveB1F_LeafGreen_FishingMonsInfo = { 20, sCeruleanCaveB1F_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRockTunnel1F_FireRed_LandMons[] =
 {
     { 15, 15, SPECIES_ZUBAT },
@@ -1849,15 +1503,9 @@ const struct WildPokemon sRockTunnel1F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRockTunnel1F_FireRed_LandMonsInfo = { 7, sRockTunnel1F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRockTunnel1F_LeafGreen_LandMons[] =
 {
     { 15, 15, SPECIES_ZUBAT },
@@ -1875,14 +1523,9 @@ const struct WildPokemon sRockTunnel1F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRockTunnel1F_LeafGreen_LandMonsInfo = { 7, sRockTunnel1F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRockTunnelB1F_FireRed_LandMons[] =
 {
     { 16, 16, SPECIES_ZUBAT },
@@ -1900,9 +1543,6 @@ const struct WildPokemon sRockTunnelB1F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRockTunnelB1F_FireRed_LandMonsInfo = { 7, sRockTunnelB1F_FireRed_LandMons };
-
-
-
 const struct WildPokemon sRockTunnelB1F_FireRed_RockSmashMons[] =
 {
     { 5, 20, SPECIES_GEODUDE },
@@ -1913,13 +1553,9 @@ const struct WildPokemon sRockTunnelB1F_FireRed_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sRockTunnelB1F_FireRed_RockSmashMonsInfo = { 50, sRockTunnelB1F_FireRed_RockSmashMons };
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRockTunnelB1F_LeafGreen_LandMons[] =
 {
     { 16, 16, SPECIES_ZUBAT },
@@ -1937,9 +1573,6 @@ const struct WildPokemon sRockTunnelB1F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRockTunnelB1F_LeafGreen_LandMonsInfo = { 7, sRockTunnelB1F_LeafGreen_LandMons };
-
-
-
 const struct WildPokemon sRockTunnelB1F_LeafGreen_RockSmashMons[] =
 {
     { 5, 20, SPECIES_GEODUDE },
@@ -1950,12 +1583,9 @@ const struct WildPokemon sRockTunnelB1F_LeafGreen_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sRockTunnelB1F_LeafGreen_RockSmashMonsInfo = { 50, sRockTunnelB1F_LeafGreen_RockSmashMons };
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSeafoamIslands1F_FireRed_LandMons[] =
 {
     { 27, 27, SPECIES_PSYDUCK },
@@ -1973,15 +1603,9 @@ const struct WildPokemon sSeafoamIslands1F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSeafoamIslands1F_FireRed_LandMonsInfo = { 7, sSeafoamIslands1F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSeafoamIslands1F_LeafGreen_LandMons[] =
 {
     { 27, 27, SPECIES_SLOWPOKE },
@@ -1999,14 +1623,9 @@ const struct WildPokemon sSeafoamIslands1F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sSeafoamIslands1F_LeafGreen_LandMonsInfo = { 7, sSeafoamIslands1F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSeafoamIslandsB1F_FireRed_LandMons[] =
 {
     { 29, 29, SPECIES_PSYDUCK },
@@ -2024,15 +1643,9 @@ const struct WildPokemon sSeafoamIslandsB1F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSeafoamIslandsB1F_FireRed_LandMonsInfo = { 7, sSeafoamIslandsB1F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSeafoamIslandsB1F_LeafGreen_LandMons[] =
 {
     { 29, 29, SPECIES_SLOWPOKE },
@@ -2050,14 +1663,9 @@ const struct WildPokemon sSeafoamIslandsB1F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sSeafoamIslandsB1F_LeafGreen_LandMonsInfo = { 7, sSeafoamIslandsB1F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSeafoamIslandsB2F_FireRed_LandMons[] =
 {
     { 30, 30, SPECIES_PSYDUCK },
@@ -2075,15 +1683,9 @@ const struct WildPokemon sSeafoamIslandsB2F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSeafoamIslandsB2F_FireRed_LandMonsInfo = { 7, sSeafoamIslandsB2F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSeafoamIslandsB2F_LeafGreen_LandMons[] =
 {
     { 30, 30, SPECIES_SLOWPOKE },
@@ -2101,14 +1703,9 @@ const struct WildPokemon sSeafoamIslandsB2F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sSeafoamIslandsB2F_LeafGreen_LandMonsInfo = { 7, sSeafoamIslandsB2F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSeafoamIslandsB3F_FireRed_LandMons[] =
 {
     { 30, 30, SPECIES_SEEL },
@@ -2126,8 +1723,6 @@ const struct WildPokemon sSeafoamIslandsB3F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSeafoamIslandsB3F_FireRed_LandMonsInfo = { 7, sSeafoamIslandsB3F_FireRed_LandMons };
-
-
 const struct WildPokemon sSeafoamIslandsB3F_FireRed_WaterMons[] =
 {
     { 25, 35, SPECIES_SEEL },
@@ -2137,9 +1732,6 @@ const struct WildPokemon sSeafoamIslandsB3F_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSeafoamIslandsB3F_FireRed_WaterMonsInfo = { 2, sSeafoamIslandsB3F_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sSeafoamIslandsB3F_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -2155,12 +1747,9 @@ const struct WildPokemon sSeafoamIslandsB3F_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSeafoamIslandsB3F_FireRed_FishingMonsInfo = { 20, sSeafoamIslandsB3F_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSeafoamIslandsB3F_LeafGreen_LandMons[] =
 {
     { 30, 30, SPECIES_SEEL },
@@ -2178,8 +1767,6 @@ const struct WildPokemon sSeafoamIslandsB3F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sSeafoamIslandsB3F_LeafGreen_LandMonsInfo = { 7, sSeafoamIslandsB3F_LeafGreen_LandMons };
-
-
 const struct WildPokemon sSeafoamIslandsB3F_LeafGreen_WaterMons[] =
 {
     { 25, 35, SPECIES_SEEL },
@@ -2189,9 +1776,6 @@ const struct WildPokemon sSeafoamIslandsB3F_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSeafoamIslandsB3F_LeafGreen_WaterMonsInfo = { 2, sSeafoamIslandsB3F_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sSeafoamIslandsB3F_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -2207,11 +1791,9 @@ const struct WildPokemon sSeafoamIslandsB3F_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSeafoamIslandsB3F_LeafGreen_FishingMonsInfo = { 20, sSeafoamIslandsB3F_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSeafoamIslandsB4F_FireRed_LandMons[] =
 {
     { 30, 30, SPECIES_SEEL },
@@ -2229,8 +1811,6 @@ const struct WildPokemon sSeafoamIslandsB4F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSeafoamIslandsB4F_FireRed_LandMonsInfo = { 7, sSeafoamIslandsB4F_FireRed_LandMons };
-
-
 const struct WildPokemon sSeafoamIslandsB4F_FireRed_WaterMons[] =
 {
     { 25, 35, SPECIES_SEEL },
@@ -2240,9 +1820,6 @@ const struct WildPokemon sSeafoamIslandsB4F_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSeafoamIslandsB4F_FireRed_WaterMonsInfo = { 2, sSeafoamIslandsB4F_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sSeafoamIslandsB4F_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -2258,12 +1835,9 @@ const struct WildPokemon sSeafoamIslandsB4F_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSeafoamIslandsB4F_FireRed_FishingMonsInfo = { 20, sSeafoamIslandsB4F_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSeafoamIslandsB4F_LeafGreen_LandMons[] =
 {
     { 30, 30, SPECIES_SEEL },
@@ -2281,8 +1855,6 @@ const struct WildPokemon sSeafoamIslandsB4F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sSeafoamIslandsB4F_LeafGreen_LandMonsInfo = { 7, sSeafoamIslandsB4F_LeafGreen_LandMons };
-
-
 const struct WildPokemon sSeafoamIslandsB4F_LeafGreen_WaterMons[] =
 {
     { 25, 35, SPECIES_SEEL },
@@ -2292,9 +1864,6 @@ const struct WildPokemon sSeafoamIslandsB4F_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSeafoamIslandsB4F_LeafGreen_WaterMonsInfo = { 2, sSeafoamIslandsB4F_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sSeafoamIslandsB4F_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -2310,11 +1879,9 @@ const struct WildPokemon sSeafoamIslandsB4F_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSeafoamIslandsB4F_LeafGreen_FishingMonsInfo = { 20, sSeafoamIslandsB4F_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sPokemonTower3F_FireRed_LandMons[] =
 {
     { 15, 15, SPECIES_GASTLY },
@@ -2332,15 +1899,9 @@ const struct WildPokemon sPokemonTower3F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sPokemonTower3F_FireRed_LandMonsInfo = { 2, sPokemonTower3F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sPokemonTower3F_LeafGreen_LandMons[] =
 {
     { 15, 15, SPECIES_GASTLY },
@@ -2358,14 +1919,9 @@ const struct WildPokemon sPokemonTower3F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sPokemonTower3F_LeafGreen_LandMonsInfo = { 2, sPokemonTower3F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sPokemonTower4F_FireRed_LandMons[] =
 {
     { 15, 15, SPECIES_GASTLY },
@@ -2383,15 +1939,9 @@ const struct WildPokemon sPokemonTower4F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sPokemonTower4F_FireRed_LandMonsInfo = { 4, sPokemonTower4F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sPokemonTower4F_LeafGreen_LandMons[] =
 {
     { 15, 15, SPECIES_GASTLY },
@@ -2409,14 +1959,9 @@ const struct WildPokemon sPokemonTower4F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sPokemonTower4F_LeafGreen_LandMonsInfo = { 4, sPokemonTower4F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sPokemonTower5F_FireRed_LandMons[] =
 {
     { 15, 15, SPECIES_GASTLY },
@@ -2434,15 +1979,9 @@ const struct WildPokemon sPokemonTower5F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sPokemonTower5F_FireRed_LandMonsInfo = { 6, sPokemonTower5F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sPokemonTower5F_LeafGreen_LandMons[] =
 {
     { 15, 15, SPECIES_GASTLY },
@@ -2460,14 +1999,9 @@ const struct WildPokemon sPokemonTower5F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sPokemonTower5F_LeafGreen_LandMonsInfo = { 6, sPokemonTower5F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sPokemonTower6F_FireRed_LandMons[] =
 {
     { 16, 16, SPECIES_GASTLY },
@@ -2485,15 +2019,9 @@ const struct WildPokemon sPokemonTower6F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sPokemonTower6F_FireRed_LandMonsInfo = { 8, sPokemonTower6F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sPokemonTower6F_LeafGreen_LandMons[] =
 {
     { 16, 16, SPECIES_GASTLY },
@@ -2511,14 +2039,9 @@ const struct WildPokemon sPokemonTower6F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sPokemonTower6F_LeafGreen_LandMonsInfo = { 8, sPokemonTower6F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sPokemonTower7F_FireRed_LandMons[] =
 {
     { 16, 16, SPECIES_GASTLY },
@@ -2536,15 +2059,9 @@ const struct WildPokemon sPokemonTower7F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sPokemonTower7F_FireRed_LandMonsInfo = { 10, sPokemonTower7F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sPokemonTower7F_LeafGreen_LandMons[] =
 {
     { 16, 16, SPECIES_GASTLY },
@@ -2562,14 +2079,9 @@ const struct WildPokemon sPokemonTower7F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sPokemonTower7F_LeafGreen_LandMonsInfo = { 10, sPokemonTower7F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sPowerPlant_FireRed_LandMons[] =
 {
     { 22, 22, SPECIES_VOLTORB },
@@ -2587,15 +2099,9 @@ const struct WildPokemon sPowerPlant_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sPowerPlant_FireRed_LandMonsInfo = { 7, sPowerPlant_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sPowerPlant_LeafGreen_LandMons[] =
 {
     { 22, 22, SPECIES_VOLTORB },
@@ -2613,14 +2119,9 @@ const struct WildPokemon sPowerPlant_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sPowerPlant_LeafGreen_LandMonsInfo = { 7, sPowerPlant_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sMtEmberExterior_FireRed_LandMons[] =
 {
     { 30, 30, SPECIES_PONYTA },
@@ -2638,9 +2139,6 @@ const struct WildPokemon sMtEmberExterior_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberExterior_FireRed_LandMonsInfo = { 21, sMtEmberExterior_FireRed_LandMons };
-
-
-
 const struct WildPokemon sMtEmberExterior_FireRed_RockSmashMons[] =
 {
     { 5, 20, SPECIES_GEODUDE },
@@ -2651,13 +2149,9 @@ const struct WildPokemon sMtEmberExterior_FireRed_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberExterior_FireRed_RockSmashMonsInfo = { 50, sMtEmberExterior_FireRed_RockSmashMons };
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sMtEmberExterior_LeafGreen_LandMons[] =
 {
     { 30, 30, SPECIES_PONYTA },
@@ -2675,9 +2169,6 @@ const struct WildPokemon sMtEmberExterior_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberExterior_LeafGreen_LandMonsInfo = { 21, sMtEmberExterior_LeafGreen_LandMons };
-
-
-
 const struct WildPokemon sMtEmberExterior_LeafGreen_RockSmashMons[] =
 {
     { 5, 20, SPECIES_GEODUDE },
@@ -2688,12 +2179,9 @@ const struct WildPokemon sMtEmberExterior_LeafGreen_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberExterior_LeafGreen_RockSmashMonsInfo = { 50, sMtEmberExterior_LeafGreen_RockSmashMons };
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sMtEmberSummitPath1F_FireRed_LandMons[] =
 {
     { 33, 33, SPECIES_GEODUDE },
@@ -2711,15 +2199,9 @@ const struct WildPokemon sMtEmberSummitPath1F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberSummitPath1F_FireRed_LandMonsInfo = { 7, sMtEmberSummitPath1F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sMtEmberSummitPath1F_LeafGreen_LandMons[] =
 {
     { 33, 33, SPECIES_GEODUDE },
@@ -2737,14 +2219,9 @@ const struct WildPokemon sMtEmberSummitPath1F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberSummitPath1F_LeafGreen_LandMonsInfo = { 7, sMtEmberSummitPath1F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sMtEmberSummitPath2F_FireRed_LandMons[] =
 {
     { 34, 34, SPECIES_GEODUDE },
@@ -2762,9 +2239,6 @@ const struct WildPokemon sMtEmberSummitPath2F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberSummitPath2F_FireRed_LandMonsInfo = { 7, sMtEmberSummitPath2F_FireRed_LandMons };
-
-
-
 const struct WildPokemon sMtEmberSummitPath2F_FireRed_RockSmashMons[] =
 {
     { 5, 20, SPECIES_GEODUDE },
@@ -2775,13 +2249,9 @@ const struct WildPokemon sMtEmberSummitPath2F_FireRed_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberSummitPath2F_FireRed_RockSmashMonsInfo = { 50, sMtEmberSummitPath2F_FireRed_RockSmashMons };
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sMtEmberSummitPath2F_LeafGreen_LandMons[] =
 {
     { 34, 34, SPECIES_GEODUDE },
@@ -2799,9 +2269,6 @@ const struct WildPokemon sMtEmberSummitPath2F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberSummitPath2F_LeafGreen_LandMonsInfo = { 7, sMtEmberSummitPath2F_LeafGreen_LandMons };
-
-
-
 const struct WildPokemon sMtEmberSummitPath2F_LeafGreen_RockSmashMons[] =
 {
     { 5, 20, SPECIES_GEODUDE },
@@ -2812,12 +2279,9 @@ const struct WildPokemon sMtEmberSummitPath2F_LeafGreen_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberSummitPath2F_LeafGreen_RockSmashMonsInfo = { 50, sMtEmberSummitPath2F_LeafGreen_RockSmashMons };
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sMtEmberSummitPath3F_FireRed_LandMons[] =
 {
     { 33, 33, SPECIES_GEODUDE },
@@ -2835,15 +2299,9 @@ const struct WildPokemon sMtEmberSummitPath3F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberSummitPath3F_FireRed_LandMonsInfo = { 7, sMtEmberSummitPath3F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sMtEmberSummitPath3F_LeafGreen_LandMons[] =
 {
     { 33, 33, SPECIES_GEODUDE },
@@ -2861,14 +2319,9 @@ const struct WildPokemon sMtEmberSummitPath3F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberSummitPath3F_LeafGreen_LandMonsInfo = { 7, sMtEmberSummitPath3F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sMtEmberRubyPath1F_FireRed_LandMons[] =
 {
     { 36, 36, SPECIES_GEODUDE },
@@ -2886,9 +2339,6 @@ const struct WildPokemon sMtEmberRubyPath1F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPath1F_FireRed_LandMonsInfo = { 7, sMtEmberRubyPath1F_FireRed_LandMons };
-
-
-
 const struct WildPokemon sMtEmberRubyPath1F_FireRed_RockSmashMons[] =
 {
     { 25, 35, SPECIES_GEODUDE },
@@ -2899,13 +2349,9 @@ const struct WildPokemon sMtEmberRubyPath1F_FireRed_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPath1F_FireRed_RockSmashMonsInfo = { 50, sMtEmberRubyPath1F_FireRed_RockSmashMons };
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sMtEmberRubyPath1F_LeafGreen_LandMons[] =
 {
     { 36, 36, SPECIES_GEODUDE },
@@ -2923,9 +2369,6 @@ const struct WildPokemon sMtEmberRubyPath1F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPath1F_LeafGreen_LandMonsInfo = { 7, sMtEmberRubyPath1F_LeafGreen_LandMons };
-
-
-
 const struct WildPokemon sMtEmberRubyPath1F_LeafGreen_RockSmashMons[] =
 {
     { 25, 35, SPECIES_GEODUDE },
@@ -2936,12 +2379,9 @@ const struct WildPokemon sMtEmberRubyPath1F_LeafGreen_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPath1F_LeafGreen_RockSmashMonsInfo = { 50, sMtEmberRubyPath1F_LeafGreen_RockSmashMons };
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sMtEmberRubyPathB1F_FireRed_LandMons[] =
 {
     { 38, 38, SPECIES_GEODUDE },
@@ -2959,9 +2399,6 @@ const struct WildPokemon sMtEmberRubyPathB1F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPathB1F_FireRed_LandMonsInfo = { 7, sMtEmberRubyPathB1F_FireRed_LandMons };
-
-
-
 const struct WildPokemon sMtEmberRubyPathB1F_FireRed_RockSmashMons[] =
 {
     { 25, 35, SPECIES_GEODUDE },
@@ -2972,13 +2409,9 @@ const struct WildPokemon sMtEmberRubyPathB1F_FireRed_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPathB1F_FireRed_RockSmashMonsInfo = { 50, sMtEmberRubyPathB1F_FireRed_RockSmashMons };
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sMtEmberRubyPathB1F_LeafGreen_LandMons[] =
 {
     { 38, 38, SPECIES_GEODUDE },
@@ -2996,9 +2429,6 @@ const struct WildPokemon sMtEmberRubyPathB1F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPathB1F_LeafGreen_LandMonsInfo = { 7, sMtEmberRubyPathB1F_LeafGreen_LandMons };
-
-
-
 const struct WildPokemon sMtEmberRubyPathB1F_LeafGreen_RockSmashMons[] =
 {
     { 25, 35, SPECIES_GEODUDE },
@@ -3009,12 +2439,9 @@ const struct WildPokemon sMtEmberRubyPathB1F_LeafGreen_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPathB1F_LeafGreen_RockSmashMonsInfo = { 50, sMtEmberRubyPathB1F_LeafGreen_RockSmashMons };
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sMtEmberRubyPathB2F_FireRed_LandMons[] =
 {
     { 40, 40, SPECIES_GEODUDE },
@@ -3032,9 +2459,6 @@ const struct WildPokemon sMtEmberRubyPathB2F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPathB2F_FireRed_LandMonsInfo = { 7, sMtEmberRubyPathB2F_FireRed_LandMons };
-
-
-
 const struct WildPokemon sMtEmberRubyPathB2F_FireRed_RockSmashMons[] =
 {
     { 25, 35, SPECIES_GEODUDE },
@@ -3045,13 +2469,9 @@ const struct WildPokemon sMtEmberRubyPathB2F_FireRed_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPathB2F_FireRed_RockSmashMonsInfo = { 50, sMtEmberRubyPathB2F_FireRed_RockSmashMons };
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sMtEmberRubyPathB2F_LeafGreen_LandMons[] =
 {
     { 40, 40, SPECIES_GEODUDE },
@@ -3069,9 +2489,6 @@ const struct WildPokemon sMtEmberRubyPathB2F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPathB2F_LeafGreen_LandMonsInfo = { 7, sMtEmberRubyPathB2F_LeafGreen_LandMons };
-
-
-
 const struct WildPokemon sMtEmberRubyPathB2F_LeafGreen_RockSmashMons[] =
 {
     { 25, 35, SPECIES_GEODUDE },
@@ -3082,12 +2499,9 @@ const struct WildPokemon sMtEmberRubyPathB2F_LeafGreen_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPathB2F_LeafGreen_RockSmashMonsInfo = { 50, sMtEmberRubyPathB2F_LeafGreen_RockSmashMons };
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sMtEmberRubyPathB3F_FireRed_LandMons[] =
 {
     { 26, 26, SPECIES_SLUGMA },
@@ -3105,9 +2519,6 @@ const struct WildPokemon sMtEmberRubyPathB3F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPathB3F_FireRed_LandMonsInfo = { 7, sMtEmberRubyPathB3F_FireRed_LandMons };
-
-
-
 const struct WildPokemon sMtEmberRubyPathB3F_FireRed_RockSmashMons[] =
 {
     { 15, 25, SPECIES_SLUGMA },
@@ -3118,13 +2529,9 @@ const struct WildPokemon sMtEmberRubyPathB3F_FireRed_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPathB3F_FireRed_RockSmashMonsInfo = { 50, sMtEmberRubyPathB3F_FireRed_RockSmashMons };
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sMtEmberRubyPathB3F_LeafGreen_LandMons[] =
 {
     { 26, 26, SPECIES_SLUGMA },
@@ -3142,9 +2549,6 @@ const struct WildPokemon sMtEmberRubyPathB3F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPathB3F_LeafGreen_LandMonsInfo = { 7, sMtEmberRubyPathB3F_LeafGreen_LandMons };
-
-
-
 const struct WildPokemon sMtEmberRubyPathB3F_LeafGreen_RockSmashMons[] =
 {
     { 15, 25, SPECIES_SLUGMA },
@@ -3155,12 +2559,9 @@ const struct WildPokemon sMtEmberRubyPathB3F_LeafGreen_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPathB3F_LeafGreen_RockSmashMonsInfo = { 50, sMtEmberRubyPathB3F_LeafGreen_RockSmashMons };
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sMtEmberRubyPathB1FStairs_FireRed_LandMons[] =
 {
     { 40, 40, SPECIES_GEODUDE },
@@ -3178,9 +2579,6 @@ const struct WildPokemon sMtEmberRubyPathB1FStairs_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPathB1FStairs_FireRed_LandMonsInfo = { 7, sMtEmberRubyPathB1FStairs_FireRed_LandMons };
-
-
-
 const struct WildPokemon sMtEmberRubyPathB1FStairs_FireRed_RockSmashMons[] =
 {
     { 25, 35, SPECIES_GEODUDE },
@@ -3191,13 +2589,9 @@ const struct WildPokemon sMtEmberRubyPathB1FStairs_FireRed_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPathB1FStairs_FireRed_RockSmashMonsInfo = { 50, sMtEmberRubyPathB1FStairs_FireRed_RockSmashMons };
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sMtEmberRubyPathB1FStairs_LeafGreen_LandMons[] =
 {
     { 40, 40, SPECIES_GEODUDE },
@@ -3215,9 +2609,6 @@ const struct WildPokemon sMtEmberRubyPathB1FStairs_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPathB1FStairs_LeafGreen_LandMonsInfo = { 7, sMtEmberRubyPathB1FStairs_LeafGreen_LandMons };
-
-
-
 const struct WildPokemon sMtEmberRubyPathB1FStairs_LeafGreen_RockSmashMons[] =
 {
     { 25, 35, SPECIES_GEODUDE },
@@ -3228,12 +2619,9 @@ const struct WildPokemon sMtEmberRubyPathB1FStairs_LeafGreen_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPathB1FStairs_LeafGreen_RockSmashMonsInfo = { 50, sMtEmberRubyPathB1FStairs_LeafGreen_RockSmashMons };
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sMtEmberRubyPathB2FStairs_FireRed_LandMons[] =
 {
     { 38, 38, SPECIES_GEODUDE },
@@ -3251,9 +2639,6 @@ const struct WildPokemon sMtEmberRubyPathB2FStairs_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPathB2FStairs_FireRed_LandMonsInfo = { 7, sMtEmberRubyPathB2FStairs_FireRed_LandMons };
-
-
-
 const struct WildPokemon sMtEmberRubyPathB2FStairs_FireRed_RockSmashMons[] =
 {
     { 25, 35, SPECIES_GEODUDE },
@@ -3264,13 +2649,9 @@ const struct WildPokemon sMtEmberRubyPathB2FStairs_FireRed_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPathB2FStairs_FireRed_RockSmashMonsInfo = { 50, sMtEmberRubyPathB2FStairs_FireRed_RockSmashMons };
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sMtEmberRubyPathB2FStairs_LeafGreen_LandMons[] =
 {
     { 38, 38, SPECIES_GEODUDE },
@@ -3288,9 +2669,6 @@ const struct WildPokemon sMtEmberRubyPathB2FStairs_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPathB2FStairs_LeafGreen_LandMonsInfo = { 7, sMtEmberRubyPathB2FStairs_LeafGreen_LandMons };
-
-
-
 const struct WildPokemon sMtEmberRubyPathB2FStairs_LeafGreen_RockSmashMons[] =
 {
     { 25, 35, SPECIES_GEODUDE },
@@ -3301,12 +2679,9 @@ const struct WildPokemon sMtEmberRubyPathB2FStairs_LeafGreen_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sMtEmberRubyPathB2FStairs_LeafGreen_RockSmashMonsInfo = { 50, sMtEmberRubyPathB2FStairs_LeafGreen_RockSmashMons };
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sThreeIslandBerryForest_FireRed_LandMons[] =
 {
     { 37, 37, SPECIES_PIDGEOTTO },
@@ -3324,8 +2699,6 @@ const struct WildPokemon sThreeIslandBerryForest_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sThreeIslandBerryForest_FireRed_LandMonsInfo = { 21, sThreeIslandBerryForest_FireRed_LandMons };
-
-
 const struct WildPokemon sThreeIslandBerryForest_FireRed_WaterMons[] =
 {
     { 5, 20, SPECIES_PSYDUCK },
@@ -3335,9 +2708,6 @@ const struct WildPokemon sThreeIslandBerryForest_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sThreeIslandBerryForest_FireRed_WaterMonsInfo = { 2, sThreeIslandBerryForest_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sThreeIslandBerryForest_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -3353,12 +2723,9 @@ const struct WildPokemon sThreeIslandBerryForest_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sThreeIslandBerryForest_FireRed_FishingMonsInfo = { 20, sThreeIslandBerryForest_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sThreeIslandBerryForest_LeafGreen_LandMons[] =
 {
     { 37, 37, SPECIES_PIDGEOTTO },
@@ -3376,8 +2743,6 @@ const struct WildPokemon sThreeIslandBerryForest_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sThreeIslandBerryForest_LeafGreen_LandMonsInfo = { 21, sThreeIslandBerryForest_LeafGreen_LandMons };
-
-
 const struct WildPokemon sThreeIslandBerryForest_LeafGreen_WaterMons[] =
 {
     { 5, 20, SPECIES_SLOWPOKE },
@@ -3387,9 +2752,6 @@ const struct WildPokemon sThreeIslandBerryForest_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sThreeIslandBerryForest_LeafGreen_WaterMonsInfo = { 2, sThreeIslandBerryForest_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sThreeIslandBerryForest_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -3405,11 +2767,9 @@ const struct WildPokemon sThreeIslandBerryForest_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sThreeIslandBerryForest_LeafGreen_FishingMonsInfo = { 20, sThreeIslandBerryForest_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sFourIslandIcefallCaveEntrance_FireRed_LandMons[] =
 {
     { 43, 43, SPECIES_SEEL },
@@ -3427,8 +2787,6 @@ const struct WildPokemon sFourIslandIcefallCaveEntrance_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sFourIslandIcefallCaveEntrance_FireRed_LandMonsInfo = { 7, sFourIslandIcefallCaveEntrance_FireRed_LandMons };
-
-
 const struct WildPokemon sFourIslandIcefallCaveEntrance_FireRed_WaterMons[] =
 {
     { 5, 35, SPECIES_SEEL },
@@ -3438,9 +2796,6 @@ const struct WildPokemon sFourIslandIcefallCaveEntrance_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sFourIslandIcefallCaveEntrance_FireRed_WaterMonsInfo = { 2, sFourIslandIcefallCaveEntrance_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sFourIslandIcefallCaveEntrance_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -3456,12 +2811,9 @@ const struct WildPokemon sFourIslandIcefallCaveEntrance_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sFourIslandIcefallCaveEntrance_FireRed_FishingMonsInfo = { 20, sFourIslandIcefallCaveEntrance_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sFourIslandIcefallCaveEntrance_LeafGreen_LandMons[] =
 {
     { 43, 43, SPECIES_SEEL },
@@ -3479,8 +2831,6 @@ const struct WildPokemon sFourIslandIcefallCaveEntrance_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sFourIslandIcefallCaveEntrance_LeafGreen_LandMonsInfo = { 7, sFourIslandIcefallCaveEntrance_LeafGreen_LandMons };
-
-
 const struct WildPokemon sFourIslandIcefallCaveEntrance_LeafGreen_WaterMons[] =
 {
     { 5, 35, SPECIES_SEEL },
@@ -3490,9 +2840,6 @@ const struct WildPokemon sFourIslandIcefallCaveEntrance_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sFourIslandIcefallCaveEntrance_LeafGreen_WaterMonsInfo = { 2, sFourIslandIcefallCaveEntrance_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sFourIslandIcefallCaveEntrance_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -3508,11 +2855,9 @@ const struct WildPokemon sFourIslandIcefallCaveEntrance_LeafGreen_FishingMons[] 
 };
 
 const struct WildPokemonInfo sFourIslandIcefallCaveEntrance_LeafGreen_FishingMonsInfo = { 20, sFourIslandIcefallCaveEntrance_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sFourIslandIcefallCave1F_FireRed_LandMons[] =
 {
     { 25, 25, SPECIES_SWINUB },
@@ -3530,15 +2875,9 @@ const struct WildPokemon sFourIslandIcefallCave1F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sFourIslandIcefallCave1F_FireRed_LandMonsInfo = { 7, sFourIslandIcefallCave1F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sFourIslandIcefallCave1F_LeafGreen_LandMons[] =
 {
     { 25, 25, SPECIES_SWINUB },
@@ -3556,14 +2895,9 @@ const struct WildPokemon sFourIslandIcefallCave1F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sFourIslandIcefallCave1F_LeafGreen_LandMonsInfo = { 7, sFourIslandIcefallCave1F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sFourIslandIcefallCaveB1F_FireRed_LandMons[] =
 {
     { 25, 25, SPECIES_SWINUB },
@@ -3581,15 +2915,9 @@ const struct WildPokemon sFourIslandIcefallCaveB1F_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sFourIslandIcefallCaveB1F_FireRed_LandMonsInfo = { 7, sFourIslandIcefallCaveB1F_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sFourIslandIcefallCaveB1F_LeafGreen_LandMons[] =
 {
     { 25, 25, SPECIES_SWINUB },
@@ -3607,14 +2935,9 @@ const struct WildPokemon sFourIslandIcefallCaveB1F_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sFourIslandIcefallCaveB1F_LeafGreen_LandMonsInfo = { 7, sFourIslandIcefallCaveB1F_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sFourIslandIcefallCaveBack_FireRed_LandMons[] =
 {
     { 43, 43, SPECIES_SEEL },
@@ -3632,8 +2955,6 @@ const struct WildPokemon sFourIslandIcefallCaveBack_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sFourIslandIcefallCaveBack_FireRed_LandMonsInfo = { 7, sFourIslandIcefallCaveBack_FireRed_LandMons };
-
-
 const struct WildPokemon sFourIslandIcefallCaveBack_FireRed_WaterMons[] =
 {
     { 5, 20, SPECIES_TENTACOOL },
@@ -3643,9 +2964,6 @@ const struct WildPokemon sFourIslandIcefallCaveBack_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sFourIslandIcefallCaveBack_FireRed_WaterMonsInfo = { 2, sFourIslandIcefallCaveBack_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sFourIslandIcefallCaveBack_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -3661,12 +2979,9 @@ const struct WildPokemon sFourIslandIcefallCaveBack_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sFourIslandIcefallCaveBack_FireRed_FishingMonsInfo = { 20, sFourIslandIcefallCaveBack_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sFourIslandIcefallCaveBack_LeafGreen_LandMons[] =
 {
     { 43, 43, SPECIES_SEEL },
@@ -3684,8 +2999,6 @@ const struct WildPokemon sFourIslandIcefallCaveBack_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sFourIslandIcefallCaveBack_LeafGreen_LandMonsInfo = { 7, sFourIslandIcefallCaveBack_LeafGreen_LandMons };
-
-
 const struct WildPokemon sFourIslandIcefallCaveBack_LeafGreen_WaterMons[] =
 {
     { 5, 20, SPECIES_TENTACOOL },
@@ -3695,9 +3008,6 @@ const struct WildPokemon sFourIslandIcefallCaveBack_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sFourIslandIcefallCaveBack_LeafGreen_WaterMonsInfo = { 2, sFourIslandIcefallCaveBack_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sFourIslandIcefallCaveBack_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -3713,11 +3023,9 @@ const struct WildPokemon sFourIslandIcefallCaveBack_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sFourIslandIcefallCaveBack_LeafGreen_FishingMonsInfo = { 20, sFourIslandIcefallCaveBack_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSixIslandPatternBush_FireRed_LandMons[] =
 {
     { 9, 9, SPECIES_SPINARAK },
@@ -3735,15 +3043,9 @@ const struct WildPokemon sSixIslandPatternBush_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandPatternBush_FireRed_LandMonsInfo = { 21, sSixIslandPatternBush_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSixIslandPatternBush_LeafGreen_LandMons[] =
 {
     { 9, 9, SPECIES_LEDYBA },
@@ -3761,14 +3063,9 @@ const struct WildPokemon sSixIslandPatternBush_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandPatternBush_LeafGreen_LandMonsInfo = { 21, sSixIslandPatternBush_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sFiveIslandLostCaveRoom1_FireRed_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -3786,15 +3083,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom1_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom1_FireRed_LandMonsInfo = { 1, sFiveIslandLostCaveRoom1_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sFiveIslandLostCaveRoom1_LeafGreen_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -3812,14 +3103,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom1_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom1_LeafGreen_LandMonsInfo = { 1, sFiveIslandLostCaveRoom1_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sFiveIslandLostCaveRoom2_FireRed_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -3837,15 +3123,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom2_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom2_FireRed_LandMonsInfo = { 2, sFiveIslandLostCaveRoom2_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sFiveIslandLostCaveRoom2_LeafGreen_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -3863,14 +3143,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom2_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom2_LeafGreen_LandMonsInfo = { 2, sFiveIslandLostCaveRoom2_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sFiveIslandLostCaveRoom3_FireRed_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -3888,15 +3163,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom3_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom3_FireRed_LandMonsInfo = { 3, sFiveIslandLostCaveRoom3_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sFiveIslandLostCaveRoom3_LeafGreen_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -3914,14 +3183,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom3_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom3_LeafGreen_LandMonsInfo = { 3, sFiveIslandLostCaveRoom3_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sFiveIslandLostCaveRoom4_FireRed_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -3939,15 +3203,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom4_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom4_FireRed_LandMonsInfo = { 4, sFiveIslandLostCaveRoom4_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sFiveIslandLostCaveRoom4_LeafGreen_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -3965,14 +3223,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom4_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom4_LeafGreen_LandMonsInfo = { 4, sFiveIslandLostCaveRoom4_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sFiveIslandLostCaveRoom5_FireRed_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -3990,15 +3243,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom5_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom5_FireRed_LandMonsInfo = { 5, sFiveIslandLostCaveRoom5_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sFiveIslandLostCaveRoom5_LeafGreen_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -4016,14 +3263,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom5_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom5_LeafGreen_LandMonsInfo = { 5, sFiveIslandLostCaveRoom5_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sFiveIslandLostCaveRoom6_FireRed_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -4041,15 +3283,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom6_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom6_FireRed_LandMonsInfo = { 6, sFiveIslandLostCaveRoom6_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sFiveIslandLostCaveRoom6_LeafGreen_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -4067,14 +3303,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom6_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom6_LeafGreen_LandMonsInfo = { 6, sFiveIslandLostCaveRoom6_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sFiveIslandLostCaveRoom7_FireRed_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -4092,15 +3323,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom7_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom7_FireRed_LandMonsInfo = { 7, sFiveIslandLostCaveRoom7_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sFiveIslandLostCaveRoom7_LeafGreen_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -4118,14 +3343,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom7_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom7_LeafGreen_LandMonsInfo = { 7, sFiveIslandLostCaveRoom7_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sFiveIslandLostCaveRoom8_FireRed_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -4143,15 +3363,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom8_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom8_FireRed_LandMonsInfo = { 8, sFiveIslandLostCaveRoom8_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sFiveIslandLostCaveRoom8_LeafGreen_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -4169,14 +3383,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom8_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom8_LeafGreen_LandMonsInfo = { 8, sFiveIslandLostCaveRoom8_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sFiveIslandLostCaveRoom9_FireRed_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -4194,15 +3403,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom9_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom9_FireRed_LandMonsInfo = { 9, sFiveIslandLostCaveRoom9_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sFiveIslandLostCaveRoom9_LeafGreen_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -4220,14 +3423,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom9_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom9_LeafGreen_LandMonsInfo = { 9, sFiveIslandLostCaveRoom9_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sFiveIslandLostCaveRoom10_FireRed_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -4245,15 +3443,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom10_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom10_FireRed_LandMonsInfo = { 10, sFiveIslandLostCaveRoom10_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sFiveIslandLostCaveRoom10_LeafGreen_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -4271,14 +3463,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom10_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom10_LeafGreen_LandMonsInfo = { 10, sFiveIslandLostCaveRoom10_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sFiveIslandLostCaveRoom11_FireRed_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -4296,15 +3483,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom11_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom11_FireRed_LandMonsInfo = { 5, sFiveIslandLostCaveRoom11_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sFiveIslandLostCaveRoom11_LeafGreen_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -4322,14 +3503,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom11_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom11_LeafGreen_LandMonsInfo = { 5, sFiveIslandLostCaveRoom11_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sFiveIslandLostCaveRoom12_FireRed_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -4347,15 +3523,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom12_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom12_FireRed_LandMonsInfo = { 5, sFiveIslandLostCaveRoom12_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sFiveIslandLostCaveRoom12_LeafGreen_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -4373,14 +3543,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom12_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom12_LeafGreen_LandMonsInfo = { 5, sFiveIslandLostCaveRoom12_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sFiveIslandLostCaveRoom13_FireRed_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -4398,15 +3563,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom13_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom13_FireRed_LandMonsInfo = { 5, sFiveIslandLostCaveRoom13_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sFiveIslandLostCaveRoom13_LeafGreen_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -4424,14 +3583,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom13_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom13_LeafGreen_LandMonsInfo = { 5, sFiveIslandLostCaveRoom13_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sFiveIslandLostCaveRoom14_FireRed_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -4449,15 +3603,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom14_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom14_FireRed_LandMonsInfo = { 5, sFiveIslandLostCaveRoom14_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sFiveIslandLostCaveRoom14_LeafGreen_LandMons[] =
 {
     { 40, 40, SPECIES_GASTLY },
@@ -4475,14 +3623,9 @@ const struct WildPokemon sFiveIslandLostCaveRoom14_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandLostCaveRoom14_LeafGreen_LandMonsInfo = { 5, sFiveIslandLostCaveRoom14_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sOneIslandKindleRoad_FireRed_LandMons[] =
 {
     { 32, 32, SPECIES_SPEAROW },
@@ -4500,8 +3643,6 @@ const struct WildPokemon sOneIslandKindleRoad_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sOneIslandKindleRoad_FireRed_LandMonsInfo = { 21, sOneIslandKindleRoad_FireRed_LandMons };
-
-
 const struct WildPokemon sOneIslandKindleRoad_FireRed_WaterMons[] =
 {
     { 5, 20, SPECIES_TENTACOOL },
@@ -4511,8 +3652,6 @@ const struct WildPokemon sOneIslandKindleRoad_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sOneIslandKindleRoad_FireRed_WaterMonsInfo = { 2, sOneIslandKindleRoad_FireRed_WaterMons };
-
-
 const struct WildPokemon sOneIslandKindleRoad_FireRed_RockSmashMons[] =
 {
     { 5, 20, SPECIES_GEODUDE },
@@ -4523,8 +3662,6 @@ const struct WildPokemon sOneIslandKindleRoad_FireRed_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sOneIslandKindleRoad_FireRed_RockSmashMonsInfo = { 25, sOneIslandKindleRoad_FireRed_RockSmashMons };
-
-
 const struct WildPokemon sOneIslandKindleRoad_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -4540,12 +3677,9 @@ const struct WildPokemon sOneIslandKindleRoad_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sOneIslandKindleRoad_FireRed_FishingMonsInfo = { 20, sOneIslandKindleRoad_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sOneIslandKindleRoad_LeafGreen_LandMons[] =
 {
     { 32, 32, SPECIES_SPEAROW },
@@ -4563,8 +3697,6 @@ const struct WildPokemon sOneIslandKindleRoad_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sOneIslandKindleRoad_LeafGreen_LandMonsInfo = { 21, sOneIslandKindleRoad_LeafGreen_LandMons };
-
-
 const struct WildPokemon sOneIslandKindleRoad_LeafGreen_WaterMons[] =
 {
     { 5, 20, SPECIES_TENTACOOL },
@@ -4574,8 +3706,6 @@ const struct WildPokemon sOneIslandKindleRoad_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sOneIslandKindleRoad_LeafGreen_WaterMonsInfo = { 2, sOneIslandKindleRoad_LeafGreen_WaterMons };
-
-
 const struct WildPokemon sOneIslandKindleRoad_LeafGreen_RockSmashMons[] =
 {
     { 5, 20, SPECIES_GEODUDE },
@@ -4586,8 +3716,6 @@ const struct WildPokemon sOneIslandKindleRoad_LeafGreen_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sOneIslandKindleRoad_LeafGreen_RockSmashMonsInfo = { 25, sOneIslandKindleRoad_LeafGreen_RockSmashMons };
-
-
 const struct WildPokemon sOneIslandKindleRoad_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -4603,11 +3731,9 @@ const struct WildPokemon sOneIslandKindleRoad_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sOneIslandKindleRoad_LeafGreen_FishingMonsInfo = { 20, sOneIslandKindleRoad_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sOneIslandTreasureBeach_FireRed_LandMons[] =
 {
     { 32, 32, SPECIES_SPEAROW },
@@ -4625,8 +3751,6 @@ const struct WildPokemon sOneIslandTreasureBeach_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sOneIslandTreasureBeach_FireRed_LandMonsInfo = { 21, sOneIslandTreasureBeach_FireRed_LandMons };
-
-
 const struct WildPokemon sOneIslandTreasureBeach_FireRed_WaterMons[] =
 {
     { 5, 20, SPECIES_TENTACOOL },
@@ -4636,9 +3760,6 @@ const struct WildPokemon sOneIslandTreasureBeach_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sOneIslandTreasureBeach_FireRed_WaterMonsInfo = { 2, sOneIslandTreasureBeach_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sOneIslandTreasureBeach_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -4654,12 +3775,9 @@ const struct WildPokemon sOneIslandTreasureBeach_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sOneIslandTreasureBeach_FireRed_FishingMonsInfo = { 20, sOneIslandTreasureBeach_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sOneIslandTreasureBeach_LeafGreen_LandMons[] =
 {
     { 32, 32, SPECIES_SPEAROW },
@@ -4677,8 +3795,6 @@ const struct WildPokemon sOneIslandTreasureBeach_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sOneIslandTreasureBeach_LeafGreen_LandMonsInfo = { 21, sOneIslandTreasureBeach_LeafGreen_LandMons };
-
-
 const struct WildPokemon sOneIslandTreasureBeach_LeafGreen_WaterMons[] =
 {
     { 5, 20, SPECIES_TENTACOOL },
@@ -4688,9 +3804,6 @@ const struct WildPokemon sOneIslandTreasureBeach_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sOneIslandTreasureBeach_LeafGreen_WaterMonsInfo = { 2, sOneIslandTreasureBeach_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sOneIslandTreasureBeach_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -4706,11 +3819,9 @@ const struct WildPokemon sOneIslandTreasureBeach_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sOneIslandTreasureBeach_LeafGreen_FishingMonsInfo = { 20, sOneIslandTreasureBeach_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sTwoIslandCapeBrink_FireRed_LandMons[] =
 {
     { 31, 31, SPECIES_SPEAROW },
@@ -4728,8 +3839,6 @@ const struct WildPokemon sTwoIslandCapeBrink_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sTwoIslandCapeBrink_FireRed_LandMonsInfo = { 21, sTwoIslandCapeBrink_FireRed_LandMons };
-
-
 const struct WildPokemon sTwoIslandCapeBrink_FireRed_WaterMons[] =
 {
     { 5, 20, SPECIES_PSYDUCK },
@@ -4739,9 +3848,6 @@ const struct WildPokemon sTwoIslandCapeBrink_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sTwoIslandCapeBrink_FireRed_WaterMonsInfo = { 2, sTwoIslandCapeBrink_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sTwoIslandCapeBrink_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -4757,12 +3863,9 @@ const struct WildPokemon sTwoIslandCapeBrink_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sTwoIslandCapeBrink_FireRed_FishingMonsInfo = { 20, sTwoIslandCapeBrink_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sTwoIslandCapeBrink_LeafGreen_LandMons[] =
 {
     { 31, 31, SPECIES_SPEAROW },
@@ -4780,8 +3883,6 @@ const struct WildPokemon sTwoIslandCapeBrink_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sTwoIslandCapeBrink_LeafGreen_LandMonsInfo = { 21, sTwoIslandCapeBrink_LeafGreen_LandMons };
-
-
 const struct WildPokemon sTwoIslandCapeBrink_LeafGreen_WaterMons[] =
 {
     { 5, 20, SPECIES_SLOWPOKE },
@@ -4791,9 +3892,6 @@ const struct WildPokemon sTwoIslandCapeBrink_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sTwoIslandCapeBrink_LeafGreen_WaterMonsInfo = { 2, sTwoIslandCapeBrink_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sTwoIslandCapeBrink_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -4809,11 +3907,9 @@ const struct WildPokemon sTwoIslandCapeBrink_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sTwoIslandCapeBrink_LeafGreen_FishingMonsInfo = { 20, sTwoIslandCapeBrink_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sThreeIslandBondBridge_FireRed_LandMons[] =
 {
     { 32, 32, SPECIES_PIDGEY },
@@ -4831,8 +3927,6 @@ const struct WildPokemon sThreeIslandBondBridge_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sThreeIslandBondBridge_FireRed_LandMonsInfo = { 21, sThreeIslandBondBridge_FireRed_LandMons };
-
-
 const struct WildPokemon sThreeIslandBondBridge_FireRed_WaterMons[] =
 {
     { 5, 20, SPECIES_TENTACOOL },
@@ -4842,9 +3936,6 @@ const struct WildPokemon sThreeIslandBondBridge_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sThreeIslandBondBridge_FireRed_WaterMonsInfo = { 2, sThreeIslandBondBridge_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sThreeIslandBondBridge_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -4860,12 +3951,9 @@ const struct WildPokemon sThreeIslandBondBridge_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sThreeIslandBondBridge_FireRed_FishingMonsInfo = { 20, sThreeIslandBondBridge_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sThreeIslandBondBridge_LeafGreen_LandMons[] =
 {
     { 32, 32, SPECIES_PIDGEY },
@@ -4883,8 +3971,6 @@ const struct WildPokemon sThreeIslandBondBridge_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sThreeIslandBondBridge_LeafGreen_LandMonsInfo = { 21, sThreeIslandBondBridge_LeafGreen_LandMons };
-
-
 const struct WildPokemon sThreeIslandBondBridge_LeafGreen_WaterMons[] =
 {
     { 5, 20, SPECIES_TENTACOOL },
@@ -4894,9 +3980,6 @@ const struct WildPokemon sThreeIslandBondBridge_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sThreeIslandBondBridge_LeafGreen_WaterMonsInfo = { 2, sThreeIslandBondBridge_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sThreeIslandBondBridge_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -4912,11 +3995,9 @@ const struct WildPokemon sThreeIslandBondBridge_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sThreeIslandBondBridge_LeafGreen_FishingMonsInfo = { 20, sThreeIslandBondBridge_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sThreeIslandPort_FireRed_LandMons[] =
 {
     { 15, 15, SPECIES_DUNSPARCE },
@@ -4934,15 +4015,9 @@ const struct WildPokemon sThreeIslandPort_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sThreeIslandPort_FireRed_LandMonsInfo = { 1, sThreeIslandPort_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sThreeIslandPort_LeafGreen_LandMons[] =
 {
     { 15, 15, SPECIES_DUNSPARCE },
@@ -4960,15 +4035,9 @@ const struct WildPokemon sThreeIslandPort_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sThreeIslandPort_LeafGreen_LandMonsInfo = { 1, sThreeIslandPort_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
-
 const struct WildPokemon sFiveIslandResortGorgeous_FireRed_WaterMons[] =
 {
     { 5, 35, SPECIES_TENTACOOL },
@@ -4978,9 +4047,6 @@ const struct WildPokemon sFiveIslandResortGorgeous_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandResortGorgeous_FireRed_WaterMonsInfo = { 2, sFiveIslandResortGorgeous_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sFiveIslandResortGorgeous_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -4996,13 +4062,9 @@ const struct WildPokemon sFiveIslandResortGorgeous_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandResortGorgeous_FireRed_FishingMonsInfo = { 20, sFiveIslandResortGorgeous_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
-
 const struct WildPokemon sFiveIslandResortGorgeous_LeafGreen_WaterMons[] =
 {
     { 5, 35, SPECIES_TENTACOOL },
@@ -5012,9 +4074,6 @@ const struct WildPokemon sFiveIslandResortGorgeous_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandResortGorgeous_LeafGreen_WaterMonsInfo = { 2, sFiveIslandResortGorgeous_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sFiveIslandResortGorgeous_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -5030,12 +4089,9 @@ const struct WildPokemon sFiveIslandResortGorgeous_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandResortGorgeous_LeafGreen_FishingMonsInfo = { 20, sFiveIslandResortGorgeous_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
-
 const struct WildPokemon sFiveIslandWaterLabyrinth_FireRed_WaterMons[] =
 {
     { 5, 20, SPECIES_TENTACOOL },
@@ -5045,9 +4101,6 @@ const struct WildPokemon sFiveIslandWaterLabyrinth_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandWaterLabyrinth_FireRed_WaterMonsInfo = { 2, sFiveIslandWaterLabyrinth_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sFiveIslandWaterLabyrinth_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -5063,13 +4116,9 @@ const struct WildPokemon sFiveIslandWaterLabyrinth_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandWaterLabyrinth_FireRed_FishingMonsInfo = { 20, sFiveIslandWaterLabyrinth_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
-
 const struct WildPokemon sFiveIslandWaterLabyrinth_LeafGreen_WaterMons[] =
 {
     { 5, 35, SPECIES_TENTACOOL },
@@ -5079,9 +4128,6 @@ const struct WildPokemon sFiveIslandWaterLabyrinth_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandWaterLabyrinth_LeafGreen_WaterMonsInfo = { 2, sFiveIslandWaterLabyrinth_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sFiveIslandWaterLabyrinth_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -5097,11 +4143,9 @@ const struct WildPokemon sFiveIslandWaterLabyrinth_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandWaterLabyrinth_LeafGreen_FishingMonsInfo = { 20, sFiveIslandWaterLabyrinth_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sFiveIslandMeadow_FireRed_LandMons[] =
 {
     { 44, 44, SPECIES_PIDGEY },
@@ -5119,8 +4163,6 @@ const struct WildPokemon sFiveIslandMeadow_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandMeadow_FireRed_LandMonsInfo = { 21, sFiveIslandMeadow_FireRed_LandMons };
-
-
 const struct WildPokemon sFiveIslandMeadow_FireRed_WaterMons[] =
 {
     { 5, 35, SPECIES_TENTACOOL },
@@ -5130,9 +4172,6 @@ const struct WildPokemon sFiveIslandMeadow_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandMeadow_FireRed_WaterMonsInfo = { 2, sFiveIslandMeadow_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sFiveIslandMeadow_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -5148,12 +4187,9 @@ const struct WildPokemon sFiveIslandMeadow_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandMeadow_FireRed_FishingMonsInfo = { 20, sFiveIslandMeadow_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sFiveIslandMeadow_LeafGreen_LandMons[] =
 {
     { 44, 44, SPECIES_PIDGEY },
@@ -5171,8 +4207,6 @@ const struct WildPokemon sFiveIslandMeadow_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandMeadow_LeafGreen_LandMonsInfo = { 21, sFiveIslandMeadow_LeafGreen_LandMons };
-
-
 const struct WildPokemon sFiveIslandMeadow_LeafGreen_WaterMons[] =
 {
     { 5, 35, SPECIES_TENTACOOL },
@@ -5182,9 +4216,6 @@ const struct WildPokemon sFiveIslandMeadow_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandMeadow_LeafGreen_WaterMonsInfo = { 2, sFiveIslandMeadow_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sFiveIslandMeadow_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -5200,11 +4231,9 @@ const struct WildPokemon sFiveIslandMeadow_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandMeadow_LeafGreen_FishingMonsInfo = { 20, sFiveIslandMeadow_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sFiveIslandMemorialPillar_FireRed_LandMons[] =
 {
     { 10, 10, SPECIES_HOPPIP },
@@ -5222,8 +4251,6 @@ const struct WildPokemon sFiveIslandMemorialPillar_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandMemorialPillar_FireRed_LandMonsInfo = { 21, sFiveIslandMemorialPillar_FireRed_LandMons };
-
-
 const struct WildPokemon sFiveIslandMemorialPillar_FireRed_WaterMons[] =
 {
     { 5, 35, SPECIES_TENTACOOL },
@@ -5233,9 +4260,6 @@ const struct WildPokemon sFiveIslandMemorialPillar_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandMemorialPillar_FireRed_WaterMonsInfo = { 2, sFiveIslandMemorialPillar_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sFiveIslandMemorialPillar_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -5251,12 +4275,9 @@ const struct WildPokemon sFiveIslandMemorialPillar_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandMemorialPillar_FireRed_FishingMonsInfo = { 20, sFiveIslandMemorialPillar_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sFiveIslandMemorialPillar_LeafGreen_LandMons[] =
 {
     { 10, 10, SPECIES_HOPPIP },
@@ -5274,8 +4295,6 @@ const struct WildPokemon sFiveIslandMemorialPillar_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandMemorialPillar_LeafGreen_LandMonsInfo = { 21, sFiveIslandMemorialPillar_LeafGreen_LandMons };
-
-
 const struct WildPokemon sFiveIslandMemorialPillar_LeafGreen_WaterMons[] =
 {
     { 5, 35, SPECIES_TENTACOOL },
@@ -5285,9 +4304,6 @@ const struct WildPokemon sFiveIslandMemorialPillar_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandMemorialPillar_LeafGreen_WaterMonsInfo = { 2, sFiveIslandMemorialPillar_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sFiveIslandMemorialPillar_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -5303,12 +4319,9 @@ const struct WildPokemon sFiveIslandMemorialPillar_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sFiveIslandMemorialPillar_LeafGreen_FishingMonsInfo = { 20, sFiveIslandMemorialPillar_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
-
 const struct WildPokemon sSixIslandOutcastIsland_FireRed_WaterMons[] =
 {
     { 5, 20, SPECIES_TENTACOOL },
@@ -5318,9 +4331,6 @@ const struct WildPokemon sSixIslandOutcastIsland_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandOutcastIsland_FireRed_WaterMonsInfo = { 2, sSixIslandOutcastIsland_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sSixIslandOutcastIsland_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -5336,13 +4346,9 @@ const struct WildPokemon sSixIslandOutcastIsland_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandOutcastIsland_FireRed_FishingMonsInfo = { 20, sSixIslandOutcastIsland_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
-
 const struct WildPokemon sSixIslandOutcastIsland_LeafGreen_WaterMons[] =
 {
     { 5, 20, SPECIES_TENTACOOL },
@@ -5352,9 +4358,6 @@ const struct WildPokemon sSixIslandOutcastIsland_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandOutcastIsland_LeafGreen_WaterMonsInfo = { 2, sSixIslandOutcastIsland_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sSixIslandOutcastIsland_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -5370,12 +4373,9 @@ const struct WildPokemon sSixIslandOutcastIsland_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandOutcastIsland_LeafGreen_FishingMonsInfo = { 20, sSixIslandOutcastIsland_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
-
 const struct WildPokemon sSixIslandGreenPath_FireRed_WaterMons[] =
 {
     { 5, 20, SPECIES_TENTACOOL },
@@ -5385,9 +4385,6 @@ const struct WildPokemon sSixIslandGreenPath_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandGreenPath_FireRed_WaterMonsInfo = { 2, sSixIslandGreenPath_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sSixIslandGreenPath_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -5403,13 +4400,9 @@ const struct WildPokemon sSixIslandGreenPath_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandGreenPath_FireRed_FishingMonsInfo = { 20, sSixIslandGreenPath_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
-
 const struct WildPokemon sSixIslandGreenPath_LeafGreen_WaterMons[] =
 {
     { 5, 20, SPECIES_TENTACOOL },
@@ -5419,9 +4412,6 @@ const struct WildPokemon sSixIslandGreenPath_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandGreenPath_LeafGreen_WaterMonsInfo = { 2, sSixIslandGreenPath_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sSixIslandGreenPath_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -5437,11 +4427,9 @@ const struct WildPokemon sSixIslandGreenPath_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandGreenPath_LeafGreen_FishingMonsInfo = { 20, sSixIslandGreenPath_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSixIslandWaterPath_FireRed_LandMons[] =
 {
     { 44, 44, SPECIES_SPEAROW },
@@ -5459,8 +4447,6 @@ const struct WildPokemon sSixIslandWaterPath_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandWaterPath_FireRed_LandMonsInfo = { 21, sSixIslandWaterPath_FireRed_LandMons };
-
-
 const struct WildPokemon sSixIslandWaterPath_FireRed_WaterMons[] =
 {
     { 5, 20, SPECIES_TENTACOOL },
@@ -5470,9 +4456,6 @@ const struct WildPokemon sSixIslandWaterPath_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandWaterPath_FireRed_WaterMonsInfo = { 2, sSixIslandWaterPath_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sSixIslandWaterPath_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -5488,12 +4471,9 @@ const struct WildPokemon sSixIslandWaterPath_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandWaterPath_FireRed_FishingMonsInfo = { 20, sSixIslandWaterPath_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSixIslandWaterPath_LeafGreen_LandMons[] =
 {
     { 44, 44, SPECIES_SPEAROW },
@@ -5511,8 +4491,6 @@ const struct WildPokemon sSixIslandWaterPath_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandWaterPath_LeafGreen_LandMonsInfo = { 21, sSixIslandWaterPath_LeafGreen_LandMons };
-
-
 const struct WildPokemon sSixIslandWaterPath_LeafGreen_WaterMons[] =
 {
     { 5, 20, SPECIES_TENTACOOL },
@@ -5522,9 +4500,6 @@ const struct WildPokemon sSixIslandWaterPath_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandWaterPath_LeafGreen_WaterMonsInfo = { 2, sSixIslandWaterPath_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sSixIslandWaterPath_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -5540,11 +4515,9 @@ const struct WildPokemon sSixIslandWaterPath_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandWaterPath_LeafGreen_FishingMonsInfo = { 20, sSixIslandWaterPath_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSixIslandRuinValley_FireRed_LandMons[] =
 {
     { 15, 15, SPECIES_NATU },
@@ -5562,8 +4535,6 @@ const struct WildPokemon sSixIslandRuinValley_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandRuinValley_FireRed_LandMonsInfo = { 21, sSixIslandRuinValley_FireRed_LandMons };
-
-
 const struct WildPokemon sSixIslandRuinValley_FireRed_WaterMons[] =
 {
     { 5, 20, SPECIES_WOOPER },
@@ -5573,9 +4544,6 @@ const struct WildPokemon sSixIslandRuinValley_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandRuinValley_FireRed_WaterMonsInfo = { 2, sSixIslandRuinValley_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sSixIslandRuinValley_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -5591,12 +4559,9 @@ const struct WildPokemon sSixIslandRuinValley_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandRuinValley_FireRed_FishingMonsInfo = { 20, sSixIslandRuinValley_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSixIslandRuinValley_LeafGreen_LandMons[] =
 {
     { 15, 15, SPECIES_NATU },
@@ -5614,8 +4579,6 @@ const struct WildPokemon sSixIslandRuinValley_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandRuinValley_LeafGreen_LandMonsInfo = { 21, sSixIslandRuinValley_LeafGreen_LandMons };
-
-
 const struct WildPokemon sSixIslandRuinValley_LeafGreen_WaterMons[] =
 {
     { 5, 20, SPECIES_MARILL },
@@ -5625,9 +4588,6 @@ const struct WildPokemon sSixIslandRuinValley_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandRuinValley_LeafGreen_WaterMonsInfo = { 2, sSixIslandRuinValley_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sSixIslandRuinValley_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -5643,12 +4603,9 @@ const struct WildPokemon sSixIslandRuinValley_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandRuinValley_LeafGreen_FishingMonsInfo = { 20, sSixIslandRuinValley_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
-
 const struct WildPokemon sSevenIslandTrainerTower_FireRed_WaterMons[] =
 {
     { 5, 20, SPECIES_TENTACOOL },
@@ -5658,9 +4615,6 @@ const struct WildPokemon sSevenIslandTrainerTower_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSevenIslandTrainerTower_FireRed_WaterMonsInfo = { 2, sSevenIslandTrainerTower_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sSevenIslandTrainerTower_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -5676,13 +4630,9 @@ const struct WildPokemon sSevenIslandTrainerTower_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSevenIslandTrainerTower_FireRed_FishingMonsInfo = { 20, sSevenIslandTrainerTower_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
-
 const struct WildPokemon sSevenIslandTrainerTower_LeafGreen_WaterMons[] =
 {
     { 5, 20, SPECIES_TENTACOOL },
@@ -5692,9 +4642,6 @@ const struct WildPokemon sSevenIslandTrainerTower_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSevenIslandTrainerTower_LeafGreen_WaterMonsInfo = { 2, sSevenIslandTrainerTower_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sSevenIslandTrainerTower_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -5710,11 +4657,9 @@ const struct WildPokemon sSevenIslandTrainerTower_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSevenIslandTrainerTower_LeafGreen_FishingMonsInfo = { 20, sSevenIslandTrainerTower_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSevenIslandSevaultCanyonEntrance_FireRed_LandMons[] =
 {
     { 44, 44, SPECIES_SPEAROW },
@@ -5732,15 +4677,9 @@ const struct WildPokemon sSevenIslandSevaultCanyonEntrance_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSevenIslandSevaultCanyonEntrance_FireRed_LandMonsInfo = { 21, sSevenIslandSevaultCanyonEntrance_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSevenIslandSevaultCanyonEntrance_LeafGreen_LandMons[] =
 {
     { 44, 44, SPECIES_SPEAROW },
@@ -5758,14 +4697,9 @@ const struct WildPokemon sSevenIslandSevaultCanyonEntrance_LeafGreen_LandMons[] 
 };
 
 const struct WildPokemonInfo sSevenIslandSevaultCanyonEntrance_LeafGreen_LandMonsInfo = { 21, sSevenIslandSevaultCanyonEntrance_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSevenIslandSevaultCanyon_FireRed_LandMons[] =
 {
     { 46, 46, SPECIES_GEODUDE },
@@ -5783,9 +4717,6 @@ const struct WildPokemon sSevenIslandSevaultCanyon_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSevenIslandSevaultCanyon_FireRed_LandMonsInfo = { 21, sSevenIslandSevaultCanyon_FireRed_LandMons };
-
-
-
 const struct WildPokemon sSevenIslandSevaultCanyon_FireRed_RockSmashMons[] =
 {
     { 25, 35, SPECIES_GEODUDE },
@@ -5796,13 +4727,9 @@ const struct WildPokemon sSevenIslandSevaultCanyon_FireRed_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sSevenIslandSevaultCanyon_FireRed_RockSmashMonsInfo = { 25, sSevenIslandSevaultCanyon_FireRed_RockSmashMons };
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSevenIslandSevaultCanyon_LeafGreen_LandMons[] =
 {
     { 46, 46, SPECIES_GEODUDE },
@@ -5820,9 +4747,6 @@ const struct WildPokemon sSevenIslandSevaultCanyon_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sSevenIslandSevaultCanyon_LeafGreen_LandMonsInfo = { 21, sSevenIslandSevaultCanyon_LeafGreen_LandMons };
-
-
-
 const struct WildPokemon sSevenIslandSevaultCanyon_LeafGreen_RockSmashMons[] =
 {
     { 25, 35, SPECIES_GEODUDE },
@@ -5833,13 +4757,9 @@ const struct WildPokemon sSevenIslandSevaultCanyon_LeafGreen_RockSmashMons[] =
 };
 
 const struct WildPokemonInfo sSevenIslandSevaultCanyon_LeafGreen_RockSmashMonsInfo = { 25, sSevenIslandSevaultCanyon_LeafGreen_RockSmashMons };
-
-
 #endif
 
 #ifdef FIRERED
-
-
 const struct WildPokemon sSevenIslandTanobyRuins_FireRed_WaterMons[] =
 {
     { 5, 20, SPECIES_TENTACOOL },
@@ -5849,9 +4769,6 @@ const struct WildPokemon sSevenIslandTanobyRuins_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSevenIslandTanobyRuins_FireRed_WaterMonsInfo = { 2, sSevenIslandTanobyRuins_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sSevenIslandTanobyRuins_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -5867,13 +4784,9 @@ const struct WildPokemon sSevenIslandTanobyRuins_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSevenIslandTanobyRuins_FireRed_FishingMonsInfo = { 20, sSevenIslandTanobyRuins_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
-
 const struct WildPokemon sSevenIslandTanobyRuins_LeafGreen_WaterMons[] =
 {
     { 5, 20, SPECIES_TENTACOOL },
@@ -5883,9 +4796,6 @@ const struct WildPokemon sSevenIslandTanobyRuins_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sSevenIslandTanobyRuins_LeafGreen_WaterMonsInfo = { 2, sSevenIslandTanobyRuins_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sSevenIslandTanobyRuins_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -5901,11 +4811,9 @@ const struct WildPokemon sSevenIslandTanobyRuins_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sSevenIslandTanobyRuins_LeafGreen_FishingMonsInfo = { 20, sSevenIslandTanobyRuins_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute1_FireRed_LandMons[] =
 {
     { 3, 3, SPECIES_PIDGEY },
@@ -5923,15 +4831,9 @@ const struct WildPokemon sRoute1_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute1_FireRed_LandMonsInfo = { 21, sRoute1_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute1_LeafGreen_LandMons[] =
 {
     { 3, 3, SPECIES_PIDGEY },
@@ -5949,14 +4851,9 @@ const struct WildPokemon sRoute1_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute1_LeafGreen_LandMonsInfo = { 21, sRoute1_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute2_FireRed_LandMons[] =
 {
     { 3, 3, SPECIES_RATTATA },
@@ -5974,15 +4871,9 @@ const struct WildPokemon sRoute2_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute2_FireRed_LandMonsInfo = { 21, sRoute2_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute2_LeafGreen_LandMons[] =
 {
     { 3, 3, SPECIES_RATTATA },
@@ -6000,14 +4891,9 @@ const struct WildPokemon sRoute2_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute2_LeafGreen_LandMonsInfo = { 21, sRoute2_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute3_FireRed_LandMons[] =
 {
     { 6, 6, SPECIES_SPEAROW },
@@ -6025,15 +4911,9 @@ const struct WildPokemon sRoute3_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute3_FireRed_LandMonsInfo = { 21, sRoute3_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute3_LeafGreen_LandMons[] =
 {
     { 6, 6, SPECIES_SPEAROW },
@@ -6051,14 +4931,9 @@ const struct WildPokemon sRoute3_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute3_LeafGreen_LandMonsInfo = { 21, sRoute3_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute4_FireRed_LandMons[] =
 {
     { 10, 10, SPECIES_SPEAROW },
@@ -6076,20 +4951,15 @@ const struct WildPokemon sRoute4_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute4_FireRed_LandMonsInfo = { 21, sRoute4_FireRed_LandMons };
-
-
 const struct WildPokemon sRoute4_FireRed_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
     { 10, 20, SPECIES_TENTACOOL },
-    { 5, 5, SPECIES_NONE },
-    { 5, 5, SPECIES_NONE },
+    { 5, 5, SPECIES_TENTACOOL },
+    { 5, 5, SPECIES_TENTACOOL },
 };
 
 const struct WildPokemonInfo sRoute4_FireRed_WaterMonsInfo = { 2, sRoute4_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sRoute4_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -6105,12 +4975,9 @@ const struct WildPokemon sRoute4_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute4_FireRed_FishingMonsInfo = { 20, sRoute4_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute4_LeafGreen_LandMons[] =
 {
     { 10, 10, SPECIES_SPEAROW },
@@ -6128,8 +4995,6 @@ const struct WildPokemon sRoute4_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute4_LeafGreen_LandMonsInfo = { 21, sRoute4_LeafGreen_LandMons };
-
-
 const struct WildPokemon sRoute4_LeafGreen_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -6139,9 +5004,6 @@ const struct WildPokemon sRoute4_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute4_LeafGreen_WaterMonsInfo = { 2, sRoute4_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sRoute4_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -6157,21 +5019,19 @@ const struct WildPokemon sRoute4_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute4_LeafGreen_FishingMonsInfo = { 20, sRoute4_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute5_FireRed_LandMons[] =
 {
     { 10, 10, SPECIES_MEOWTH },
-    { 13, 13, SPECIES_PIDGEY },
+    { 13, 13, SPECIES_BELLSPROUT },
     { 13, 13, SPECIES_ODDISH },
     { 12, 12, SPECIES_MEOWTH },
     { 15, 15, SPECIES_ODDISH },
     { 15, 15, SPECIES_PIDGEY },
     { 16, 16, SPECIES_ODDISH },
-    { 16, 16, SPECIES_PIDGEY },
+    { 16, 16, SPECIES_BELLSPROUT },
     { 15, 15, SPECIES_PIDGEY },
     { 14, 14, SPECIES_MEOWTH },
     { 15, 15, SPECIES_PIDGEY },
@@ -6179,15 +5039,9 @@ const struct WildPokemon sRoute5_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute5_FireRed_LandMonsInfo = { 21, sRoute5_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute5_LeafGreen_LandMons[] =
 {
     { 10, 10, SPECIES_MEOWTH },
@@ -6205,24 +5059,19 @@ const struct WildPokemon sRoute5_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute5_LeafGreen_LandMonsInfo = { 21, sRoute5_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute6_FireRed_LandMons[] =
 {
     { 10, 10, SPECIES_MEOWTH },
-    { 13, 13, SPECIES_PIDGEY },
+    { 13, 13, SPECIES_BELLSPROUT },
     { 13, 13, SPECIES_ODDISH },
     { 12, 12, SPECIES_MEOWTH },
     { 15, 15, SPECIES_ODDISH },
     { 15, 15, SPECIES_PIDGEY },
     { 16, 16, SPECIES_ODDISH },
-    { 16, 16, SPECIES_PIDGEY },
+    { 16, 16, SPECIES_BELLSPROUT },
     { 15, 15, SPECIES_PIDGEY },
     { 14, 14, SPECIES_MEOWTH },
     { 15, 15, SPECIES_PIDGEY },
@@ -6230,20 +5079,15 @@ const struct WildPokemon sRoute6_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute6_FireRed_LandMonsInfo = { 21, sRoute6_FireRed_LandMons };
-
-
 const struct WildPokemon sRoute6_FireRed_WaterMons[] =
 {
     { 20, 25, SPECIES_PSYDUCK },
-    { 20, 25, SPECIES_PSYDUCK },
-    { 5, 5, SPECIES_NONE },
-    { 5, 5, SPECIES_NONE },
+    { 20, 25, SPECIES_SLOWPOKE },
+    { 5, 5, SPECIES_PSYDUCK },
+    { 5, 5, SPECIES_SLOWPOKE },
 };
 
 const struct WildPokemonInfo sRoute6_FireRed_WaterMonsInfo = { 2, sRoute6_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sRoute6_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -6255,16 +5099,13 @@ const struct WildPokemon sRoute6_FireRed_FishingMons[] =
     { 20, 30, SPECIES_POLIWHIRL },
     { 15, 25, SPECIES_GYARADOS },
     { 15, 25, SPECIES_PSYDUCK },
-    { 25, 35, SPECIES_PSYDUCK },
+    { 25, 35, SPECIES_SLOWPOKE },
 };
 
 const struct WildPokemonInfo sRoute6_FireRed_FishingMonsInfo = { 20, sRoute6_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute6_LeafGreen_LandMons[] =
 {
     { 10, 10, SPECIES_MEOWTH },
@@ -6282,8 +5123,6 @@ const struct WildPokemon sRoute6_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute6_LeafGreen_LandMonsInfo = { 21, sRoute6_LeafGreen_LandMons };
-
-
 const struct WildPokemon sRoute6_LeafGreen_WaterMons[] =
 {
     { 20, 25, SPECIES_SLOWPOKE },
@@ -6293,9 +5132,6 @@ const struct WildPokemon sRoute6_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute6_LeafGreen_WaterMonsInfo = { 2, sRoute6_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sRoute6_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -6311,11 +5147,9 @@ const struct WildPokemon sRoute6_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute6_LeafGreen_FishingMonsInfo = { 20, sRoute6_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute7_FireRed_LandMons[] =
 {
     { 19, 19, SPECIES_PIDGEY },
@@ -6333,15 +5167,9 @@ const struct WildPokemon sRoute7_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute7_FireRed_LandMonsInfo = { 21, sRoute7_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute7_LeafGreen_LandMons[] =
 {
     { 19, 19, SPECIES_PIDGEY },
@@ -6359,14 +5187,9 @@ const struct WildPokemon sRoute7_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute7_LeafGreen_LandMonsInfo = { 21, sRoute7_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute8_FireRed_LandMons[] =
 {
     { 18, 18, SPECIES_PIDGEY },
@@ -6384,15 +5207,9 @@ const struct WildPokemon sRoute8_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute8_FireRed_LandMonsInfo = { 21, sRoute8_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute8_LeafGreen_LandMons[] =
 {
     { 18, 18, SPECIES_PIDGEY },
@@ -6410,14 +5227,9 @@ const struct WildPokemon sRoute8_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute8_LeafGreen_LandMonsInfo = { 21, sRoute8_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute9_FireRed_LandMons[] =
 {
     { 16, 16, SPECIES_SPEAROW },
@@ -6435,15 +5247,9 @@ const struct WildPokemon sRoute9_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute9_FireRed_LandMonsInfo = { 21, sRoute9_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute9_LeafGreen_LandMons[] =
 {
     { 16, 16, SPECIES_SPEAROW },
@@ -6461,14 +5267,9 @@ const struct WildPokemon sRoute9_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute9_LeafGreen_LandMonsInfo = { 21, sRoute9_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute10_FireRed_LandMons[] =
 {
     { 16, 16, SPECIES_SPEAROW },
@@ -6486,8 +5287,6 @@ const struct WildPokemon sRoute10_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute10_FireRed_LandMonsInfo = { 21, sRoute10_FireRed_LandMons };
-
-
 const struct WildPokemon sRoute10_FireRed_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -6497,9 +5296,6 @@ const struct WildPokemon sRoute10_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute10_FireRed_WaterMonsInfo = { 2, sRoute10_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sRoute10_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -6515,12 +5311,9 @@ const struct WildPokemon sRoute10_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute10_FireRed_FishingMonsInfo = { 20, sRoute10_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute10_LeafGreen_LandMons[] =
 {
     { 16, 16, SPECIES_SPEAROW },
@@ -6538,8 +5331,6 @@ const struct WildPokemon sRoute10_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute10_LeafGreen_LandMonsInfo = { 21, sRoute10_LeafGreen_LandMons };
-
-
 const struct WildPokemon sRoute10_LeafGreen_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -6549,9 +5340,6 @@ const struct WildPokemon sRoute10_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute10_LeafGreen_WaterMonsInfo = { 2, sRoute10_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sRoute10_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -6567,11 +5355,9 @@ const struct WildPokemon sRoute10_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute10_LeafGreen_FishingMonsInfo = { 20, sRoute10_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute11_FireRed_LandMons[] =
 {
     { 14, 14, SPECIES_EKANS },
@@ -6589,8 +5375,6 @@ const struct WildPokemon sRoute11_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute11_FireRed_LandMonsInfo = { 21, sRoute11_FireRed_LandMons };
-
-
 const struct WildPokemon sRoute11_FireRed_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -6600,9 +5384,6 @@ const struct WildPokemon sRoute11_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute11_FireRed_WaterMonsInfo = { 2, sRoute11_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sRoute11_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -6618,12 +5399,9 @@ const struct WildPokemon sRoute11_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute11_FireRed_FishingMonsInfo = { 20, sRoute11_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute11_LeafGreen_LandMons[] =
 {
     { 14, 14, SPECIES_SANDSHREW },
@@ -6641,8 +5419,6 @@ const struct WildPokemon sRoute11_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute11_LeafGreen_LandMonsInfo = { 21, sRoute11_LeafGreen_LandMons };
-
-
 const struct WildPokemon sRoute11_LeafGreen_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -6652,9 +5428,6 @@ const struct WildPokemon sRoute11_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute11_LeafGreen_WaterMonsInfo = { 2, sRoute11_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sRoute11_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -6670,11 +5443,9 @@ const struct WildPokemon sRoute11_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute11_LeafGreen_FishingMonsInfo = { 20, sRoute11_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute12_FireRed_LandMons[] =
 {
     { 24, 24, SPECIES_ODDISH },
@@ -6692,8 +5463,6 @@ const struct WildPokemon sRoute12_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute12_FireRed_LandMonsInfo = { 21, sRoute12_FireRed_LandMons };
-
-
 const struct WildPokemon sRoute12_FireRed_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -6703,9 +5472,6 @@ const struct WildPokemon sRoute12_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute12_FireRed_WaterMonsInfo = { 2, sRoute12_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sRoute12_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -6721,12 +5487,9 @@ const struct WildPokemon sRoute12_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute12_FireRed_FishingMonsInfo = { 60, sRoute12_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute12_LeafGreen_LandMons[] =
 {
     { 24, 24, SPECIES_BELLSPROUT },
@@ -6744,8 +5507,6 @@ const struct WildPokemon sRoute12_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute12_LeafGreen_LandMonsInfo = { 21, sRoute12_LeafGreen_LandMons };
-
-
 const struct WildPokemon sRoute12_LeafGreen_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -6755,9 +5516,6 @@ const struct WildPokemon sRoute12_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute12_LeafGreen_WaterMonsInfo = { 2, sRoute12_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sRoute12_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -6773,11 +5531,9 @@ const struct WildPokemon sRoute12_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute12_LeafGreen_FishingMonsInfo = { 60, sRoute12_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute13_FireRed_LandMons[] =
 {
     { 24, 24, SPECIES_ODDISH },
@@ -6795,8 +5551,6 @@ const struct WildPokemon sRoute13_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute13_FireRed_LandMonsInfo = { 21, sRoute13_FireRed_LandMons };
-
-
 const struct WildPokemon sRoute13_FireRed_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -6806,9 +5560,6 @@ const struct WildPokemon sRoute13_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute13_FireRed_WaterMonsInfo = { 2, sRoute13_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sRoute13_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -6824,12 +5575,9 @@ const struct WildPokemon sRoute13_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute13_FireRed_FishingMonsInfo = { 20, sRoute13_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute13_LeafGreen_LandMons[] =
 {
     { 24, 24, SPECIES_BELLSPROUT },
@@ -6847,8 +5595,6 @@ const struct WildPokemon sRoute13_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute13_LeafGreen_LandMonsInfo = { 21, sRoute13_LeafGreen_LandMons };
-
-
 const struct WildPokemon sRoute13_LeafGreen_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -6858,9 +5604,6 @@ const struct WildPokemon sRoute13_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute13_LeafGreen_WaterMonsInfo = { 2, sRoute13_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sRoute13_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -6876,11 +5619,9 @@ const struct WildPokemon sRoute13_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute13_LeafGreen_FishingMonsInfo = { 20, sRoute13_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute14_FireRed_LandMons[] =
 {
     { 24, 24, SPECIES_ODDISH },
@@ -6898,15 +5639,9 @@ const struct WildPokemon sRoute14_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute14_FireRed_LandMonsInfo = { 21, sRoute14_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute14_LeafGreen_LandMons[] =
 {
     { 24, 24, SPECIES_BELLSPROUT },
@@ -6924,14 +5659,9 @@ const struct WildPokemon sRoute14_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute14_LeafGreen_LandMonsInfo = { 21, sRoute14_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute15_FireRed_LandMons[] =
 {
     { 24, 24, SPECIES_ODDISH },
@@ -6949,15 +5679,9 @@ const struct WildPokemon sRoute15_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute15_FireRed_LandMonsInfo = { 21, sRoute15_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute15_LeafGreen_LandMons[] =
 {
     { 24, 24, SPECIES_BELLSPROUT },
@@ -6975,14 +5699,9 @@ const struct WildPokemon sRoute15_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute15_LeafGreen_LandMonsInfo = { 21, sRoute15_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute16_FireRed_LandMons[] =
 {
     { 20, 20, SPECIES_SPEAROW },
@@ -7000,15 +5719,9 @@ const struct WildPokemon sRoute16_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute16_FireRed_LandMonsInfo = { 21, sRoute16_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute16_LeafGreen_LandMons[] =
 {
     { 20, 20, SPECIES_SPEAROW },
@@ -7026,14 +5739,9 @@ const struct WildPokemon sRoute16_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute16_LeafGreen_LandMonsInfo = { 21, sRoute16_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute17_FireRed_LandMons[] =
 {
     { 20, 20, SPECIES_SPEAROW },
@@ -7051,15 +5759,9 @@ const struct WildPokemon sRoute17_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute17_FireRed_LandMonsInfo = { 21, sRoute17_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute17_LeafGreen_LandMons[] =
 {
     { 20, 20, SPECIES_SPEAROW },
@@ -7077,14 +5779,9 @@ const struct WildPokemon sRoute17_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute17_LeafGreen_LandMonsInfo = { 21, sRoute17_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute18_FireRed_LandMons[] =
 {
     { 20, 20, SPECIES_SPEAROW },
@@ -7102,15 +5799,9 @@ const struct WildPokemon sRoute18_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute18_FireRed_LandMonsInfo = { 21, sRoute18_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute18_LeafGreen_LandMons[] =
 {
     { 20, 20, SPECIES_SPEAROW },
@@ -7128,15 +5819,9 @@ const struct WildPokemon sRoute18_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute18_LeafGreen_LandMonsInfo = { 21, sRoute18_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
-
 const struct WildPokemon sRoute19_FireRed_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -7146,9 +5831,6 @@ const struct WildPokemon sRoute19_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute19_FireRed_WaterMonsInfo = { 2, sRoute19_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sRoute19_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -7164,13 +5846,9 @@ const struct WildPokemon sRoute19_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute19_FireRed_FishingMonsInfo = { 20, sRoute19_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
-
 const struct WildPokemon sRoute19_LeafGreen_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -7180,9 +5858,6 @@ const struct WildPokemon sRoute19_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute19_LeafGreen_WaterMonsInfo = { 2, sRoute19_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sRoute19_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -7198,12 +5873,9 @@ const struct WildPokemon sRoute19_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute19_LeafGreen_FishingMonsInfo = { 20, sRoute19_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
-
 const struct WildPokemon sRoute20_FireRed_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -7213,9 +5885,6 @@ const struct WildPokemon sRoute20_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute20_FireRed_WaterMonsInfo = { 2, sRoute20_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sRoute20_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -7231,13 +5900,9 @@ const struct WildPokemon sRoute20_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute20_FireRed_FishingMonsInfo = { 20, sRoute20_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
-
 const struct WildPokemon sRoute20_LeafGreen_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -7247,9 +5912,6 @@ const struct WildPokemon sRoute20_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute20_LeafGreen_WaterMonsInfo = { 2, sRoute20_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sRoute20_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -7265,11 +5927,9 @@ const struct WildPokemon sRoute20_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute20_LeafGreen_FishingMonsInfo = { 20, sRoute20_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute21North_FireRed_LandMons[] =
 {
     { 22, 22, SPECIES_TANGELA },
@@ -7287,8 +5947,6 @@ const struct WildPokemon sRoute21North_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute21North_FireRed_LandMonsInfo = { 14, sRoute21North_FireRed_LandMons };
-
-
 const struct WildPokemon sRoute21North_FireRed_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -7298,9 +5956,6 @@ const struct WildPokemon sRoute21North_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute21North_FireRed_WaterMonsInfo = { 2, sRoute21North_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sRoute21North_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -7316,12 +5971,9 @@ const struct WildPokemon sRoute21North_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute21North_FireRed_FishingMonsInfo = { 20, sRoute21North_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute21North_LeafGreen_LandMons[] =
 {
     { 22, 22, SPECIES_TANGELA },
@@ -7339,8 +5991,6 @@ const struct WildPokemon sRoute21North_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute21North_LeafGreen_LandMonsInfo = { 14, sRoute21North_LeafGreen_LandMons };
-
-
 const struct WildPokemon sRoute21North_LeafGreen_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -7350,9 +6000,6 @@ const struct WildPokemon sRoute21North_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute21North_LeafGreen_WaterMonsInfo = { 2, sRoute21North_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sRoute21North_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -7368,11 +6015,9 @@ const struct WildPokemon sRoute21North_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute21North_LeafGreen_FishingMonsInfo = { 20, sRoute21North_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute21South_FireRed_LandMons[] =
 {
     { 22, 22, SPECIES_TANGELA },
@@ -7390,8 +6035,6 @@ const struct WildPokemon sRoute21South_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute21South_FireRed_LandMonsInfo = { 14, sRoute21South_FireRed_LandMons };
-
-
 const struct WildPokemon sRoute21South_FireRed_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -7401,9 +6044,6 @@ const struct WildPokemon sRoute21South_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute21South_FireRed_WaterMonsInfo = { 2, sRoute21South_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sRoute21South_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -7419,12 +6059,9 @@ const struct WildPokemon sRoute21South_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute21South_FireRed_FishingMonsInfo = { 20, sRoute21South_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute21South_LeafGreen_LandMons[] =
 {
     { 22, 22, SPECIES_TANGELA },
@@ -7442,8 +6079,6 @@ const struct WildPokemon sRoute21South_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute21South_LeafGreen_LandMonsInfo = { 14, sRoute21South_LeafGreen_LandMons };
-
-
 const struct WildPokemon sRoute21South_LeafGreen_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -7453,9 +6088,6 @@ const struct WildPokemon sRoute21South_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute21South_LeafGreen_WaterMonsInfo = { 2, sRoute21South_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sRoute21South_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -7471,11 +6103,9 @@ const struct WildPokemon sRoute21South_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute21South_LeafGreen_FishingMonsInfo = { 20, sRoute21South_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute22_FireRed_LandMons[] =
 {
     { 3, 3, SPECIES_NIDORAN_F },
@@ -7493,8 +6123,6 @@ const struct WildPokemon sRoute22_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute22_FireRed_LandMonsInfo = { 21, sRoute22_FireRed_LandMons };
-
-
 const struct WildPokemon sRoute22_FireRed_WaterMons[] =
 {
     { 20, 25, SPECIES_PSYDUCK },
@@ -7504,9 +6132,6 @@ const struct WildPokemon sRoute22_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute22_FireRed_WaterMonsInfo = { 2, sRoute22_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sRoute22_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -7522,12 +6147,9 @@ const struct WildPokemon sRoute22_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute22_FireRed_FishingMonsInfo = { 20, sRoute22_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute22_LeafGreen_LandMons[] =
 {
     { 3, 3, SPECIES_RATTATA },
@@ -7545,8 +6167,6 @@ const struct WildPokemon sRoute22_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute22_LeafGreen_LandMonsInfo = { 21, sRoute22_LeafGreen_LandMons };
-
-
 const struct WildPokemon sRoute22_LeafGreen_WaterMons[] =
 {
     { 20, 25, SPECIES_SLOWPOKE },
@@ -7556,9 +6176,6 @@ const struct WildPokemon sRoute22_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute22_LeafGreen_WaterMonsInfo = { 2, sRoute22_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sRoute22_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -7574,11 +6191,9 @@ const struct WildPokemon sRoute22_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute22_LeafGreen_FishingMonsInfo = { 20, sRoute22_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute23_FireRed_LandMons[] =
 {
     { 32, 32, SPECIES_MANKEY },
@@ -7596,8 +6211,6 @@ const struct WildPokemon sRoute23_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute23_FireRed_LandMonsInfo = { 21, sRoute23_FireRed_LandMons };
-
-
 const struct WildPokemon sRoute23_FireRed_WaterMons[] =
 {
     { 20, 25, SPECIES_PSYDUCK },
@@ -7607,9 +6220,6 @@ const struct WildPokemon sRoute23_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute23_FireRed_WaterMonsInfo = { 2, sRoute23_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sRoute23_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -7625,12 +6235,9 @@ const struct WildPokemon sRoute23_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute23_FireRed_FishingMonsInfo = { 20, sRoute23_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute23_LeafGreen_LandMons[] =
 {
     { 32, 32, SPECIES_MANKEY },
@@ -7648,8 +6255,6 @@ const struct WildPokemon sRoute23_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute23_LeafGreen_LandMonsInfo = { 21, sRoute23_LeafGreen_LandMons };
-
-
 const struct WildPokemon sRoute23_LeafGreen_WaterMons[] =
 {
     { 20, 25, SPECIES_SLOWPOKE },
@@ -7659,9 +6264,6 @@ const struct WildPokemon sRoute23_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute23_LeafGreen_WaterMonsInfo = { 2, sRoute23_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sRoute23_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -7677,42 +6279,35 @@ const struct WildPokemon sRoute23_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute23_LeafGreen_FishingMonsInfo = { 20, sRoute23_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute24_FireRed_LandMons[] =
 {
-    { 7, 7, SPECIES_WEEDLE },
-    { 7, 7, SPECIES_CATERPIE },
-    { 11, 11, SPECIES_PIDGEY },
+    { 7, 7, SPECIES_BELLSPROUT },
+    { 7, 7, SPECIES_PIDGEY },
+    { 11, 11, SPECIES_VENONAT },
     { 12, 12, SPECIES_ODDISH },
     { 13, 13, SPECIES_ODDISH },
     { 10, 10, SPECIES_ABRA },
     { 13, 13, SPECIES_PIDGEY },
     { 14, 14, SPECIES_ODDISH },
-    { 8, 8, SPECIES_KAKUNA },
+    { 8, 8, SPECIES_BELLSPROUT },
     { 8, 8, SPECIES_ABRA },
-    { 8, 8, SPECIES_METAPOD },
+    { 8, 8, SPECIES_BELLSPROUT },
     { 12, 12, SPECIES_ABRA },
 };
 
 const struct WildPokemonInfo sRoute24_FireRed_LandMonsInfo = { 21, sRoute24_FireRed_LandMons };
-
-
 const struct WildPokemon sRoute24_FireRed_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
     { 10, 20, SPECIES_TENTACOOL },
-    { 5, 5, SPECIES_NONE },
-    { 5, 5, SPECIES_NONE },
+    { 5, 5, SPECIES_TENTACOOL },
+    { 5, 5, SPECIES_TENTACOOL },
 };
 
 const struct WildPokemonInfo sRoute24_FireRed_WaterMonsInfo = { 2, sRoute24_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sRoute24_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -7721,19 +6316,16 @@ const struct WildPokemon sRoute24_FireRed_FishingMons[] =
     { 5, 15, SPECIES_MAGIKARP },
     { 5, 15, SPECIES_KRABBY },
     { 15, 25, SPECIES_HORSEA },
-    { 15, 25, SPECIES_HORSEA },
+    { 15, 25, SPECIES_KRABBY },
     { 15, 25, SPECIES_GYARADOS },
-    { 25, 35, SPECIES_HORSEA },
+    { 25, 35, SPECIES_SLOWPOKE },
     { 25, 35, SPECIES_PSYDUCK },
 };
 
 const struct WildPokemonInfo sRoute24_FireRed_FishingMonsInfo = { 20, sRoute24_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute24_LeafGreen_LandMons[] =
 {
     { 7, 7, SPECIES_WEEDLE },
@@ -7751,8 +6343,6 @@ const struct WildPokemon sRoute24_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute24_LeafGreen_LandMonsInfo = { 21, sRoute24_LeafGreen_LandMons };
-
-
 const struct WildPokemon sRoute24_LeafGreen_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -7762,9 +6352,6 @@ const struct WildPokemon sRoute24_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute24_LeafGreen_WaterMonsInfo = { 2, sRoute24_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sRoute24_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -7780,30 +6367,26 @@ const struct WildPokemon sRoute24_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute24_LeafGreen_FishingMonsInfo = { 20, sRoute24_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sRoute25_FireRed_LandMons[] =
 {
-    { 8, 8, SPECIES_WEEDLE },
-    { 8, 8, SPECIES_CATERPIE },
-    { 13, 13, SPECIES_PIDGEY },
+    { 8, 8, SPECIES_BELLSPROUT },
+    { 8, 8, SPECIES_PIDGEY },
+    { 13, 13, SPECIES_VENONAT },
     { 14, 14, SPECIES_ODDISH },
     { 13, 13, SPECIES_ODDISH },
     { 11, 11, SPECIES_ABRA },
     { 11, 11, SPECIES_PIDGEY },
     { 12, 12, SPECIES_ODDISH },
-    { 9, 9, SPECIES_KAKUNA },
+    { 9, 9, SPECIES_BELLSPROUT },
     { 9, 9, SPECIES_ABRA },
-    { 9, 9, SPECIES_METAPOD },
+    { 9, 9, SPECIES_BELLSPROUT },
     { 13, 13, SPECIES_ABRA },
 };
 
 const struct WildPokemonInfo sRoute25_FireRed_LandMonsInfo = { 21, sRoute25_FireRed_LandMons };
-
-
 const struct WildPokemon sRoute25_FireRed_WaterMons[] =
 {
     { 20, 25, SPECIES_PSYDUCK },
@@ -7813,9 +6396,6 @@ const struct WildPokemon sRoute25_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute25_FireRed_WaterMonsInfo = { 2, sRoute25_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sRoute25_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -7831,12 +6411,9 @@ const struct WildPokemon sRoute25_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute25_FireRed_FishingMonsInfo = { 20, sRoute25_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sRoute25_LeafGreen_LandMons[] =
 {
     { 8, 8, SPECIES_WEEDLE },
@@ -7854,8 +6431,6 @@ const struct WildPokemon sRoute25_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sRoute25_LeafGreen_LandMonsInfo = { 21, sRoute25_LeafGreen_LandMons };
-
-
 const struct WildPokemon sRoute25_LeafGreen_WaterMons[] =
 {
     { 20, 25, SPECIES_SLOWPOKE },
@@ -7865,9 +6440,6 @@ const struct WildPokemon sRoute25_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sRoute25_LeafGreen_WaterMonsInfo = { 2, sRoute25_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sRoute25_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -7883,12 +6455,9 @@ const struct WildPokemon sRoute25_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sRoute25_LeafGreen_FishingMonsInfo = { 20, sRoute25_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
-
 const struct WildPokemon sPalletTown_FireRed_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -7898,9 +6467,6 @@ const struct WildPokemon sPalletTown_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sPalletTown_FireRed_WaterMonsInfo = { 1, sPalletTown_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sPalletTown_FireRed_FishingMons[] =
 {
     { 5, 10, SPECIES_MAGIKARP },
@@ -7916,13 +6482,9 @@ const struct WildPokemon sPalletTown_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sPalletTown_FireRed_FishingMonsInfo = { 10, sPalletTown_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
-
 const struct WildPokemon sPalletTown_LeafGreen_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -7932,9 +6494,6 @@ const struct WildPokemon sPalletTown_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sPalletTown_LeafGreen_WaterMonsInfo = { 1, sPalletTown_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sPalletTown_LeafGreen_FishingMons[] =
 {
     { 5, 10, SPECIES_MAGIKARP },
@@ -7950,12 +6509,9 @@ const struct WildPokemon sPalletTown_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sPalletTown_LeafGreen_FishingMonsInfo = { 10, sPalletTown_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
-
 const struct WildPokemon sViridianCity_FireRed_WaterMons[] =
 {
     { 20, 25, SPECIES_PSYDUCK },
@@ -7965,9 +6521,6 @@ const struct WildPokemon sViridianCity_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sViridianCity_FireRed_WaterMonsInfo = { 1, sViridianCity_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sViridianCity_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -7983,13 +6536,9 @@ const struct WildPokemon sViridianCity_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sViridianCity_FireRed_FishingMonsInfo = { 10, sViridianCity_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
-
 const struct WildPokemon sViridianCity_LeafGreen_WaterMons[] =
 {
     { 20, 25, SPECIES_SLOWPOKE },
@@ -7999,9 +6548,6 @@ const struct WildPokemon sViridianCity_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sViridianCity_LeafGreen_WaterMonsInfo = { 1, sViridianCity_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sViridianCity_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -8017,12 +6563,9 @@ const struct WildPokemon sViridianCity_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sViridianCity_LeafGreen_FishingMonsInfo = { 10, sViridianCity_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
-
 const struct WildPokemon sCeruleanCity_FireRed_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -8032,9 +6575,6 @@ const struct WildPokemon sCeruleanCity_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sCeruleanCity_FireRed_WaterMonsInfo = { 1, sCeruleanCity_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sCeruleanCity_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -8043,20 +6583,16 @@ const struct WildPokemon sCeruleanCity_FireRed_FishingMons[] =
     { 5, 15, SPECIES_MAGIKARP },
     { 5, 15, SPECIES_KRABBY },
     { 15, 25, SPECIES_HORSEA },
-    { 15, 25, SPECIES_HORSEA },
+    { 15, 25, SPECIES_KRABBY },
     { 15, 25, SPECIES_GYARADOS },
-    { 25, 35, SPECIES_HORSEA },
+    { 25, 35, SPECIES_SLOWPOKE },
     { 25, 35, SPECIES_PSYDUCK },
 };
 
 const struct WildPokemonInfo sCeruleanCity_FireRed_FishingMonsInfo = { 10, sCeruleanCity_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
-
 const struct WildPokemon sCeruleanCity_LeafGreen_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -8066,9 +6602,6 @@ const struct WildPokemon sCeruleanCity_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sCeruleanCity_LeafGreen_WaterMonsInfo = { 1, sCeruleanCity_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sCeruleanCity_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -8084,24 +6617,18 @@ const struct WildPokemon sCeruleanCity_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sCeruleanCity_LeafGreen_FishingMonsInfo = { 10, sCeruleanCity_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
-
 const struct WildPokemon sVermilionCity_FireRed_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
     { 10, 20, SPECIES_TENTACOOL },
-    { 5, 5, SPECIES_NONE },
-    { 5, 5, SPECIES_NONE },
+    { 5, 5, SPECIES_TENTACOOL },
+    { 5, 5, SPECIES_TENTACOOL },
 };
 
 const struct WildPokemonInfo sVermilionCity_FireRed_WaterMonsInfo = { 1, sVermilionCity_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sVermilionCity_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -8117,13 +6644,9 @@ const struct WildPokemon sVermilionCity_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sVermilionCity_FireRed_FishingMonsInfo = { 10, sVermilionCity_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
-
 const struct WildPokemon sVermilionCity_LeafGreen_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -8133,9 +6656,6 @@ const struct WildPokemon sVermilionCity_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sVermilionCity_LeafGreen_WaterMonsInfo = { 1, sVermilionCity_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sVermilionCity_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -8151,12 +6671,9 @@ const struct WildPokemon sVermilionCity_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sVermilionCity_LeafGreen_FishingMonsInfo = { 10, sVermilionCity_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
-
 const struct WildPokemon sCeladonCity_FireRed_WaterMons[] =
 {
     { 5, 10, SPECIES_PSYDUCK },
@@ -8166,9 +6683,6 @@ const struct WildPokemon sCeladonCity_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sCeladonCity_FireRed_WaterMonsInfo = { 1, sCeladonCity_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sCeladonCity_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -8184,13 +6698,9 @@ const struct WildPokemon sCeladonCity_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sCeladonCity_FireRed_FishingMonsInfo = { 10, sCeladonCity_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
-
 const struct WildPokemon sCeladonCity_LeafGreen_WaterMons[] =
 {
     { 5, 10, SPECIES_SLOWPOKE },
@@ -8200,9 +6710,6 @@ const struct WildPokemon sCeladonCity_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sCeladonCity_LeafGreen_WaterMonsInfo = { 1, sCeladonCity_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sCeladonCity_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -8218,12 +6725,9 @@ const struct WildPokemon sCeladonCity_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sCeladonCity_LeafGreen_FishingMonsInfo = { 10, sCeladonCity_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
-
 const struct WildPokemon sFuchsiaCity_FireRed_WaterMons[] =
 {
     { 20, 25, SPECIES_PSYDUCK },
@@ -8233,9 +6737,6 @@ const struct WildPokemon sFuchsiaCity_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sFuchsiaCity_FireRed_WaterMonsInfo = { 1, sFuchsiaCity_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sFuchsiaCity_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -8251,13 +6752,9 @@ const struct WildPokemon sFuchsiaCity_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sFuchsiaCity_FireRed_FishingMonsInfo = { 10, sFuchsiaCity_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
-
 const struct WildPokemon sFuchsiaCity_LeafGreen_WaterMons[] =
 {
     { 20, 25, SPECIES_SLOWPOKE },
@@ -8267,9 +6764,6 @@ const struct WildPokemon sFuchsiaCity_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sFuchsiaCity_LeafGreen_WaterMonsInfo = { 1, sFuchsiaCity_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sFuchsiaCity_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -8285,12 +6779,9 @@ const struct WildPokemon sFuchsiaCity_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sFuchsiaCity_LeafGreen_FishingMonsInfo = { 10, sFuchsiaCity_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
-
 const struct WildPokemon sCinnabarIsland_FireRed_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -8300,9 +6791,6 @@ const struct WildPokemon sCinnabarIsland_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sCinnabarIsland_FireRed_WaterMonsInfo = { 1, sCinnabarIsland_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sCinnabarIsland_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -8318,13 +6806,9 @@ const struct WildPokemon sCinnabarIsland_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sCinnabarIsland_FireRed_FishingMonsInfo = { 10, sCinnabarIsland_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
-
 const struct WildPokemon sCinnabarIsland_LeafGreen_WaterMons[] =
 {
     { 5, 10, SPECIES_TENTACOOL },
@@ -8334,9 +6818,6 @@ const struct WildPokemon sCinnabarIsland_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sCinnabarIsland_LeafGreen_WaterMonsInfo = { 1, sCinnabarIsland_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sCinnabarIsland_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -8352,12 +6833,9 @@ const struct WildPokemon sCinnabarIsland_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sCinnabarIsland_LeafGreen_FishingMonsInfo = { 10, sCinnabarIsland_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
-
 const struct WildPokemon sOneIsland_FireRed_WaterMons[] =
 {
     { 5, 20, SPECIES_TENTACOOL },
@@ -8367,9 +6845,6 @@ const struct WildPokemon sOneIsland_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sOneIsland_FireRed_WaterMonsInfo = { 1, sOneIsland_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sOneIsland_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -8385,13 +6860,9 @@ const struct WildPokemon sOneIsland_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sOneIsland_FireRed_FishingMonsInfo = { 10, sOneIsland_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
-
 const struct WildPokemon sOneIsland_LeafGreen_WaterMons[] =
 {
     { 5, 20, SPECIES_TENTACOOL },
@@ -8401,9 +6872,6 @@ const struct WildPokemon sOneIsland_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sOneIsland_LeafGreen_WaterMonsInfo = { 1, sOneIsland_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sOneIsland_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -8419,12 +6887,9 @@ const struct WildPokemon sOneIsland_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sOneIsland_LeafGreen_FishingMonsInfo = { 10, sOneIsland_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
-
 const struct WildPokemon sFourIsland_FireRed_WaterMons[] =
 {
     { 5, 15, SPECIES_WOOPER },
@@ -8434,9 +6899,6 @@ const struct WildPokemon sFourIsland_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sFourIsland_FireRed_WaterMonsInfo = { 2, sFourIsland_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sFourIsland_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -8452,13 +6914,9 @@ const struct WildPokemon sFourIsland_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sFourIsland_FireRed_FishingMonsInfo = { 20, sFourIsland_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
-
 const struct WildPokemon sFourIsland_LeafGreen_WaterMons[] =
 {
     { 5, 15, SPECIES_MARILL },
@@ -8468,9 +6926,6 @@ const struct WildPokemon sFourIsland_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sFourIsland_LeafGreen_WaterMonsInfo = { 2, sFourIsland_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sFourIsland_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -8486,12 +6941,9 @@ const struct WildPokemon sFourIsland_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sFourIsland_LeafGreen_FishingMonsInfo = { 20, sFourIsland_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
-
 const struct WildPokemon sFiveIsland_FireRed_WaterMons[] =
 {
     { 5, 35, SPECIES_TENTACOOL },
@@ -8501,9 +6953,6 @@ const struct WildPokemon sFiveIsland_FireRed_WaterMons[] =
 };
 
 const struct WildPokemonInfo sFiveIsland_FireRed_WaterMonsInfo = { 1, sFiveIsland_FireRed_WaterMons };
-
-
-
 const struct WildPokemon sFiveIsland_FireRed_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -8519,13 +6968,9 @@ const struct WildPokemon sFiveIsland_FireRed_FishingMons[] =
 };
 
 const struct WildPokemonInfo sFiveIsland_FireRed_FishingMonsInfo = { 10, sFiveIsland_FireRed_FishingMons };
-
 #endif
 
 #ifdef LEAFGREEN
-
-
-
 const struct WildPokemon sFiveIsland_LeafGreen_WaterMons[] =
 {
     { 5, 35, SPECIES_TENTACOOL },
@@ -8535,9 +6980,6 @@ const struct WildPokemon sFiveIsland_LeafGreen_WaterMons[] =
 };
 
 const struct WildPokemonInfo sFiveIsland_LeafGreen_WaterMonsInfo = { 1, sFiveIsland_LeafGreen_WaterMons };
-
-
-
 const struct WildPokemon sFiveIsland_LeafGreen_FishingMons[] =
 {
     { 5, 5, SPECIES_MAGIKARP },
@@ -8553,11 +6995,9 @@ const struct WildPokemon sFiveIsland_LeafGreen_FishingMons[] =
 };
 
 const struct WildPokemonInfo sFiveIsland_LeafGreen_FishingMonsInfo = { 10, sFiveIsland_LeafGreen_FishingMons };
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSixIslandAlteringCave_FireRed_LandMons[] =
 {
     { 10, 10, SPECIES_ZUBAT },
@@ -8575,14 +7015,9 @@ const struct WildPokemon sSixIslandAlteringCave_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandAlteringCave_FireRed_LandMonsInfo = { 5, sSixIslandAlteringCave_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSixIslandAlteringCave_2_FireRed_LandMons[] =
 {
     { 7, 7, SPECIES_MAREEP },
@@ -8600,14 +7035,9 @@ const struct WildPokemon sSixIslandAlteringCave_2_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandAlteringCave_2_FireRed_LandMonsInfo = { 5, sSixIslandAlteringCave_2_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSixIslandAlteringCave_3_FireRed_LandMons[] =
 {
     { 23, 23, SPECIES_PINECO },
@@ -8625,14 +7055,9 @@ const struct WildPokemon sSixIslandAlteringCave_3_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandAlteringCave_3_FireRed_LandMonsInfo = { 5, sSixIslandAlteringCave_3_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSixIslandAlteringCave_4_FireRed_LandMons[] =
 {
     { 16, 16, SPECIES_HOUNDOUR },
@@ -8650,14 +7075,9 @@ const struct WildPokemon sSixIslandAlteringCave_4_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandAlteringCave_4_FireRed_LandMonsInfo = { 5, sSixIslandAlteringCave_4_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSixIslandAlteringCave_5_FireRed_LandMons[] =
 {
     { 22, 22, SPECIES_TEDDIURSA },
@@ -8675,14 +7095,9 @@ const struct WildPokemon sSixIslandAlteringCave_5_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandAlteringCave_5_FireRed_LandMonsInfo = { 5, sSixIslandAlteringCave_5_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSixIslandAlteringCave_6_FireRed_LandMons[] =
 {
     { 22, 22, SPECIES_AIPOM },
@@ -8700,14 +7115,9 @@ const struct WildPokemon sSixIslandAlteringCave_6_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandAlteringCave_6_FireRed_LandMonsInfo = { 5, sSixIslandAlteringCave_6_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSixIslandAlteringCave_7_FireRed_LandMons[] =
 {
     { 22, 22, SPECIES_SHUCKLE },
@@ -8725,14 +7135,9 @@ const struct WildPokemon sSixIslandAlteringCave_7_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandAlteringCave_7_FireRed_LandMonsInfo = { 5, sSixIslandAlteringCave_7_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSixIslandAlteringCave_8_FireRed_LandMons[] =
 {
     { 22, 22, SPECIES_STANTLER },
@@ -8750,14 +7155,9 @@ const struct WildPokemon sSixIslandAlteringCave_8_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandAlteringCave_8_FireRed_LandMonsInfo = { 5, sSixIslandAlteringCave_8_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef FIRERED
-
 const struct WildPokemon sSixIslandAlteringCave_9_FireRed_LandMons[] =
 {
     { 22, 22, SPECIES_SMEARGLE },
@@ -8775,15 +7175,9 @@ const struct WildPokemon sSixIslandAlteringCave_9_FireRed_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandAlteringCave_9_FireRed_LandMonsInfo = { 5, sSixIslandAlteringCave_9_FireRed_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSixIslandAlteringCave_LeafGreen_LandMons[] =
 {
     { 10, 10, SPECIES_ZUBAT },
@@ -8801,15 +7195,9 @@ const struct WildPokemon sSixIslandAlteringCave_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandAlteringCave_LeafGreen_LandMonsInfo = { 7, sSixIslandAlteringCave_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSixIslandAlteringCave_2_LeafGreen_LandMons[] =
 {
     { 7, 7, SPECIES_MAREEP },
@@ -8827,15 +7215,9 @@ const struct WildPokemon sSixIslandAlteringCave_2_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandAlteringCave_2_LeafGreen_LandMonsInfo = { 7, sSixIslandAlteringCave_2_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSixIslandAlteringCave_3_LeafGreen_LandMons[] =
 {
     { 23, 23, SPECIES_PINECO },
@@ -8853,15 +7235,9 @@ const struct WildPokemon sSixIslandAlteringCave_3_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandAlteringCave_3_LeafGreen_LandMonsInfo = { 7, sSixIslandAlteringCave_3_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSixIslandAlteringCave_4_LeafGreen_LandMons[] =
 {
     { 16, 16, SPECIES_HOUNDOUR },
@@ -8879,15 +7255,9 @@ const struct WildPokemon sSixIslandAlteringCave_4_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandAlteringCave_4_LeafGreen_LandMonsInfo = { 7, sSixIslandAlteringCave_4_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSixIslandAlteringCave_5_LeafGreen_LandMons[] =
 {
     { 22, 22, SPECIES_TEDDIURSA },
@@ -8905,15 +7275,9 @@ const struct WildPokemon sSixIslandAlteringCave_5_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandAlteringCave_5_LeafGreen_LandMonsInfo = { 7, sSixIslandAlteringCave_5_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSixIslandAlteringCave_6_LeafGreen_LandMons[] =
 {
     { 22, 22, SPECIES_AIPOM },
@@ -8931,15 +7295,9 @@ const struct WildPokemon sSixIslandAlteringCave_6_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandAlteringCave_6_LeafGreen_LandMonsInfo = { 7, sSixIslandAlteringCave_6_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSixIslandAlteringCave_7_LeafGreen_LandMons[] =
 {
     { 22, 22, SPECIES_SHUCKLE },
@@ -8957,15 +7315,9 @@ const struct WildPokemon sSixIslandAlteringCave_7_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandAlteringCave_7_LeafGreen_LandMonsInfo = { 7, sSixIslandAlteringCave_7_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSixIslandAlteringCave_8_LeafGreen_LandMons[] =
 {
     { 22, 22, SPECIES_STANTLER },
@@ -8983,15 +7335,9 @@ const struct WildPokemon sSixIslandAlteringCave_8_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandAlteringCave_8_LeafGreen_LandMonsInfo = { 7, sSixIslandAlteringCave_8_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 #ifdef LEAFGREEN
-
-
 const struct WildPokemon sSixIslandAlteringCave_9_LeafGreen_LandMons[] =
 {
     { 22, 22, SPECIES_SMEARGLE },
@@ -9009,10 +7355,6 @@ const struct WildPokemon sSixIslandAlteringCave_9_LeafGreen_LandMons[] =
 };
 
 const struct WildPokemonInfo sSixIslandAlteringCave_9_LeafGreen_LandMonsInfo = { 7, sSixIslandAlteringCave_9_LeafGreen_LandMons };
-
-
-
-
 #endif
 
 
@@ -9029,7 +7371,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SEVEN_ISLAND_TANOBY_RUINS_MONEAN_CHAMBER),
         .mapNum = MAP_NUM(SEVEN_ISLAND_TANOBY_RUINS_MONEAN_CHAMBER),
@@ -9050,7 +7391,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SEVEN_ISLAND_TANOBY_RUINS_LIPTOO_CHAMBER),
         .mapNum = MAP_NUM(SEVEN_ISLAND_TANOBY_RUINS_LIPTOO_CHAMBER),
@@ -9071,7 +7411,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SEVEN_ISLAND_TANOBY_RUINS_WEEPTH_CHAMBER),
         .mapNum = MAP_NUM(SEVEN_ISLAND_TANOBY_RUINS_WEEPTH_CHAMBER),
@@ -9092,7 +7431,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SEVEN_ISLAND_TANOBY_RUINS_DILFORD_CHAMBER),
         .mapNum = MAP_NUM(SEVEN_ISLAND_TANOBY_RUINS_DILFORD_CHAMBER),
@@ -9113,7 +7451,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SEVEN_ISLAND_TANOBY_RUINS_SCUFIB_CHAMBER),
         .mapNum = MAP_NUM(SEVEN_ISLAND_TANOBY_RUINS_SCUFIB_CHAMBER),
@@ -9134,7 +7471,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SEVEN_ISLAND_TANOBY_RUINS_RIXY_CHAMBER),
         .mapNum = MAP_NUM(SEVEN_ISLAND_TANOBY_RUINS_RIXY_CHAMBER),
@@ -9155,7 +7491,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SEVEN_ISLAND_TANOBY_RUINS_VIAPOIS_CHAMBER),
         .mapNum = MAP_NUM(SEVEN_ISLAND_TANOBY_RUINS_VIAPOIS_CHAMBER),
@@ -9176,7 +7511,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(VIRIDIAN_FOREST),
         .mapNum = MAP_NUM(VIRIDIAN_FOREST),
@@ -9197,7 +7531,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(MT_MOON_1F),
         .mapNum = MAP_NUM(MT_MOON_1F),
@@ -9218,7 +7551,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(MT_MOON_B1F),
         .mapNum = MAP_NUM(MT_MOON_B1F),
@@ -9239,7 +7571,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(MT_MOON_B2F),
         .mapNum = MAP_NUM(MT_MOON_B2F),
@@ -9260,7 +7591,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SSANNE_EXTERIOR),
         .mapNum = MAP_NUM(SSANNE_EXTERIOR),
@@ -9281,7 +7611,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(DIGLETTS_CAVE_B1F),
         .mapNum = MAP_NUM(DIGLETTS_CAVE_B1F),
@@ -9302,7 +7631,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(VICTORY_ROAD_1F),
         .mapNum = MAP_NUM(VICTORY_ROAD_1F),
@@ -9323,7 +7651,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(VICTORY_ROAD_2F),
         .mapNum = MAP_NUM(VICTORY_ROAD_2F),
@@ -9344,7 +7671,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(VICTORY_ROAD_3F),
         .mapNum = MAP_NUM(VICTORY_ROAD_3F),
@@ -9365,7 +7691,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(POKEMON_MANSION_1F),
         .mapNum = MAP_NUM(POKEMON_MANSION_1F),
@@ -9386,7 +7711,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(POKEMON_MANSION_2F),
         .mapNum = MAP_NUM(POKEMON_MANSION_2F),
@@ -9407,7 +7731,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(POKEMON_MANSION_3F),
         .mapNum = MAP_NUM(POKEMON_MANSION_3F),
@@ -9428,7 +7751,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(POKEMON_MANSION_B1F),
         .mapNum = MAP_NUM(POKEMON_MANSION_B1F),
@@ -9449,7 +7771,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SAFARI_ZONE_CENTER),
         .mapNum = MAP_NUM(SAFARI_ZONE_CENTER),
@@ -9470,7 +7791,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SAFARI_ZONE_EAST),
         .mapNum = MAP_NUM(SAFARI_ZONE_EAST),
@@ -9491,7 +7811,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SAFARI_ZONE_NORTH),
         .mapNum = MAP_NUM(SAFARI_ZONE_NORTH),
@@ -9512,7 +7831,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SAFARI_ZONE_WEST),
         .mapNum = MAP_NUM(SAFARI_ZONE_WEST),
@@ -9533,7 +7851,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(CERULEAN_CAVE_1F),
         .mapNum = MAP_NUM(CERULEAN_CAVE_1F),
@@ -9554,7 +7871,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(CERULEAN_CAVE_2F),
         .mapNum = MAP_NUM(CERULEAN_CAVE_2F),
@@ -9575,7 +7891,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(CERULEAN_CAVE_B1F),
         .mapNum = MAP_NUM(CERULEAN_CAVE_B1F),
@@ -9596,7 +7911,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROCK_TUNNEL_1F),
         .mapNum = MAP_NUM(ROCK_TUNNEL_1F),
@@ -9617,7 +7931,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROCK_TUNNEL_B1F),
         .mapNum = MAP_NUM(ROCK_TUNNEL_B1F),
@@ -9638,7 +7951,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SEAFOAM_ISLANDS_1F),
         .mapNum = MAP_NUM(SEAFOAM_ISLANDS_1F),
@@ -9659,7 +7971,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SEAFOAM_ISLANDS_B1F),
         .mapNum = MAP_NUM(SEAFOAM_ISLANDS_B1F),
@@ -9680,7 +7991,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SEAFOAM_ISLANDS_B2F),
         .mapNum = MAP_NUM(SEAFOAM_ISLANDS_B2F),
@@ -9701,7 +8011,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SEAFOAM_ISLANDS_B3F),
         .mapNum = MAP_NUM(SEAFOAM_ISLANDS_B3F),
@@ -9722,7 +8031,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SEAFOAM_ISLANDS_B4F),
         .mapNum = MAP_NUM(SEAFOAM_ISLANDS_B4F),
@@ -9743,7 +8051,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(POKEMON_TOWER_3F),
         .mapNum = MAP_NUM(POKEMON_TOWER_3F),
@@ -9764,7 +8071,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(POKEMON_TOWER_4F),
         .mapNum = MAP_NUM(POKEMON_TOWER_4F),
@@ -9785,7 +8091,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(POKEMON_TOWER_5F),
         .mapNum = MAP_NUM(POKEMON_TOWER_5F),
@@ -9806,7 +8111,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(POKEMON_TOWER_6F),
         .mapNum = MAP_NUM(POKEMON_TOWER_6F),
@@ -9827,7 +8131,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(POKEMON_TOWER_7F),
         .mapNum = MAP_NUM(POKEMON_TOWER_7F),
@@ -9848,7 +8151,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(POWER_PLANT),
         .mapNum = MAP_NUM(POWER_PLANT),
@@ -9869,7 +8171,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(MT_EMBER_EXTERIOR),
         .mapNum = MAP_NUM(MT_EMBER_EXTERIOR),
@@ -9890,7 +8191,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(MT_EMBER_SUMMIT_PATH_1F),
         .mapNum = MAP_NUM(MT_EMBER_SUMMIT_PATH_1F),
@@ -9911,7 +8211,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(MT_EMBER_SUMMIT_PATH_2F),
         .mapNum = MAP_NUM(MT_EMBER_SUMMIT_PATH_2F),
@@ -9932,7 +8231,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(MT_EMBER_SUMMIT_PATH_3F),
         .mapNum = MAP_NUM(MT_EMBER_SUMMIT_PATH_3F),
@@ -9953,7 +8251,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(MT_EMBER_RUBY_PATH_1F),
         .mapNum = MAP_NUM(MT_EMBER_RUBY_PATH_1F),
@@ -9974,7 +8271,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(MT_EMBER_RUBY_PATH_B1F),
         .mapNum = MAP_NUM(MT_EMBER_RUBY_PATH_B1F),
@@ -9995,7 +8291,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(MT_EMBER_RUBY_PATH_B2F),
         .mapNum = MAP_NUM(MT_EMBER_RUBY_PATH_B2F),
@@ -10016,7 +8311,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(MT_EMBER_RUBY_PATH_B3F),
         .mapNum = MAP_NUM(MT_EMBER_RUBY_PATH_B3F),
@@ -10037,7 +8331,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(MT_EMBER_RUBY_PATH_B1F_STAIRS),
         .mapNum = MAP_NUM(MT_EMBER_RUBY_PATH_B1F_STAIRS),
@@ -10058,7 +8351,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(MT_EMBER_RUBY_PATH_B2F_STAIRS),
         .mapNum = MAP_NUM(MT_EMBER_RUBY_PATH_B2F_STAIRS),
@@ -10079,7 +8371,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(THREE_ISLAND_BERRY_FOREST),
         .mapNum = MAP_NUM(THREE_ISLAND_BERRY_FOREST),
@@ -10100,7 +8391,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FOUR_ISLAND_ICEFALL_CAVE_ENTRANCE),
         .mapNum = MAP_NUM(FOUR_ISLAND_ICEFALL_CAVE_ENTRANCE),
@@ -10121,7 +8411,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FOUR_ISLAND_ICEFALL_CAVE_1F),
         .mapNum = MAP_NUM(FOUR_ISLAND_ICEFALL_CAVE_1F),
@@ -10142,7 +8431,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FOUR_ISLAND_ICEFALL_CAVE_B1F),
         .mapNum = MAP_NUM(FOUR_ISLAND_ICEFALL_CAVE_B1F),
@@ -10163,7 +8451,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FOUR_ISLAND_ICEFALL_CAVE_BACK),
         .mapNum = MAP_NUM(FOUR_ISLAND_ICEFALL_CAVE_BACK),
@@ -10184,7 +8471,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SIX_ISLAND_PATTERN_BUSH),
         .mapNum = MAP_NUM(SIX_ISLAND_PATTERN_BUSH),
@@ -10205,7 +8491,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FIVE_ISLAND_LOST_CAVE_ROOM1),
         .mapNum = MAP_NUM(FIVE_ISLAND_LOST_CAVE_ROOM1),
@@ -10226,7 +8511,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FIVE_ISLAND_LOST_CAVE_ROOM2),
         .mapNum = MAP_NUM(FIVE_ISLAND_LOST_CAVE_ROOM2),
@@ -10247,7 +8531,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FIVE_ISLAND_LOST_CAVE_ROOM3),
         .mapNum = MAP_NUM(FIVE_ISLAND_LOST_CAVE_ROOM3),
@@ -10268,7 +8551,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FIVE_ISLAND_LOST_CAVE_ROOM4),
         .mapNum = MAP_NUM(FIVE_ISLAND_LOST_CAVE_ROOM4),
@@ -10289,7 +8571,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FIVE_ISLAND_LOST_CAVE_ROOM5),
         .mapNum = MAP_NUM(FIVE_ISLAND_LOST_CAVE_ROOM5),
@@ -10310,7 +8591,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FIVE_ISLAND_LOST_CAVE_ROOM6),
         .mapNum = MAP_NUM(FIVE_ISLAND_LOST_CAVE_ROOM6),
@@ -10331,7 +8611,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FIVE_ISLAND_LOST_CAVE_ROOM7),
         .mapNum = MAP_NUM(FIVE_ISLAND_LOST_CAVE_ROOM7),
@@ -10352,7 +8631,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FIVE_ISLAND_LOST_CAVE_ROOM8),
         .mapNum = MAP_NUM(FIVE_ISLAND_LOST_CAVE_ROOM8),
@@ -10373,7 +8651,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FIVE_ISLAND_LOST_CAVE_ROOM9),
         .mapNum = MAP_NUM(FIVE_ISLAND_LOST_CAVE_ROOM9),
@@ -10394,7 +8671,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FIVE_ISLAND_LOST_CAVE_ROOM10),
         .mapNum = MAP_NUM(FIVE_ISLAND_LOST_CAVE_ROOM10),
@@ -10415,7 +8691,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FIVE_ISLAND_LOST_CAVE_ROOM11),
         .mapNum = MAP_NUM(FIVE_ISLAND_LOST_CAVE_ROOM11),
@@ -10436,7 +8711,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FIVE_ISLAND_LOST_CAVE_ROOM12),
         .mapNum = MAP_NUM(FIVE_ISLAND_LOST_CAVE_ROOM12),
@@ -10457,7 +8731,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FIVE_ISLAND_LOST_CAVE_ROOM13),
         .mapNum = MAP_NUM(FIVE_ISLAND_LOST_CAVE_ROOM13),
@@ -10478,7 +8751,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FIVE_ISLAND_LOST_CAVE_ROOM14),
         .mapNum = MAP_NUM(FIVE_ISLAND_LOST_CAVE_ROOM14),
@@ -10499,7 +8771,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ONE_ISLAND_KINDLE_ROAD),
         .mapNum = MAP_NUM(ONE_ISLAND_KINDLE_ROAD),
@@ -10520,7 +8791,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ONE_ISLAND_TREASURE_BEACH),
         .mapNum = MAP_NUM(ONE_ISLAND_TREASURE_BEACH),
@@ -10541,7 +8811,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(TWO_ISLAND_CAPE_BRINK),
         .mapNum = MAP_NUM(TWO_ISLAND_CAPE_BRINK),
@@ -10562,7 +8831,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(THREE_ISLAND_BOND_BRIDGE),
         .mapNum = MAP_NUM(THREE_ISLAND_BOND_BRIDGE),
@@ -10583,7 +8851,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(THREE_ISLAND_PORT),
         .mapNum = MAP_NUM(THREE_ISLAND_PORT),
@@ -10604,7 +8871,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FIVE_ISLAND_RESORT_GORGEOUS),
         .mapNum = MAP_NUM(FIVE_ISLAND_RESORT_GORGEOUS),
@@ -10625,7 +8891,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FIVE_ISLAND_WATER_LABYRINTH),
         .mapNum = MAP_NUM(FIVE_ISLAND_WATER_LABYRINTH),
@@ -10646,7 +8911,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FIVE_ISLAND_MEADOW),
         .mapNum = MAP_NUM(FIVE_ISLAND_MEADOW),
@@ -10667,7 +8931,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FIVE_ISLAND_MEMORIAL_PILLAR),
         .mapNum = MAP_NUM(FIVE_ISLAND_MEMORIAL_PILLAR),
@@ -10688,7 +8951,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SIX_ISLAND_OUTCAST_ISLAND),
         .mapNum = MAP_NUM(SIX_ISLAND_OUTCAST_ISLAND),
@@ -10709,7 +8971,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SIX_ISLAND_GREEN_PATH),
         .mapNum = MAP_NUM(SIX_ISLAND_GREEN_PATH),
@@ -10730,7 +8991,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SIX_ISLAND_WATER_PATH),
         .mapNum = MAP_NUM(SIX_ISLAND_WATER_PATH),
@@ -10751,7 +9011,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SIX_ISLAND_RUIN_VALLEY),
         .mapNum = MAP_NUM(SIX_ISLAND_RUIN_VALLEY),
@@ -10772,7 +9031,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SEVEN_ISLAND_TRAINER_TOWER),
         .mapNum = MAP_NUM(SEVEN_ISLAND_TRAINER_TOWER),
@@ -10793,7 +9051,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SEVEN_ISLAND_SEVAULT_CANYON_ENTRANCE),
         .mapNum = MAP_NUM(SEVEN_ISLAND_SEVAULT_CANYON_ENTRANCE),
@@ -10814,7 +9071,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SEVEN_ISLAND_SEVAULT_CANYON),
         .mapNum = MAP_NUM(SEVEN_ISLAND_SEVAULT_CANYON),
@@ -10835,7 +9091,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SEVEN_ISLAND_TANOBY_RUINS),
         .mapNum = MAP_NUM(SEVEN_ISLAND_TANOBY_RUINS),
@@ -10856,7 +9111,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE1),
         .mapNum = MAP_NUM(ROUTE1),
@@ -10877,7 +9131,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE2),
         .mapNum = MAP_NUM(ROUTE2),
@@ -10898,7 +9151,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE3),
         .mapNum = MAP_NUM(ROUTE3),
@@ -10919,7 +9171,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE4),
         .mapNum = MAP_NUM(ROUTE4),
@@ -10940,7 +9191,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE5),
         .mapNum = MAP_NUM(ROUTE5),
@@ -10961,7 +9211,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE6),
         .mapNum = MAP_NUM(ROUTE6),
@@ -10982,7 +9231,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE7),
         .mapNum = MAP_NUM(ROUTE7),
@@ -11003,7 +9251,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE8),
         .mapNum = MAP_NUM(ROUTE8),
@@ -11024,7 +9271,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE9),
         .mapNum = MAP_NUM(ROUTE9),
@@ -11045,7 +9291,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE10),
         .mapNum = MAP_NUM(ROUTE10),
@@ -11066,7 +9311,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE11),
         .mapNum = MAP_NUM(ROUTE11),
@@ -11087,7 +9331,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE12),
         .mapNum = MAP_NUM(ROUTE12),
@@ -11108,7 +9351,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE13),
         .mapNum = MAP_NUM(ROUTE13),
@@ -11129,7 +9371,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE14),
         .mapNum = MAP_NUM(ROUTE14),
@@ -11150,7 +9391,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE15),
         .mapNum = MAP_NUM(ROUTE15),
@@ -11171,7 +9411,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE16),
         .mapNum = MAP_NUM(ROUTE16),
@@ -11192,7 +9431,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE17),
         .mapNum = MAP_NUM(ROUTE17),
@@ -11213,7 +9451,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE18),
         .mapNum = MAP_NUM(ROUTE18),
@@ -11234,7 +9471,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE19),
         .mapNum = MAP_NUM(ROUTE19),
@@ -11255,7 +9491,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE20),
         .mapNum = MAP_NUM(ROUTE20),
@@ -11276,7 +9511,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE21_NORTH),
         .mapNum = MAP_NUM(ROUTE21_NORTH),
@@ -11297,7 +9531,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE21_SOUTH),
         .mapNum = MAP_NUM(ROUTE21_SOUTH),
@@ -11318,7 +9551,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE22),
         .mapNum = MAP_NUM(ROUTE22),
@@ -11339,7 +9571,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE23),
         .mapNum = MAP_NUM(ROUTE23),
@@ -11360,7 +9591,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE24),
         .mapNum = MAP_NUM(ROUTE24),
@@ -11381,7 +9611,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ROUTE25),
         .mapNum = MAP_NUM(ROUTE25),
@@ -11402,7 +9631,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(PALLET_TOWN),
         .mapNum = MAP_NUM(PALLET_TOWN),
@@ -11423,7 +9651,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(VIRIDIAN_CITY),
         .mapNum = MAP_NUM(VIRIDIAN_CITY),
@@ -11444,7 +9671,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(CERULEAN_CITY),
         .mapNum = MAP_NUM(CERULEAN_CITY),
@@ -11465,7 +9691,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(VERMILION_CITY),
         .mapNum = MAP_NUM(VERMILION_CITY),
@@ -11486,7 +9711,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(CELADON_CITY),
         .mapNum = MAP_NUM(CELADON_CITY),
@@ -11507,7 +9731,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FUCHSIA_CITY),
         .mapNum = MAP_NUM(FUCHSIA_CITY),
@@ -11528,7 +9751,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(CINNABAR_ISLAND),
         .mapNum = MAP_NUM(CINNABAR_ISLAND),
@@ -11549,7 +9771,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(ONE_ISLAND),
         .mapNum = MAP_NUM(ONE_ISLAND),
@@ -11570,7 +9791,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FOUR_ISLAND),
         .mapNum = MAP_NUM(FOUR_ISLAND),
@@ -11591,7 +9811,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(FIVE_ISLAND),
         .mapNum = MAP_NUM(FIVE_ISLAND),
@@ -11692,7 +9911,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SIX_ISLAND_ALTERING_CAVE),
         .mapNum = MAP_NUM(SIX_ISLAND_ALTERING_CAVE),
@@ -11703,7 +9921,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SIX_ISLAND_ALTERING_CAVE),
         .mapNum = MAP_NUM(SIX_ISLAND_ALTERING_CAVE),
@@ -11714,7 +9931,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SIX_ISLAND_ALTERING_CAVE),
         .mapNum = MAP_NUM(SIX_ISLAND_ALTERING_CAVE),
@@ -11725,7 +9941,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SIX_ISLAND_ALTERING_CAVE),
         .mapNum = MAP_NUM(SIX_ISLAND_ALTERING_CAVE),
@@ -11736,7 +9951,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SIX_ISLAND_ALTERING_CAVE),
         .mapNum = MAP_NUM(SIX_ISLAND_ALTERING_CAVE),
@@ -11747,7 +9961,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SIX_ISLAND_ALTERING_CAVE),
         .mapNum = MAP_NUM(SIX_ISLAND_ALTERING_CAVE),
@@ -11758,7 +9971,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SIX_ISLAND_ALTERING_CAVE),
         .mapNum = MAP_NUM(SIX_ISLAND_ALTERING_CAVE),
@@ -11769,7 +9981,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SIX_ISLAND_ALTERING_CAVE),
         .mapNum = MAP_NUM(SIX_ISLAND_ALTERING_CAVE),
@@ -11780,7 +9991,6 @@ const struct WildPokemonHeader gWildMonHeaders[] =
     },
 #endif
 #ifdef LEAFGREEN
-
     {
         .mapGroup = MAP_GROUP(SIX_ISLAND_ALTERING_CAVE),
         .mapNum = MAP_NUM(SIX_ISLAND_ALTERING_CAVE),
