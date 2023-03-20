@@ -500,7 +500,7 @@ PalletTown_ProfessorOaksLab_Movement_RivalApproachForBattleBulbasaurRight::
 
 PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle::
 	special HealPlayerParty
-	call_if_set FLAG_LOST_FIRST_RIVAL, PalletTown_ProfessorOaksLab_EventScript_Vaporeon
+	
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalGoToughenMyMon
 	closemessage
 	playbgm MUS_RIVAL_EXIT, 0
@@ -512,11 +512,12 @@ PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle::
 	fadedefaultbgm
 	setvar VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 4
 	setflag FLAG_BEAT_RIVAL_IN_OAKS_LAB
+	call_if_set FLAG_LOST_FIRST_RIVAL, PalletTown_ProfessorOaksLab_EventScript_Vaporeon
 	releaseall
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_Vaporeon::
-	setvar PLAYER_STARTER_NUM, 2
+	setvar VAR_STARTER_MON, 2
 	return
 
 PalletTown_ProfessorOaksLab_EventScript_RivalExitAfterBattleLeft::

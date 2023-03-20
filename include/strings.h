@@ -240,6 +240,7 @@ extern const u8 gText_OakNoRunningFromATrainer[];
 extern const u8 gText_WinEarnsPrizeMoney[];
 extern const u8 gText_HowDissapointing[];
 extern const u8 gText_WhatWillOldManDo[];
+extern const u8 gText_WhatWillOakDo[]; // for Oak
 
 // battle_controller_pokedude
 extern const u8 Pokedude_Text_SpeedierBattlerGoesFirst[];

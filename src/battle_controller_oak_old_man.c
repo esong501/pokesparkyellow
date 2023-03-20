@@ -17,6 +17,8 @@
 #include "reshow_battle_screen.h"
 #include "constants/songs.h"
 #include "constants/items.h"
+// to be able to set flags
+#include "event_data.h"
 
 static void OakOldManHandleGetMonData(void);
 static void OakOldManHandleGetRawMonData(void);
@@ -738,6 +740,7 @@ static void PrintOakText_WinEarnsPrizeMoney(void)
 
 void PrintOakText_HowDisappointing(void)
 {
+    // This may be where I need to set the flag for Vaporeon
     PrintOakTextWithMainBgDarkened(gText_HowDissapointing, 64);
 }
 
@@ -1777,6 +1780,8 @@ static void OakOldManHandlePrintString(void)
                 gBattlerControllerFuncs[gActiveBattler] = PrintOakText_WinEarnsPrizeMoney;
                 return;
             case STRINGID_TRAINER1WINTEXT:
+                // this new flag is set to keep track of which of the first 2 battles the player has won
+                FlagSet(FLAG_LOST_FIRST_RIVAL);
                 gBattlerControllerFuncs[gActiveBattler] = PrintOakText_HowDisappointing;
                 return;
             case STRINGID_DONTLEAVEBIRCH:
@@ -1821,8 +1826,10 @@ static void OakOldManHandleChooseAction(void)
     ActionSelectionCreateCursorAt(gActionSelectionCursor[gActiveBattler], 0);
     if (gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE)
         BattleStringExpandPlaceholdersToDisplayedString(gText_WhatWillPkmnDo);
-    else
+    else if (gBattleTypeFlags & BATTLE_TYPE_OLD_MAN_TUTORIAL)
         BattleStringExpandPlaceholdersToDisplayedString(gText_WhatWillOldManDo);
+    else
+        BattleStringExpandPlaceholdersToDisplayedString(gText_WhatWillOakDo);
     BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_ACTION_PROMPT);
 }
 

@@ -13,8 +13,9 @@ PalletTown_PlayersHouse_1F_Text_AllGirlsLeaveOakLookingForYou::
     .string "for you.$"
 
 PalletTown_PlayersHouse_1F_Text_TakeRunningShoes::
-    .string "Oh, yes. Take these RUNNING SHOES,\n"
-    .string "just in case you run into any\p"
+    .string "Oh, yes.\n"
+    .string "Take these RUNNING SHOES,\p"
+    .string "just in case you run into any\n"
     .string "wild POKéMON.$"
 
 PalletTown_PlayersHouse_1F_Text_YouShouldTakeQuickRest::
