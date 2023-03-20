@@ -45,6 +45,12 @@ Route22_EventScript_EarlyRival::
 	fadedefaultbgm
 	removeobject LOCALID_RIVAL
 	setvar VAR_MAP_SCENE_ROUTE22, 2
+	goto_if_unset FLAG_LOST_FIRST_RIVAL, Route22_EventScript_Jolteon
+	releaseall
+	end
+
+Route22_EventScript_Jolteon::
+	setvar VAR_STARTER_MON, 1
 	releaseall
 	end
 
