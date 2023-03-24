@@ -30,6 +30,7 @@
 #define GAME_LANGUAGE (LANGUAGE_ENGLISH)
 #endif
 
+// capacities of various saveblock objects
 #define DAYCARE_MON_COUNT   2
 #define PC_ITEMS_COUNT      30
 #define BAG_ITEMS_COUNT     42
@@ -52,6 +53,9 @@
 #define POCKET_TM_CASE      4
 #define POCKET_BERRY_POUCH  5
 #define NUM_BAG_POCKETS 5
+
+// Contests
+#define CONTEST_CATEGORIES_COUNT  5
 
 // string lengths
 #define ITEM_NAME_LENGTH 14
@@ -110,5 +114,14 @@
 #define DIR_SOUTHEAST   6
 #define DIR_NORTHWEST   7
 #define DIR_NORTHEAST   8
+
+#define CONNECTION_INVALID -1
+#define CONNECTION_NONE     0
+#define CONNECTION_SOUTH    1
+#define CONNECTION_NORTH    2
+#define CONNECTION_WEST     3
+#define CONNECTION_EAST     4
+#define CONNECTION_DIVE     5
+#define CONNECTION_EMERGE   6
 
 #endif //GUARD_CONSTANTS_GLOBAL_H

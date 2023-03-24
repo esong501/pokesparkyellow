@@ -20,6 +20,14 @@ enum
     POKEBALL_COUNT
 };
 
+enum {
+    BALL_AFFINE_ANIM_0,
+    BALL_ROTATE_RIGHT,
+    BALL_ROTATE_LEFT,
+    BALL_AFFINE_ANIM_3,
+    BALL_AFFINE_ANIM_4
+};
+
 extern const struct CompressedSpriteSheet gBallSpriteSheets[POKEBALL_COUNT];
 extern const struct CompressedSpritePalette gBallSpritePalettes[POKEBALL_COUNT];
 extern const struct SpriteTemplate gBallSpriteTemplates[];
@@ -28,12 +36,12 @@ extern const struct SpriteTemplate gBallSpriteTemplates[];
 #define POKEBALL_OPPONENT_SENDOUT   0xFE
 
 u8 DoPokeballSendOutAnimation(s16 pan, u8 kindOfThrow);
-void CreatePokeballSpriteToReleaseMon(u8 monSpriteId, u8 bank, u8 x, u8 y, u8 oamPriority, u8 subpriortiy, u8 g, u32 h);
-u8 CreateTradePokeballSprite(u8 monSpriteId, u8 bank, u8 x, u8 y, u8 oamPriority, u8 subpriortiy, u8 g, u32 h);
+void CreatePokeballSpriteToReleaseMon(u8 monSpriteId, u8 monPalNum, u8 x, u8 y, u8 oamPriority, u8 subpriortiy, u8 delay, u32 fadePalettes);
+u8 CreateTradePokeballSprite(u8 monSpriteId, u8 monPalNum, u8 x, u8 y, u8 oamPriority, u8 subPriority, u8 delay, u32 fadePalettes);
 void DoHitAnimHealthboxEffect(u8 bank);
 void LoadBallGfx(u8 ballId);
 void FreeBallGfx(u8 ballId);
 void StartHealthboxSlideIn(u8 battler);
-void DestroySpriteAndFreeResources2(struct Sprite *sprite);
+void DestroySpriteAndFreeResources_Ball(struct Sprite *sprite);
 
 #endif // GUARD_POKEBALL_H
