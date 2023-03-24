@@ -722,7 +722,7 @@ static void Task_NewGameScene(u8 taskId)
         break;
     case 1:
         sOakSpeechResources = AllocZeroed(sizeof(*sOakSpeechResources));
-        OakSpeechNidoranFSetup(1, TRUE);
+        CreateMonSpritesGfxManager(1, 1);
         break;
     case 2:
         SetGpuReg(REG_OFFSET_WIN0H, 0);
@@ -1777,7 +1777,7 @@ static void Task_OakSpeech_WaitForFade(u8 taskId)
 static void Task_OakSpeech_FreeResources(u8 taskId)
 {
     FreeAllWindowBuffers();
-    OakSpeechNidoranFFreeResources();
+    DestroyMonSpritesGfxManager();
     Free(sOakSpeechResources);
     sOakSpeechResources = NULL;
     gTextFlags.canABSpeedUpPrint = FALSE;
@@ -1878,9 +1878,7 @@ static void CreateNidoranFSprite(u8 taskId)
 {
     u8 spriteId;
 
-    // Yellow has Pikachu as the Pokemon shown in the Oak speech
-    // this will hopefully do the same
-    DecompressPicFromTable(&gMonFrontPicTable[SPECIES_PIKACHU], OakSpeechNidoranFGetBuffer(0), SPECIES_PIKACHU);
+    DecompressPicFromTable(&gMonFrontPicTable[SPECIES_PIKACHU], MonSpritesGfxManager_GetSpritePtr(0), SPECIES_PIKACHU);
     LoadCompressedSpritePaletteUsingHeap(&gMonPaletteTable[SPECIES_PIKACHU]);
     SetMultiuseSpriteTemplateToPokemon(SPECIES_PIKACHU, 0);
     spriteId = CreateSprite(&gMultiuseSpriteTemplate, 96, 96, 1);
