@@ -8,7 +8,9 @@
 #include "constants/flags.h"
 #include "constants/vars.h"
 #include "constants/species.h"
+#include "constants/pokedex.h"
 #include "constants/easy_chat.h"
+#include "constants/rgb.h"
 
 // Prevent cross-jump optimization.
 #define BLOCK_CROSS_JUMP asm("");
@@ -100,13 +102,13 @@
 #define T1_READ_8(ptr)  ((ptr)[0])
 #define T1_READ_16(ptr) ((ptr)[0] | ((ptr)[1] << 8))
 #define T1_READ_32(ptr) ((ptr)[0] | ((ptr)[1] << 8) | ((ptr)[2] << 16) | ((ptr)[3] << 24))
-#define T1_READ_PTR(ptr) (u8*) T1_READ_32(ptr)
+#define T1_READ_PTR(ptr) (u8 *) T1_READ_32(ptr)
 
 // T2_READ_8 is a duplicate to remain consistent with each group.
 #define T2_READ_8(ptr)  ((ptr)[0])
 #define T2_READ_16(ptr) ((ptr)[0] + ((ptr)[1] << 8))
 #define T2_READ_32(ptr) ((ptr)[0] + ((ptr)[1] << 8) + ((ptr)[2] << 16) + ((ptr)[3] << 24))
-#define T2_READ_PTR(ptr) (void*) T2_READ_32(ptr)
+#define T2_READ_PTR(ptr) (void *) T2_READ_32(ptr)
 
 // This macro is required to prevent the compiler from optimizing
 // a dpad up/down check in sub_812CAD8 (fame_checker.c).
@@ -128,6 +130,10 @@ extern u8 gStringVar4[];
 #define DEX_FLAGS_NO ROUND_BITS_TO_BYTES(NUM_SPECIES)
 #define NUM_FLAG_BYTES ROUND_BITS_TO_BYTES(FLAGS_COUNT)
 #define NUM_ADDITIONAL_PHRASE_BYTES ROUND_BITS_TO_BYTES(NUM_ADDITIONAL_PHRASES)
+
+// This produces an error at compile-time if expr is zero.
+// It looks like file.c:line: size of array `id' is negative
+#define STATIC_ASSERT(expr, id) typedef char id[(expr) ? 1 : -1];
 
 struct Coords8
 {
@@ -177,8 +183,8 @@ struct Pokedex
 {
     /*0x00*/ u8 order;
     /*0x01*/ u8 mode;
-    /*0x02*/ u8 nationalMagic; // must equal 0xDA in order to have National mode
-    /*0x03*/ u8 unknown2; // set to 0xB9 when national dex is first enabled
+    /*0x02*/ u8 unused; // set to 0xDA, never read
+    /*0x03*/ u8 nationalMagic; // set to 0xB9 when national dex is first enabled
     /*0x04*/ u32 unownPersonality; // set when you first see Unown
     /*0x08*/ u32 spindaPersonality; // set when you first see Spinda
     /*0x0C*/ u32 unknown3;
@@ -621,15 +627,15 @@ struct FameCheckerSaveData
 
 struct WonderNewsMetadata
 {
-    u8 unk_0_0:2;
-    u8 unk_0_2:3;
-    u8 unk_0_5:3;
+    u8 newsType:2;
+    u8 sentRewardCounter:3;
+    u8 rewardCounter:3;
     u8 berry;
 };
 
 struct WonderNews
 {
-    u16 newsId;
+    u16 id;
     u8 sendType; // SEND_TYPE_*
     u8 bgType;
     u8 titleText[WONDER_NEWS_TEXT_LENGTH];
@@ -809,7 +815,7 @@ struct MapPosition
 {
     s16 x;
     s16 y;
-    s8 height;
+    s8 elevation;
 };
 
 extern struct SaveBlock1* gSaveBlock1Ptr;
