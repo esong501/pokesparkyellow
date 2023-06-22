@@ -261,7 +261,7 @@ static const struct WindowTemplate sWindowTemplates[9] = {
         .tilemapTop = 0,
         .width = 6,
         .height = 7,
-        .paletteNum = 0x0d,
+        .paletteNum = 13,
         .baseBlock = 0x014
     },
     {
@@ -270,7 +270,7 @@ static const struct WindowTemplate sWindowTemplates[9] = {
         .tilemapTop = 0,
         .width = 5,
         .height = 5,
-        .paletteNum = 0x0d,
+        .paletteNum = 13,
         .baseBlock = 0x03e
     },
     {
@@ -279,7 +279,7 @@ static const struct WindowTemplate sWindowTemplates[9] = {
         .tilemapTop = 0,
         .width = 5,
         .height = 2,
-        .paletteNum = 0x0d,
+        .paletteNum = 13,
         .baseBlock = 0x057
     },
     {
@@ -288,7 +288,7 @@ static const struct WindowTemplate sWindowTemplates[9] = {
         .tilemapTop = 0,
         .width = 3,
         .height = 5,
-        .paletteNum = 0x0f,
+        .paletteNum = 15,
         .baseBlock = 0x061
     },
     {
@@ -297,7 +297,7 @@ static const struct WindowTemplate sWindowTemplates[9] = {
         .tilemapTop = 2,
         .width = 3,
         .height = 3,
-        .paletteNum = 0x0f,
+        .paletteNum = 15,
         .baseBlock = 0x070
     },
     {
@@ -306,7 +306,7 @@ static const struct WindowTemplate sWindowTemplates[9] = {
         .tilemapTop = 6,
         .width = 15,
         .height = 8,
-        .paletteNum = 0x0f,
+        .paletteNum = 15,
         .baseBlock = 0x079
     },
     {
@@ -315,7 +315,7 @@ static const struct WindowTemplate sWindowTemplates[9] = {
         .tilemapTop = 1,
         .width = 10,
         .height = 12,
-        .paletteNum = 0x0f,
+        .paletteNum = 15,
         .baseBlock = 0x0f1
     },
     {
@@ -324,7 +324,7 @@ static const struct WindowTemplate sWindowTemplates[9] = {
         .tilemapTop = 15,
         .width = 26,
         .height = 4,
-        .paletteNum = 0x0f,
+        .paletteNum = 15,
         .baseBlock = 0x169
     }, DUMMY_WIN_TEMPLATE
 };
@@ -335,7 +335,7 @@ static const struct WindowTemplate sMoveRelearnerYesNoMenuTemplate = {
     .tilemapTop = 8,
     .width = 6,
     .height = 4,
-    .paletteNum = 0x0f,
+    .paletteNum = 15,
     .baseBlock = 0x1d1
 };
 
@@ -399,11 +399,11 @@ static void MoveRelearnerLoadBgGfx(void)
             FillWindowPixelBuffer(i, PIXEL_FILL(0));
         }
         FillWindowPixelBuffer(7, PIXEL_FILL(1));
-        FillBgTilemapBufferRect(0, 0x000, 0, 0, 30, 20, 0xF);
+        FillBgTilemapBufferRect(0, 0x000, 0, 0, 30, 20, 15);
         SetBgTilemapBuffer(1, sMoveRelearner->bg1TilemapBuffer);
-        LoadUserWindowGfx(0, 1, 0xE0);
-        ListMenuLoadStdPalAt(0xD0, 1);
-        LoadPalette(gMoveRelearner_Pal, 0x00, 0x20);
+        LoadUserWindowGfx(0, 1, BG_PLTT_ID(14));
+        ListMenuLoadStdPalAt(BG_PLTT_ID(13), 1);
+        LoadPalette(gMoveRelearner_Pal, BG_PLTT_ID(0), PLTT_SIZE_4BPP);
         DecompressAndLoadBgGfxUsingHeap(1, gMoveRelearner_Gfx, 0, 0, 0);
         CopyToBgTilemapBuffer(1, gMoveRelearner_Tilemap, 0, 0);
         CopyBgTilemapBufferToVram(1);
@@ -445,7 +445,7 @@ static void CB2_MoveRelearner_Resume(void)
     SetVBlankCallback(VBlankCB_MoveRelearner);
     MoveRelearnerLoadBgGfx();
     SpawnListMenuScrollIndicatorSprites();
-    FillPalette(RGB_BLACK, 0, 2);
+    SetBackdropFromColor(RGB_BLACK);
 
     RunTasks();
     AnimateSprites();
@@ -509,7 +509,7 @@ static void MoveRelearnerStateMachine(void)
         MoveRelearnerMenuHandleInput();
         break;
     case MENU_STATE_PRINT_TEACH_MOVE_PROMPT:
-        CreateYesNoMenu(&sMoveRelearnerYesNoMenuTemplate, FONT_NORMAL_COPY_2, 0, 2, 0x001, 0xE, 0);
+        CreateYesNoMenu(&sMoveRelearnerYesNoMenuTemplate, FONT_NORMAL_COPY_2, 0, 2, 0x001, 14, 0);
         sMoveRelearner->state++;
         break;
     case MENU_STATE_TEACH_MOVE_CONFIRM :
@@ -534,7 +534,7 @@ static void MoveRelearnerStateMachine(void)
         }
         break;
     case MENU_STATE_PRINT_GIVE_UP_PROMPT:
-        CreateYesNoMenu(&sMoveRelearnerYesNoMenuTemplate, FONT_NORMAL_COPY_2, 0, 2, 0x001, 0xE, 0);
+        CreateYesNoMenu(&sMoveRelearnerYesNoMenuTemplate, FONT_NORMAL_COPY_2, 0, 2, 0x001, 14, 0);
         sMoveRelearner->state++;
         break;
     case MENU_STATE_GIVE_UP_CONFIRM:
@@ -555,7 +555,7 @@ static void MoveRelearnerStateMachine(void)
         sMoveRelearner->state++;
         break;
     case MENU_STATE_WAIT_FOR_TRYING_TO_LEARN:
-        CreateYesNoMenu(&sMoveRelearnerYesNoMenuTemplate, FONT_NORMAL_COPY_2, 0, 2, 0x001, 0xE, 0);
+        CreateYesNoMenu(&sMoveRelearnerYesNoMenuTemplate, FONT_NORMAL_COPY_2, 0, 2, 0x001, 14, 0);
         sMoveRelearner->state = 18;
         break;
     case MENU_STATE_CONFIRM_DELETE_OLD_MOVE:
@@ -576,7 +576,7 @@ static void MoveRelearnerStateMachine(void)
         sMoveRelearner->state++;
         break;
     case MENU_STATE_WAIT_FOR_STOP_TEACHING:
-        CreateYesNoMenu(&sMoveRelearnerYesNoMenuTemplate, FONT_NORMAL_COPY_2, 0, 2, 0x001, 0xE, 0);
+        CreateYesNoMenu(&sMoveRelearnerYesNoMenuTemplate, FONT_NORMAL_COPY_2, 0, 2, 0x001, 14, 0);
         sMoveRelearner->state = 26;
         break;
     case MENU_STATE_CONFIRM_STOP_TEACHING:
@@ -687,7 +687,7 @@ static void DrawTextBorderOnWindows6and7(void)
 {
     int i;
     for (i = 6; i < 8; i++)
-        DrawTextBorderOuter(i, 0x001, 0xE);
+        DrawTextBorderOuter(i, 0x001, 14);
 }
 
 static void PrintTeachWhichMoveToStrVar1(bool8 onInit)
