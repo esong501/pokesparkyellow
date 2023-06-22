@@ -72,6 +72,30 @@ u8 ScriptGiveMon(u16 species, u8 level, u16 item, u32 unused1, u32 unused2, u8 u
     return sentToPc;
 }
 
+// script to give player starter Pikachu
+u8 ScriptGivePikachu()
+{
+    u16 nationalDexNum;
+    int sentToPc;
+    struct Pokemon *mon = AllocZeroed(sizeof(struct Pokemon));
+
+    CreatePikachu(mon);
+    sentToPc = GiveMonToPlayer(mon);
+    nationalDexNum = SpeciesToNationalPokedexNum(SPECIES_PIKACHU);
+
+    switch(sentToPc)
+    {
+    case MON_GIVEN_TO_PARTY:
+    case MON_GIVEN_TO_PC:
+        GetSetPokedexFlag(nationalDexNum, FLAG_SET_SEEN);
+        GetSetPokedexFlag(nationalDexNum, FLAG_SET_CAUGHT);
+        break;
+    }
+
+    Free(mon);
+    return sentToPc;
+}
+
 u8 ScriptGiveEgg(u16 species)
 {
     struct Pokemon *mon = AllocZeroed(sizeof(struct Pokemon));

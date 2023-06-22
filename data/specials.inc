@@ -14,7 +14,7 @@ gSpecials::
 	def_special ReturnFromLinkRoom
 	def_special CleanupLinkRoomState
 	def_special ExitLinkRoom
-	def_special NullFieldSpecial  @ Secret Base specials
+	def_special ScriptGivePikachu  @ Secret Base specials, replacing with Pikachu script
 	def_special NullFieldSpecial
 	def_special NullFieldSpecial
 	def_special NullFieldSpecial

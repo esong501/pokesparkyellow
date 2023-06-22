@@ -1919,6 +1919,19 @@ void CreateMaleMon(struct Pokemon *mon, u16 species, u8 level)
     CreateMon(mon, species, level, USE_RANDOM_IVS, TRUE, personality, OT_ID_PRESET, otId);
 }
 
+// used to create starter (want to restrict to being male)
+void CreatePikachu(struct Pokemon *mon)
+{
+    u32 personality;
+
+    do
+    {
+        personality = Random32();
+    }
+    while (GetGenderFromSpeciesAndPersonality(SPECIES_PIKACHU, personality) != MON_MALE);
+    CreateMon(mon, SPECIES_PIKACHU, 5, USE_RANDOM_IVS, TRUE, personality, OT_ID_PLAYER_ID, 0);
+}
+
 void CreateMonWithIVsPersonality(struct Pokemon *mon, u16 species, u8 level, u32 ivs, u32 personality)
 {
     CreateMon(mon, species, level, 0, TRUE, personality, OT_ID_PLAYER_ID, 0);
