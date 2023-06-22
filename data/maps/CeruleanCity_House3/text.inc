@@ -7,21 +7,22 @@ CeruleanCity_House3_Text_PleaseTradeWithMyHusband::
 CeruleanCity_House3_Text_BulbasaurTrainer::
     .string "Hi! My name's MELANIE.\p"
     .string "I've been taking care of injured\n"
-    .string "POKéMON with the help of my\p"
+    .string "POKéMON with the help of this\p"
     .string "BULBASAUR, but now that we've\n"
     .string "treated everyone, I think\p"
     .string "BULBASAUR needs a better home\n"
-    .string "with a strong trainer.$"
+    .string "with a good trainer.$"
 
-CeruleanCity_House3_Text_BadgeGet::
-    .string "Oh, that's the BOULDER BADGE!\p"
-    .string "Would you please take BULBASAUR\n"
-    .string "with you?$"
+CeruleanCity_House3_Text_HighFriendship::
+    .string "Your POKéMON seem very happy\n"
+    .string "with you!\p"
+    .string "Would you take care of this\n"
+    .string "BULBASAUR?$"
 
 CeruleanCity_House3_Text_HowsBulbasaur::
-    .string "How's it going? I think you'll\n"
-    .string "find BULBASAUR to be very\p"
-    .string "helpful in MISTY's GYM!$"
+    .string "How is everything?\p"
+    .string "I think BULBASAUR will be\n"
+    .string "very helpful in MISTY's GYM!$"
 
 CeruleanCity_House3_Text_ObtainedBulbasaurFromMelanie::
     .string "{PLAYER} received a BULBASAUR\n"

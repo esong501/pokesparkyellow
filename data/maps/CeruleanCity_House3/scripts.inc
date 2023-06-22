@@ -27,13 +27,25 @@ CeruleanCity_House3_EventScript_Melanie::
 	lock
 	faceplayer
 	goto_if_set FLAG_GOT_BULBASAUR, CeruleanCity_House3_EventScript_HowsBulbasaur
-	msgbox CeruleanCity_House3_Text_BulbasaurTrainer
-	goto_if_set FLAG_BADGE01_GET, CeruleanCity_House3_EventScript_MelanieBadge
+	switch VAR_RESULT
+	case 0, CeruleanCity_House3_EventScript_MelanieIntro
+	case 1, CeruleanCity_House3_EventScript_MelanieIntro
+	case 2, CeruleanCity_House3_EventScript_MelanieIntro
+	case 3, CeruleanCity_House3_EventScript_MelanieIntro
+	case 4, CeruleanCity_House3_EventScript_MelanieOfferBulbasaur
+	case 5, CeruleanCity_House3_EventScript_MelanieOfferBulbasaur
+	case 6, CeruleanCity_House3_EventScript_MelanieOfferBulbasaur
 	releaseall
 	end
 
-CeruleanCity_House3_EventScript_MelanieBadge::
-	msgbox CeruleanCity_House3_Text_BadgeGet, MSGBOX_YESNO
+CeruleanCity_House3_EventScript_MelanieIntro::
+	msgbox CeruleanCity_House3_Text_BulbasaurTrainer
+	releaseall
+	end
+
+CeruleanCity_House3_EventScript_MelanieOfferBulbasaur::
+	msgbox CeruleanCity_House3_Text_BulbasaurTrainer
+	msgbox CeruleanCity_House3_Text_HighFriendship, MSGBOX_YESNO
 	compare VAR_RESULT, YES
 	goto_if_eq CeruleanCity_House3_EventScript_ReceiveBulbasaur
 	compare VAR_RESULT, NO
