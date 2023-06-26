@@ -27,6 +27,7 @@ CeruleanCity_House3_EventScript_Melanie::
 	lock
 	faceplayer
 	goto_if_set FLAG_GOT_BULBASAUR, CeruleanCity_House3_EventScript_HowsBulbasaur
+	specialvar VAR_RESULT, GetLeadMonFriendship
 	switch VAR_RESULT
 	case 0, CeruleanCity_House3_EventScript_MelanieIntro
 	case 1, CeruleanCity_House3_EventScript_MelanieIntro
@@ -71,6 +72,7 @@ CeruleanCity_House3_EventScript_ReceiveBulbasaur::
 	goto_if_eq CeruleanCity_House3_EventScript_ReceiveBulbasaurPC
 	compare VAR_RESULT, 2
 	goto_if_eq EventScript_NoMoreRoomForPokemon
+	msgbox CeruleanCity_House3_Text_TakeCareOfBulbasaur
 	release
 	end
 

@@ -20,13 +20,14 @@ CeruleanCity_House3_Text_HighFriendship::
     .string "BULBASAUR?$"
 
 CeruleanCity_House3_Text_HowsBulbasaur::
-    .string "How is everything?\p"
-    .string "I think BULBASAUR will be\n"
-    .string "very helpful in MISTY's GYM!$"
+    .string "How is BULBASAUR?$"
 
 CeruleanCity_House3_Text_ObtainedBulbasaurFromMelanie::
     .string "{PLAYER} received a BULBASAUR\n"
     .string "from MELANIE!$"
+
+CeruleanCity_House3_Text_TakeCareOfBulbasaur::
+    .string "Please take care of BULBASAUR!$"
 
 CeruleanCity_House3_Text_BulbasaurDeclined::
     .string "Oh… Okay. I'm sure a trainer\n"

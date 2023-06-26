@@ -106,11 +106,6 @@ Route24_Text_CharmanderTrainer::
     .string "If you promise me you'll care for\n"
     .string "it, it's yours.$"
 
-Route24_Text_BadgeGet::
-    .string "Oh, that's the BOULDER BADGE!\p"
-    .string "Would you please take CHARMANDER\n"
-    .string "with you?$"
-
 Route24_Text_HowsCharmander::
     .string "You better be raising CHARMANDER\n"
     .string "well!$"
@@ -120,5 +115,5 @@ Route24_Text_ObtainedCharmanderFromDamian::
     .string "from DAMIAN!$"
 
 Route24_Text_CharmanderDeclined::
-    .string "Figures. I'll find something\n"
-    .string "for CHARMANDER.$"
+    .string "I get it. I'll find something\n"
+    .string "else for CHARMANDER.$"
