@@ -154,3 +154,35 @@ VermilionCity_Text_SquirtleGet::
 
 VermilionCity_Text_SquirtleDeclined::
     .string "Oh… what am I to do now?$"
+
+VermilionCity_Text_CutMan::
+    .string "Have you seen these trees around?\p"
+    .string "My boys and I are trying to get\n"
+    .string "rid of them but these guys are\p"
+    .string "tough and it seems like they're\n"
+    .string "everywhere.$"
+
+VermilionCity_Text_ShouldICut::
+    .string "Hey, you've got the HM for CUT!\p"
+    .string "Do you mind if I borrow this? I\n"
+    .string "think this is just the thing that\p"
+    .string "we need to get rid of the trees.$"
+
+VermilionCity_Text_OhWell::
+    .string "Figured I should ask in case.\n"
+    .string "Don't worry, we'll get 'em\p"
+    .string "all at some point.$"
+
+VermilionCity_Text_HandedHM01::
+    .string "{PLAYER} lent HM01 to a\n"
+    .string "strange man?$"
+
+VermilionCity_Text_ComeBack::
+    .string "We should be done in a bit,\n"
+    .string "go take a walk and come back.$"
+
+VermilionCity_Text_WeCutTheTrees::
+    .string "Whew… That was a lot of hard\n"
+    .string "work. We really couldn't\p"
+    .string "have done it without your\n"
+    .string "kindness!$"
