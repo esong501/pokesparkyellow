@@ -183,6 +183,5 @@ VermilionCity_Text_ComeBack::
 
 VermilionCity_Text_WeCutTheTrees::
     .string "Whew… That was a lot of hard\n"
-    .string "work. We really couldn't\p"
-    .string "have done it without your\n"
-    .string "kindness!$"
+    .string "work.$"
+
