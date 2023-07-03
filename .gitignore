@@ -51,4 +51,4 @@ prefabs.json
 .vscode/*.*
 agbcc/
 *.bps
-*.ss1
+*.ss*

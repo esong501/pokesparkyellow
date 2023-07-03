@@ -303,7 +303,6 @@ VermilionCity_EventScript_ReceiveSquirtle::
 	goto_if_eq VermilionCity_EventScript_ReceiveSquirtlePC
 	compare VAR_RESULT, 2
 	goto_if_eq EventScript_NoMoreRoomForPokemon
-	release
 	end
 
 VermilionCity_EventScript_ReceiveSquirtleParty:: @ 8161B12
@@ -344,5 +343,53 @@ VermilionCity_EventScript_EndReceiveSquirtle:: @ 8161B7E
 	call EventScript_RestorePrevTextColor
 	msgbox VermilionCity_Text_SquirtleGet
 	setflag FLAG_GOT_SQUIRTLE
+	release
+	end
+
+VermilionCity_EventScript_CutMan::
+	lock
+	faceplayer
+	goto_if_set FLAG_TEMP_1, VermilionCity_EventScript_ComeBack
+	goto_if_set FLAG_HIDE_CUT_TREES, VermilionCity_EventScript_WeCutTrees
+	msgbox VermilionCity_Text_CutMan
+	goto_if_set FLAG_GOT_TM03_FROM_MISTY, VermilionCity_EventScript_CheckHM01
+	release
+	end
+
+VermilionCity_EventScript_CheckHM01::
+	goto_if_set FLAG_GOT_HM01, VermilionCity_EventScript_ShouldICut
+	release
+	end
+
+VermilionCity_EventScript_ShouldICut::
+	msgbox VermilionCity_Text_ShouldICut, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq VermilionCity_EventScript_OhWell
+	goto VermilionCity_EventScript_CutAllTrees
+	end
+
+VermilionCity_EventScript_OhWell::
+	msgbox VermilionCity_Text_OhWell
+	release
+	end
+
+VermilionCity_EventScript_CutAllTrees::
+	textcolor 3
+	playfanfare MUS_LEVEL_UP
+	message VermilionCity_Text_HandedHM01
+	waitmessage
+	waitfanfare
+	setflag FLAG_HIDE_CUT_TREES
+	setflag FLAG_TEMP_1
+	call EventScript_RestorePrevTextColor
+	end
+
+VermilionCity_EventScript_ComeBack::
+	msgbox VermilionCity_Text_ComeBack
+	release
+	end
+
+VermilionCity_EventScript_WeCutTrees::
+	msgbox VermilionCity_Text_WeCutTheTrees
 	release
 	end

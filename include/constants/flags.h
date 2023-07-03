@@ -197,8 +197,10 @@
 #define FLAG_GOT_CHARMANDER      0x0B1
 // officer Jenny's Squirtle
 #define FLAG_GOT_SQUIRTLE        0x0B2
-#define FLAG_0x0B3               0x0B3
-#define FLAG_0x0B4               0x0B4
+// to create an NPC that cuts all trees for you
+#define FLAG_HIDE_CUT_TREES      0x0B3
+// same but with rocks
+#define FLAG_HIDE_SMASH_ROCKS    0x0B4
 #define FLAG_0x0B5               0x0B5
 #define FLAG_0x0B6               0x0B6
 #define FLAG_0x0B7               0x0B7
