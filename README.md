@@ -1,39 +1,42 @@
-# Pokémon FireRed and LeafGreen
+# Pokémon Spark Yellow
 
-[![Build Status][travis-badge]][travis]
+Built using [pret's disassembly][1] of Pokemon Fire Red and Leaf Green
 
-[travis]: https://travis-ci.org/pret/pokefirered
-[travis-badge]: https://travis-ci.org/pret/pokefirered.svg?branch=master
+Modification of Pokemon Fire Red that aims to recreate Pokemon Yellow but in the Gen 3 style with some QoL updates
 
-This is a disassembly of Pokémon FireRed and LeafGreen.
+# Installation instructions:
 
-It builds the following ROMs:
+Use [FLIPS][2] to patch the .BPS file onto a clean Pokemon Fire Red ROM (the option will appear as "Apply Patch"). From there, FLIPS will ask you for the clean unmodified ROM and THEN the patch (.BPS) file.
 
-* [**pokefirered.gba**](https://datomatic.no-intro.org/?page=show_record&s=23&n=1616) `sha1: 41cb23d8dccc8ebd7c649cd8fbb58eeace6e2fdc`
-* [**pokeleafgreen.gba**](https://datomatic.no-intro.org/?page=show_record&s=23&n=1617) `sha1: 574fa542ffebb14be69902d1d36f1ec0a4afd71e`
-* [**pokefirered_rev1.gba**](https://datomatic.no-intro.org/?page=show_record&s=23&n=1672) `sha1: dd5945db9b930750cb39d00c84da8571feebf417`
-* [**pokeleafgreen_rev1.gba**](https://datomatic.no-intro.org/index.php?page=show_record&s=23&n=1668) `sha1: 7862c67bdecbe21d1d69ce082ce34327e1c6ed5e`
+Changelog:
+----------
 
-To set up the repository, see [INSTALL.md](INSTALL.md).
+- Your starter is now Pikachu and your rival has Eevee
+- Eevee now evolves into either Espeon or Umbreon by sun and moon stone respectively
+- Pikachu now learns iron tail at level 13 similar to how Charmander got Metal Claw
+- Bulbasaur, Charmander, and Squirtle can now be received from NPCs similar to Yellow
+    - Bulbasaur: lead Pokemon must have at least 150 frienship
+    - Charmander: received for free
+    - Squirtle: received once Thunder Badge is obtained
+    - each starter is holding their type-boosting item and is level 15
+- TMs are infinite use
+    - HMs are forgettable
+- Wild Pikachu event in Pallet Town
+- Wild Pokemon are matched with Yellow
+    - slight adjustments to make Pokedex completion possible
+- change moves and nickname options from party menu!
+- Rivals team changes based on results of early game battles
+- Talking to NPC next to Vermilion Gym now removes all cut trees from the region
+    - cutting one tree also achieves the same effect (not intentional lol)
 
+To-Do:
+------
 
-## See also
+- clean up Pikachu event (Prof. Oak instead of old man)
+- add Jessie and James
+- UI fixes and creating logos
+- look into cut tree bug
+- following Pikachu
 
-Other disassembly and/or decompilation projects:
-* [**Pokémon Red and Blue**](https://github.com/pret/pokered)
-* [**Pokémon Gold and Silver (Space World '97 demo)**](https://github.com/pret/pokegold-spaceworld)
-* [**Pokémon Yellow**](https://github.com/pret/pokeyellow)
-* [**Pokémon Trading Card Game**](https://github.com/pret/poketcg)
-* [**Pokémon Pinball**](https://github.com/pret/pokepinball)
-* [**Pokémon Stadium**](https://github.com/pret/pokestadium)
-* [**Pokémon Gold and Silver**](https://github.com/pret/pokegold)
-* [**Pokémon Crystal**](https://github.com/pret/pokecrystal)
-* [**Pokémon Ruby and Sapphire**](https://github.com/pret/pokeruby)
-* [**Pokémon Pinball: Ruby & Sapphire**](https://github.com/pret/pokepinballrs)
-* [**Pokémon Emerald**](https://github.com/pret/pokeemerald)
-* [**Pokémon Mystery Dungeon: Red Rescue Team**](https://github.com/pret/pmd-red)
-
-
-## Contacts
-
-You can find us on [Discord](https://discord.gg/d5dubZ3) and [IRC](https://web.libera.chat/?#pret).
+[1]: https://github.com/pret/pokefirered    "pret/pokefirered"
+[2]: https://www.smwcentral.net/?p=section&a=details&id=11474 "FLIPS"
