@@ -231,10 +231,10 @@ PalletTown_EventScript_OakYellowTrigger::
 	waitmessage
 	delay 85
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_WalkInPlaceFastestDown
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	playse SE_PIN
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_ExclamationMark
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
 	waitmovement 0
 	delay 30
 	addobject LOCALID_PROF_OAK
@@ -246,7 +246,7 @@ PalletTown_EventScript_OakYellowTrigger::
 	msgbox PalletTown_Text_OakGrassYellow
 	closemessage
 	delay 30
-	applymovement LOCALID_PROF_OAK, Movement_WalkInPlaceFastestRight
+	applymovement LOCALID_PROF_OAK, Common_Movement_WalkInPlaceFasterRight
 	call PalletTown_EventScript_DoPikachuBattle
 	compare VAR_TEMP_1, 0
 	call_if_eq PalletTown_EventScript_OakLeadPlayerToLabLeft
@@ -511,7 +511,7 @@ PalletTown_EventScript_DoPikachuBattle::
 	waitstate
 	lock
 	msgbox PalletTown_Text_OakCaughtPikachu
-	applymovement LOCALID_PROF_OAK, Movement_WalkInPlaceFastestUp
+	applymovement LOCALID_PROF_OAK, Common_Movement_WalkInPlaceFasterUp
 	msgbox PalletTown_Text_OakPokemonCanAppear
 	releaseall
 	return

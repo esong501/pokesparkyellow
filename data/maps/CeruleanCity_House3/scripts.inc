@@ -68,7 +68,7 @@ CeruleanCity_House3_EventScript_ReceiveBulbasaurParty:: @ 8161B12
 	message CeruleanCity_House3_Text_ObtainedBulbasaurFromMelanie
 	waitmessage
 	waitfanfare
-	getspeciesname 0, SPECIES_BULBASAUR
+	bufferspeciesname STR_VAR_1, SPECIES_BULBASAUR
 	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq CeruleanCity_House3_EventScript_EndReceiveBulbasaur
@@ -83,7 +83,7 @@ CeruleanCity_House3_EventScript_ReceiveBulbasaurPC:: @ 8161B45
 	message CeruleanCity_House3_Text_ObtainedBulbasaurFromMelanie
 	waitmessage
 	waitfanfare
-	getspeciesname 0, SPECIES_BULBASAUR
+	bufferspeciesname STR_VAR_1, SPECIES_BULBASAUR
 	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq CeruleanCity_House3_EventScript_BulbasaurTransferredToPC

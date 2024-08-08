@@ -3742,7 +3742,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RivalOaksLabCharmander[]
 };
 
 static const struct TrainerMonNoItemCustomMoves sParty_RivalRoute22EarlySquirtle[] = {
-    {
+  {
         .iv = 50,
         .lvl = 9,
         .species = SPECIES_SPEAROW,
@@ -3814,7 +3814,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_RivalCeruleanSquirtle[] =
 };
 
 static const struct TrainerMonNoItemCustomMoves sParty_RivalCeruleanBulbasaur[] = {
-    {
+{
         .iv = 50,
         .lvl = 17,
         .species = SPECIES_SPEAROW,
@@ -3841,7 +3841,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_RivalCeruleanBulbasaur[] 
 };
 
 static const struct TrainerMonNoItemCustomMoves sParty_RivalCeruleanCharmander[] = {
-    {
+{
         .iv = 50,
         .lvl = 17,
         .species = SPECIES_SPEAROW,

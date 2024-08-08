@@ -312,7 +312,7 @@ VermilionCity_EventScript_ReceiveSquirtleParty:: @ 8161B12
 	message VermilionCity_Text_ObtainedSquirtleFromMelanie
 	waitmessage
 	waitfanfare
-	getspeciesname 0, SPECIES_SQUIRTLE
+	bufferspeciesname STR_VAR_1, SPECIES_SQUIRTLE
 	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq VermilionCity_EventScript_EndReceiveSquirtle
@@ -327,7 +327,7 @@ VermilionCity_EventScript_ReceiveSquirtlePC:: @ 8161B45
 	message VermilionCity_Text_ObtainedSquirtleFromMelanie
 	waitmessage
 	waitfanfare
-	getspeciesname 0, SPECIES_SQUIRTLE
+	bufferspeciesname STR_VAR_1, SPECIES_SQUIRTLE
 	msgbox Text_GiveNicknameToThisMon, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq VermilionCity_EventScript_SquirtleTransferredToPC

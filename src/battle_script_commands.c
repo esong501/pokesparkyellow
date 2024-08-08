@@ -4511,26 +4511,6 @@ static void Cmd_switchindataupdate(void)
 
 static void Cmd_switchinanim(void)
 {
-<<<<<<< HEAD
-    if (!gBattleControllerExecFlags)
-    {
-        gActiveBattler = GetBattlerForBattleScript(gBattlescriptCurrInstr[1]);
-        if (GetBattlerSide(gActiveBattler) == B_SIDE_OPPONENT
-         && !(gBattleTypeFlags & 
-              (BATTLE_TYPE_LINK
-            | BATTLE_TYPE_LEGENDARY
-            | BATTLE_TYPE_OLD_MAN_TUTORIAL
-            | BATTLE_TYPE_PIKACHU
-            | BATTLE_TYPE_POKEDUDE
-            | BATTLE_TYPE_EREADER_TRAINER
-            | BATTLE_TYPE_GHOST)))
-            HandleSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[gActiveBattler].species), FLAG_SET_SEEN, gBattleMons[gActiveBattler].personality);
-        gAbsentBattlerFlags &= ~(gBitTable[gActiveBattler]);
-        BtlController_EmitSwitchInAnim(0, gBattlerPartyIndexes[gActiveBattler], gBattlescriptCurrInstr[2]);
-        MarkBattlerForControllerExec(gActiveBattler);
-        gBattlescriptCurrInstr += 3;
-    }
-=======
     if (gBattleControllerExecFlags)
         return;
 
@@ -4540,6 +4520,7 @@ static void Cmd_switchinanim(void)
         && !(gBattleTypeFlags & (BATTLE_TYPE_LINK
                                  | BATTLE_TYPE_LEGENDARY
                                  | BATTLE_TYPE_OLD_MAN_TUTORIAL
+                                 | BATTLE_TYPE_PIKACHU
                                  | BATTLE_TYPE_POKEDUDE
                                  | BATTLE_TYPE_EREADER_TRAINER
                                  | BATTLE_TYPE_GHOST)))
@@ -4551,7 +4532,6 @@ static void Cmd_switchinanim(void)
     MarkBattlerForControllerExec(gActiveBattler);
 
     gBattlescriptCurrInstr += 3;
->>>>>>> f6aa148946da1a2b947553ca205669016f840946
 }
 
 static void Cmd_jumpifcantswitch(void)
@@ -5252,10 +5232,6 @@ static void Cmd_yesnoboxlearnmove(void)
                     && !(gBattleMons[2].status2 & STATUS2_TRANSFORMED)
                     && !(gDisableStructs[2].mimickedMoves & gBitTable[movePosition]))
                 {
-<<<<<<< HEAD
-                    RemoveBattleMonPPBonus(&gBattleMons[2], movePosition);
-                    SetBattleMonMoveSlot(&gBattleMons[2], gMoveToLearn, movePosition);
-=======
                     gBattlescriptCurrInstr = T1_READ_PTR(gBattlescriptCurrInstr + 1);
 
                     PREPARE_MOVE_BUFFER(gBattleTextBuff2, moveId)
@@ -5275,7 +5251,6 @@ static void Cmd_yesnoboxlearnmove(void)
                         RemoveBattleMonPPBonus(&gBattleMons[2], movePosition);
                         SetBattleMonMoveSlot(&gBattleMons[2], gMoveToLearn, movePosition);
                     }
->>>>>>> f6aa148946da1a2b947553ca205669016f840946
                 }
                 // }
             }
@@ -9508,37 +9483,8 @@ static void Cmd_handleballthrow(void)
 {
     u8 ballMultiplier = 0;
 
-<<<<<<< HEAD
-    if (!gBattleControllerExecFlags)
-    {
-        gActiveBattler = gBattlerAttacker;
-        gBattlerTarget = gBattlerAttacker ^ BIT_SIDE;
-        if (gBattleTypeFlags & BATTLE_TYPE_GHOST)
-        {
-            BtlController_EmitBallThrowAnim(0, BALL_GHOST_DODGE);
-            MarkBattlerForControllerExec(gActiveBattler);
-            gBattlescriptCurrInstr = BattleScript_GhostBallDodge;
-        }
-        else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
-        {
-            BtlController_EmitBallThrowAnim(0, BALL_TRAINER_BLOCK);
-            MarkBattlerForControllerExec(gActiveBattler);
-            gBattlescriptCurrInstr = BattleScript_TrainerBallBlock;
-        }
-        else if (gBattleTypeFlags & (BATTLE_TYPE_POKEDUDE | BATTLE_TYPE_OLD_MAN_TUTORIAL | BATTLE_TYPE_PIKACHU))
-        {
-            BtlController_EmitBallThrowAnim(0, BALL_3_SHAKES_SUCCESS);
-            MarkBattlerForControllerExec(gActiveBattler);
-            gBattlescriptCurrInstr = BattleScript_OldMan_Pokedude_CaughtMessage;
-        }
-        else
-        {
-            u32 odds;
-            u8 catchRate;
-=======
     if (gBattleControllerExecFlags)
         return;
->>>>>>> f6aa148946da1a2b947553ca205669016f840946
 
     gActiveBattler = gBattlerAttacker;
     gBattlerTarget = gBattlerAttacker ^ BIT_SIDE;
@@ -9555,7 +9501,7 @@ static void Cmd_handleballthrow(void)
         MarkBattlerForControllerExec(gActiveBattler);
         gBattlescriptCurrInstr = BattleScript_TrainerBallBlock;
     }
-    else if (gBattleTypeFlags & (BATTLE_TYPE_POKEDUDE | BATTLE_TYPE_OLD_MAN_TUTORIAL))
+    else if (gBattleTypeFlags & (BATTLE_TYPE_POKEDUDE | BATTLE_TYPE_OLD_MAN_TUTORIAL | BATTLE_TYPE_PIKACHU))
     {
         BtlController_EmitBallThrowAnim(BUFFER_A, BALL_3_SHAKES_SUCCESS);
         MarkBattlerForControllerExec(gActiveBattler);

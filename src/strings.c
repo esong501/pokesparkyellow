@@ -226,19 +226,12 @@ const u8 gText_ThankYouIllSendItHome[] = _("どうも ありがとう!\nじた�
 const u8 gText_ThanksIllSendItHome[] = _("どうも ありがとう!\nじたくの パソコンに おくって おくね!");
 const u8 gText_YouDontHaveMoney[] = _("You don't have enough money.{PAUSE_UNTIL_PRESS}");
 const u8 gText_NoMoreRoomForThis[] = _("You have no more room for this\nitem.{PAUSE_UNTIL_PRESS}");
-<<<<<<< HEAD
 // new string for buying TMs you already have
 const u8 gText_YouAlreadyHaveThis[] = _("You already have this item.{PAUSE_UNTIL_PRESS}");
-const u8 gUnknown_8416888[] = _("{STR_VAR_1}を\nいれる ばしょが いっぱいです{PAUSE_UNTIL_PRESS}");
-const u8 gText_CanIHelpWithAnythingElse[] = _("Is there anything else I can do?");
-const u8 gUnknown_84168BF[] = _("その ほかに\nなにか ちからに なれることは?");
-const u8 gUnknown_84168D7[] = _("プレミアボ-ル 1コ\nおまけ しておきますね!{PAUSE_UNTIL_PRESS}");
-=======
 const u8 gText_SpaceForVar1Full[] = _("{STR_VAR_1}を\nいれる ばしょが いっぱいです{PAUSE_UNTIL_PRESS}");
 const u8 gText_AnythingElseICanHelp[] = _("Is there anything else I can do?");
 const u8 gText_CanIHelpWithAnythingElse[] = _("その ほかに\nなにか ちからに なれることは?");
 const u8 gText_ThrowInPremierBall[] = _("プレミアボ-ル 1コ\nおまけ しておきますね!{PAUSE_UNTIL_PRESS}");
->>>>>>> f6aa148946da1a2b947553ca205669016f840946
 const u8 gText_OhNoICantBuyThat[] = _("{STR_VAR_1}? Oh, no.\nI can't buy that.{PAUSE_UNTIL_PRESS}");
 const u8 gText_HowManyWouldYouLikeToSell[] = _("{STR_VAR_1}?\nHow many would you like to sell?");
 const u8 gText_ICanPayThisMuch_WouldThatBeOkay[] = _("I can pay ¥{STR_VAR_3}.\nWould that be okay?");

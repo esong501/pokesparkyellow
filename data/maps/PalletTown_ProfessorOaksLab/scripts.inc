@@ -304,9 +304,7 @@ PalletTown_ProfessorOaksLab_EventScript_RivalBattle::
 	closemessage
 	applymovement LOCALID_PROF_OAK, Common_Movement_FaceDown
 	waitmovement 0
-	goto_if_eq VAR_STARTER_MON, 0, PalletTown_ProfessorOaksLab_EventScript_RivalApproachForBattleCharmander
-	goto_if_eq VAR_STARTER_MON, 1, PalletTown_ProfessorOaksLab_EventScript_RivalApproachForBattleBulbasaur
-	goto_if_eq VAR_STARTER_MON, 2, PalletTown_ProfessorOaksLab_EventScript_RivalApproachForBattleSquirtle
+	call PalletTown_ProfessorOaksLab_EventScript_RivalApproachForBattleSquirtle
 	end
 
 @ The scripts for the rival approaching the player for battle are a bit bloated because
@@ -518,7 +516,7 @@ PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle::
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_Vaporeon::
-	setvar PLAYER_STARTER_NUM, 2
+	setvar VAR_STARTER_MON, 2
 	return
 
 PalletTown_ProfessorOaksLab_EventScript_RivalExitAfterBattleLeft::
@@ -617,7 +615,7 @@ PalletTown_ProfessorOaksLab_EventScript_ProfOak::
 	goto_if_ge VAR_MAP_SCENE_VIRIDIAN_CITY_MART, 1, PalletTown_ProfessorOaksLab_EventScript_ReceiveDexScene
 	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 4, PalletTown_ProfessorOaksLab_EventScript_OakBattleMonForItToGrow
 	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3, PalletTown_ProfessorOaksLab_EventScript_OakCanReachNextTownWithMon
-	msgbox PalletTown_ProfessorOaksLab_Text_OakWhichOneWillYouChoose
+	msgbox PalletTown_ProfessorOaksLab_Text_OakGoAhead
 	release
 	end
 
@@ -1250,17 +1248,17 @@ PalletTown_ProfessorOaksLab_Movement_RivalWalksToBulbasaur::
 	step_end
 
 PalletTown_ProfessorOaksLab_Movement_OakFaceRight::
-	walk_in_place_fastest_right
+	walk_in_place_faster_right
 	step_end
 
 PalletTown_ProfessorOaksLab_Movement_OakFaceDown::
-	walk_in_place_fastest_down
+	walk_in_place_faster_down
 	step_end
 
 PalletTown_ProfessorOaksLab_EventScript_PikachuBall::
 	lock
 	faceplayer
-	setvar PLAYER_STARTER_NUM, 1
+	setvar PLAYER_STARTER_NUM, 0
 	setvar PLAYER_STARTER_SPECIES, SPECIES_PIKACHU
 	setvar RIVAL_STARTER_SPECIES, SPECIES_EEVEE
 	setvar RIVAL_STARTER_ID, LOCALID_BULBASAUR_BALL
@@ -1304,7 +1302,7 @@ PalletTown_ProfessorOaksLab_EventScript_GetPikachu::
 	setflag FLAG_PALLET_LADY_NOT_BLOCKING_SIGN
 	givemon PLAYER_STARTER_SPECIES, 5, ITEM_NONE
 	copyvar VAR_STARTER_MON, PLAYER_STARTER_NUM
-	getspeciesname 0, PLAYER_STARTER_SPECIES
+	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
 	message PalletTown_ProfessorOaksLab_Text_ReceivedMonFromOak
 	waitmessage
 	playfanfare MUS_OBTAIN_KEY_ITEM
